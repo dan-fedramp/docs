@@ -14,7 +14,7 @@ addFormats(ajv);
 
 test("All requirement files must validate against the FedRAMP JSON schema", async () => {
   // Load the schema
-  const schemaContent = readFileSync("./schema/fedramp.schema.json", "utf-8");
+  const schemaContent = readFileSync("./json-schema/fedramp.schema.json", "utf-8");
   const schema = JSON.parse(schemaContent);
   
   // Compile the schema
