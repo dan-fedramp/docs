@@ -1,7 +1,7 @@
 {
   "info": {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "schema.json",
+    "$id": "fedramp.schema.json",
     "name": "Minimum Assessment Scope Requirements",
     "short_name": "MAS",
     "current_release": "25.06A",

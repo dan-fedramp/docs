@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schema.json",
+  "$id": "fedramp.schema.json",
   "info": {
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
