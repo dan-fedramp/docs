@@ -1,0 +1,227 @@
+{
+  "info": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "schema.json",
+    "name": "Minimum Assessment Scope Requirements",
+    "short_name": "MAS",
+    "current_release": "25.06A",
+    "types": ["FRR", "FRD"],
+    "releases": [
+      {
+        "id": "25.06A",
+        "published_date": "2025-06-16",
+        "description": "Minor non-breaking updates to formatting for clarity; renamed to Minimum Assessment Scope Requirements.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "pilot": "2025-06-16",
+            "specific_release": "20x.MAS.P1.25.06A",
+            "is_optional": false,
+            "comment": "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
+          },
+          "Rev5": {
+            "closed_beta": "2025-07-30",
+            "specific_release": "R5.MAS.B1.25.06A",
+            "is_optional": true,
+            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
+          }
+        }
+      },
+      {
+        "id": "25.05A",
+        "published_date": "2025-05-30",
+        "description": "Initial release of the Minimum Assessment Scope Standard.",
+        "public_comment": true,
+        "effective": {
+          "20x": {
+            "pilot": "2025-05-30",
+            "specific_release": "20x.MAS.P1.25.05A",
+            "is_optional": false,
+            "comment": "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
+          },
+          "Rev5": {
+            "closed_beta": "2025-06-30",
+            "specific_release": "R5.MAS.B1.25.05A",
+            "is_optional": true,
+            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
+          }
+        },
+        "related_rfcs": [
+          {
+            "start_date": "2025-04-24",
+            "end_date": "2025-05-25",
+            "id": "0007",
+            "url": "https://www.fedramp.gov/rfcs/0007/",
+            "discussion_url": "https://github.com/FedRAMP/community/discussions/2",
+            "short_name": "rfc-0005-minimum-assessment-scope",
+            "full_name": "FedRAMP RFC-0005: Minimum Assessment Scope Standard"
+          }
+        ]
+      }
+    ],
+    "front_matter": {
+      "authority": [
+        {
+          "reference": "OMB Circular A-130: Managing Information as a Strategic Resource",
+          "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf",
+          "description": "Section 10 states that an \"Authorization boundary\" includes \"all components of an information system to be authorized for operation by an authorizing official. This excludes separately authorized systems to which the information system is connected.\" and further adds in footnote 64 that \"Agencies have significant flexibility in determining what constitutes an information system and its associated boundary.\""
+        },
+        {
+          "reference": "NIST SP 800-37 Rev. 2",
+          "reference_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+          "description": "Chapter 2.4 footnote 36 similarly states that \"the term authorization boundary is now used exclusively to refer to the set of system elements comprising the system to be authorized for operation or authorized for use by an authorizing official (i.e., the scope of the authorization).\""
+        },
+        {
+          "reference": "FedRAMP Authorization Act (44 USC § 3609 (a) (4))",
+          "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607",
+          "description": "Requires the General Services Administration to \"establish and update guidance on the boundaries of FedRAMP authorization packages to enhance the security and protection of Federal information and promote transparency for agencies and users as to which services are included in the scope of a FedRAMP authorization.\"",
+          "delegation": "This responsibility is delegated to the FedRAMP Director",
+          "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+        }
+      ],
+      "purpose": "Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.",
+      "expected_outcomes": [
+        "Boundaries will be scoped to include the minimum number of components to make authorization and assessment easier",
+        "Cloud service providers will define clear boundaries for security and assessment of offerings based on the direct risk to federal information",
+        "Third-party independent assessors will have a simple well documented approach to assess security and implementation decisions",
+        "Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based Authorization to Operate decisions based on their planned use case"
+      ]
+    }
+  },
+  "FRD": {
+    "MAS": [
+      {
+        "id": "FRD-MAS-01",
+        "term": "Federal Information",
+        "definition": "Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means \"information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.\"",
+        "note": "This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP's Technical Assistance on Federal Information and consult qualified legal experts for additional assistance identifying federal information.",
+        "reference": "OMB Circular A-130",
+        "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
+      },
+      {
+        "id": "FRD-MAS-02",
+        "term": "Information Resource",
+        "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\"",
+        "note": "This applies to any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
+        "reference": "44 USC § 3502 (6)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
+      },
+      {
+        "id": "FRD-MAS-03",
+        "term": "Handle",
+        "definition": "Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc."
+      },
+      {
+        "id": "FRD-MAS-04",
+        "term": "Likely",
+        "definition": "A reasonable degree of probability based on context."
+      },
+      {
+        "id": "FRD-MAS-05",
+        "term": "Third-party Information Resource",
+        "definition": "Any information resource that is not entirely included in the FedRAMP Minimum Assessment Scope for the cloud service offering seeking authorization."
+      }
+    ]
+  },
+  "FRR": {
+    "MAS": {
+      "base": {
+        "application": "These requirements apply ALWAYS to ALL FedRAMP authorizations based on the Effective Date(s) and Overall Applicability.",
+        "requirements": [
+          {
+            "id": "FRR-MAS-01",
+            "statement": "Providers MUST establish a FedRAMP Minimum Assessment Scope that includes all information resources that are likely to handle federal information or likely to impact the confidentiality, integrity, or availability of federal information.",
+            "affects": ["Providers"],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-MAS-02",
+            "statement": "Providers MUST include the configuration and usage of third-party information resources, ONLY IF FRR-MAS-01 APPLIES.",
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_rules": [ "FRR-MAS-01" ]
+          },
+          {
+            "id": "FRR-MAS-03",
+            "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to federal information from the configuration and usage of non-FedRAMP authorized third-party information resources, ONLY IF FRR-MAS-01 APPLIES.",
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_rules": ["FRR-MAS-01"]
+          },
+          {
+            "id": "FRR-MAS-04",
+            "statement": "Providers MUST include metadata (including metadata about federal information), ONLY IF FRR-MAS-01 APPLIES.",
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_rules": ["FRR-MAS-01"]
+          },
+          {
+            "id": "FRR-MAS-05",
+            "statement": "Providers MUST clearly identify, document, and explain information flows and impact levels for ALL information resources, ONLY IF FRR-MAS-01 APPLIES.",
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_rules": ["FRR-MAS-01"]
+          }
+        ]
+      },
+      "exceptions": {
+        "application": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+        "requirements": [
+          {
+            "id": "FRR-MAS-EX-01",
+            "statement": "Providers MAY include documentation of information resources beyond the Minimum Assessment Scope, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the Minimum Assessment Scope.",
+            "affects": ["Providers"],
+            "primary_key_word": "MAY"
+          }
+        ]
+      },
+      "application": {
+        "application": "These rules provide general guidance on the application of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-MAS-AY-01",
+            "statement": "Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore also outside the Minimum Assessment Scope. For more, see fedramp.gov/scope.",
+            "affects": ["All"],
+            "primary_key_word": "MUST",
+            "reference": "Overall Scope of FedRAMP",
+            "reference_url": "http://fedramp.gov/scope"
+          },
+          {
+            "id": "FRR-MAS-AY-02",
+            "statement": "Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore outside the Minimum Assessment Scope. For more, see fedramp.gov/scope.",
+            "affects": ["All"],
+            "primary_key_word": "MUST",
+            "reference": "Overall Scope of FedRAMP",
+            "reference_url": "http://fedramp.gov/scope"
+          },
+          {
+            "id": "FRR-MAS-AY-03",
+            "statement": "Information resources (including third-party information resources) that do not meet the conditions in FRR-MAS-01 are outside the Minimum Assessment Scope (FRR-MAS-02).",
+            "affects": ["All"],
+            "primary_key_word": "MUST",
+            "referenced_rules": ["FRR-MAS-01", "FRR-MAS-02"]
+          },
+          {
+            "id": "FRR-MAS-AY-04",
+            "statement": "Information resources (including third-party information resources) MAY vary by impact level as appropriate to the level of information handled or impacted by the information resource (FRR-MAS-05).",
+            "affects": ["All"],
+            "primary_key_word": "MAY",
+            "referenced_rules": ["FRR-MAS-05"]
+          },
+          {
+            "id": "FRR-MAS-AY-05",
+            "statement": "All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Scope as needed.",
+            "affects": ["All"],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-MAS-AY-06",
+            "statement": "All aspects of the Minimum Assessment Scope are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.",
+            "affects": ["Providers"],
+            "primary_key_word": "MUST"
+          }
+        ]
+      }
+    }
+  }
+}
