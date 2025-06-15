@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schema.json",
+  "$id": "FedRAMP.schema.json",
   "info": {
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
@@ -10,20 +10,33 @@
       {
         "id": "25.06A",
         "published_date": "2025-06-16",
-        "description": "Initial release Significant Change Notification Requirements",
+        "description": "Initial release of Significant Change Notification Requirements",
         "public_comment": true,
         "effective": {
           "20x": {
-            "pilot": "2025-06-16",
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-16",
+                "designator": "20xP1",
+                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+              }
+            },
             "specific_release": "20x.SCN.P1.25.06A",
             "is_optional": false,
             "comment": "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
           },
           "Rev5": {
-            "closed_beta": "2025-07-07",
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-07-07",
+                "is_tentative": true,
+                "designator": "R5.SCN.B1",
+                "comment": "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1)."
+              }
+            },
             "is_optional": true,
             "specific_release": "R5.SCN.B1.25.06A",
-            "comment": "Additional information on these phases will be vailable in the FedRAMP Rev5 Community Working Group and at fedramp.gov. "
+            "comment": "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
           }
         },
         "related_rfcs": [
@@ -65,7 +78,7 @@
           "delegation_url": "https://www.gsa.gov/fedramp/about-federal-risk-and-authorizations-management-program-fedramp/fedramp-pmo-director"
         }
       ],
-      "purpose": "The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.\nThis standard broadly identifies four types of significant changes, from least impactful to most impactful:\n1. Routine Recurring\n2. Adaptive\n3. Transformative\n4. Impact Categorization\nThese categories, and the resulting requirements, apply only to significant changes.",
+      "purpose": "The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.\n\nThis standard broadly identifies four types of significant changes, from least impactful to most impactful:\n1. Routine Recurring\n2. Adaptive\n3. Transformative\n4. Impact Categorization\n\nThese categories, and the resulting requirements, apply only to significant changes.",
       "expected_outcomes": [
         "Cloud service providers will securely deliver new features and capabilities for government customers at the same speed and pace of delivery for commercial customers, without needing advance government approval",
         "Federal agencies will have equal access to features and capabilities as commercial customers without sacrificing the visibility and information they need to maintain ongoing confidence in the service"
@@ -113,6 +126,7 @@
   "FRR": {
     "SCN": {
       "base": {
+        "id": "FRR-SCN",
         "application": "These requirements apply ALWAYS to ALL significant changes based on current Effective Date(s) and Overall Applicability.",
         "requirements": [
           {
@@ -194,6 +208,7 @@
       },
       "exceptions": {
         "application": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+        "id": "FRR-SCN-EX",
         "requirements": [
           {
             "id": "FRR-SCN-EX-01",
@@ -211,6 +226,7 @@
       },
       "routine_recurring": {
         "application": "These requirements apply ONLY to significant changes of type ROUTINE RECURRING.",
+        "id": "FRR-SCN-RR",
         "requirements": [
           {
             "id": "FRR-SCN-RR-01",
@@ -222,6 +238,7 @@
       },
       "adaptive": {
         "application": "These requirements apply ONLY to significant changes of type ADAPTIVE.",
+        "id": "FRR-SCN-AD",
         "requirements": [
           {
             "id": "FRR-SCN-AD-01",
@@ -236,6 +253,7 @@
       },
       "transformative": {
         "application": "These requirements apply ONLY to significant changes of type TRANSFORMATIVE.",
+        "id": "FRR-SCN-TF",
         "requirements": [
           {
             "id": "FRR-SCN-TF-01",
@@ -292,6 +310,7 @@
       },
       "impact": {
         "application": "These requirements apply ONLY to significant changes of type IMPACT CATEGORIZATION.",
+        "id": "FRR-SCN-IM",
         "requirements": [
           {
             "id": "FRR-SCN-IM-01",

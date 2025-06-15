@@ -1,7 +1,7 @@
 {
   "info": {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "schema.json",
+    "$id": "FedRAMP.schema.json",
     "name": "Minimum Assessment Scope Requirements",
     "short_name": "MAS",
     "current_release": "25.06A",
@@ -14,16 +14,29 @@
         "public_comment": false,
         "effective": {
           "20x": {
-            "pilot": "2025-06-16",
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-16",
+                "designator": "20xP1",
+                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+              }
+            },
             "specific_release": "20x.MAS.P1.25.06A",
             "is_optional": false,
             "comment": "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
           },
           "Rev5": {
-            "closed_beta": "2025-07-30",
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-07-30",
+                "is_tentative": true,
+                "designator": "R5.MAS.B1",
+                "comment": "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1)."
+              }
+            },
             "specific_release": "R5.MAS.B1.25.06A",
             "is_optional": true,
-            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
+            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
           }
         }
       },
@@ -127,6 +140,7 @@
     "MAS": {
       "base": {
         "application": "These requirements apply ALWAYS to ALL FedRAMP authorizations based on the Effective Date(s) and Overall Applicability.",
+        "id": "FRR-MAS",
         "requirements": [
           {
             "id": "FRR-MAS-01",
@@ -139,7 +153,7 @@
             "statement": "Providers MUST include the configuration and usage of third-party information resources, ONLY IF FRR-MAS-01 APPLIES.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_rules": [ "FRR-MAS-01" ]
+            "referenced_rules": ["FRR-MAS-01"]
           },
           {
             "id": "FRR-MAS-03",
@@ -166,6 +180,7 @@
       },
       "exceptions": {
         "application": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+        "id": "FRR-MAS-EX",
         "requirements": [
           {
             "id": "FRR-MAS-EX-01",
@@ -177,6 +192,7 @@
       },
       "application": {
         "application": "These rules provide general guidance on the application of this standard.",
+        "id": "FRR-MAS-AY",
         "requirements": [
           {
             "id": "FRR-MAS-AY-01",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schema.json",
+  "$id": "FedRAMP.schema.json",
   "info": {
     "name": "Key Security Indicators",
     "short_name": "KSI",
@@ -14,7 +14,13 @@
         "public_comment": true,
         "effective": {
           "20x": {
-            "pilot": "2025-05-30",
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-16",
+                "designator": "20xP1",
+                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+              }
+            },
             "specific_release": "20x.KSI.P1.25.05A",
             "is_optional": false,
             "comment": "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized third-party information resources."
@@ -79,6 +85,7 @@
     "KSI": {
       "base": {
         "application": "These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.",
+        "id": "FRR-KSI",
         "requirements": [
           {
             "id": "FRR-KSI-01",
