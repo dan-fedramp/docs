@@ -14,14 +14,14 @@ addFormats(ajv);
 
 test("All requirement files must validate against the FedRAMP JSON schema", async () => {
   // Load the schema
-  const schemaContent = readFileSync("./json-schema/fedramp.schema.json", "utf-8");
+  const schemaContent = readFileSync("../templates/FedRAMP.schema.json", "utf-8");
   const schema = JSON.parse(schemaContent);
   
   // Compile the schema
   const validate = ajv.compile(schema);
 
   // Find all JSON files in src-requirements
-  const files = await glob("./src-requirements/*.json");
+  const files = await glob("../FRMR*.json");
   expect(files.length > 0).toBeTruthy();
   
   // Test each file

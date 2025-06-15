@@ -36,7 +36,13 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["id", "published_date", "description", "effective", "public_comment"],
+            "required": [
+              "id",
+              "published_date",
+              "description",
+              "effective",
+              "public_comment"
+            ],
             "properties": {
               "id": {
                 "type": "string",
@@ -60,7 +66,15 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "required": ["start_date", "end_date", "id", "url", "short_name", "full_name", "discussion_url"],
+                  "required": [
+                    "start_date",
+                    "end_date",
+                    "id",
+                    "url",
+                    "short_name",
+                    "full_name",
+                    "discussion_url"
+                  ],
                   "properties": {
                     "start_date": { "type": "string", "format": "date" },
                     "end_date": { "type": "string", "format": "date" },
@@ -138,7 +152,8 @@
             "adaptive": { "$ref": "#/$defs/requirement_section" },
             "transformative": { "$ref": "#/$defs/requirement_section" },
             "impact": { "$ref": "#/$defs/requirement_section" },
-            "application": { "$ref": "#/$defs/requirement_section" }
+            "application": { "$ref": "#/$defs/requirement_section" },
+            "id": { "$ref": "#/$defs/requirement_section" }
           }
         }
       }
@@ -186,8 +201,27 @@
     "release_target": {
       "type": "object",
       "properties": {
-        "pilot": { "type": "string", "format": "date" },
-        "closed_beta": { "type": "string", "format": "date" },
+        "timeline": {
+          "type": "object",
+          "properties": {
+            "pilot": {
+              "type": "object",
+              "properties": {
+                "start_date": { "type": "string" },
+                "designator": { "type": "string" },
+                "comment": { "type": "string" }
+              }
+            },
+            "closed_beta": {
+              "type": "object",
+              "properties": {
+                "start_date": { "type": "string" },
+                "designator": { "type": "string" },
+                "comment": { "type": "string" }
+              }
+            }
+          }
+        },
         "specific_release": {
           "type": "string",
           "pattern": "^(20x|R5)\\.[A-Z]{3}\\.((P|B)\\d+|WR)\\.\\d{2}\\.\\d{2}[A-Z]$"
@@ -198,9 +232,10 @@
     },
     "requirement_section": {
       "type": "object",
-      "required": ["application", "requirements"],
+      "required": ["application", "requirements", "id"],
       "properties": {
         "application": { "type": "string" },
+        "id": { "type": "string" },
         "requirements": {
           "type": "array",
           "items": {

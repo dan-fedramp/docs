@@ -1,0 +1,23 @@
+{
+  "name": "docs",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.3",
+    "handlebars": "^4.7.8",
+    "nodemon": "^3.1.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "watch": "bunx nodemon --watch ../templates/FRMR.markdown.template.hbs --watch ../ --exec 'bun run scripts/FRMR-to-markdown.ts'"
+  }
+}
+
+

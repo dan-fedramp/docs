@@ -1,0 +1,109 @@
+# FedRAMP {{info.name}}
+
+- **Release:** {{info.current_release}}
+- **Published:** {{info.releases.[0].published_date}}  
+- **Designator:** {{info.short_name}}
+- **Description:** {{info.releases.[0].description}}
+
+## Front Matter
+
+### Effective Date(s) & Overall Applicability
+
+{{#each info.releases.[0].effective}}
+- **FedRAMP {{@key}}**:
+  {{#each this.timeline}}
+  - This release is effective **{{start_date}}** for **{{designator}}**{{#if is_tentative}} _(tentatively)_{{/if}}. 
+  - {{#if comment}}{{comment}}{{/if}}
+  {{/each}}
+  {{#if comment}}
+  - {{comment}}    
+  {{/if}}
+
+{{/each}}
+
+
+## Background & Authority
+{{#each info.front_matter.authority}}
+- [{{reference}}]({{reference_url}}) {{description}}  
+  {{#if delegation}}
+
+  ([{{delegation}}]({{delegation_url}}).)
+  {{/if}}
+{{/each}}
+
+### Purpose
+
+{{info.front_matter.purpose}}
+
+### Expected Outcomes
+
+{{#each info.front_matter.expected_outcomes}}
+- {{this}}
+{{/each}}
+
+---
+
+{{!-- Definitions section (FRD) --}}
+{{#if FRD}}
+## Definitions
+
+  {{#each FRD}}
+    {{#each this}}
+#### {{id}}
+
+> **{{term}}**: {{definition}}
+      {{#if note}}
+>
+>  _Note: {{note}}_
+      {{/if}}
+      {{#if reference}}
+>
+>  _[Reference: {{reference}}]({{reference_url}})_
+      {{/if}}
+    {{/each}}
+  {{/each}}
+{{/if}}
+
+{{!-- Requirements section (FRR) --}}
+{{#if FRR}}
+## Requirements
+
+  {{#each FRR}}
+    {{#each this}}    
+### {{this.id}}
+
+**{{this.application}}**
+      {{#each requirements}}
+
+#### {{this.id}}
+
+> {{this.statement}}
+        {{#if following_information}}
+          {{#each following_information}}
+> - {{this}}
+          {{/each}}
+        {{/if}}
+      {{/each}}
+---   
+    {{/each}}      
+  {{/each}}
+{{/if}}
+
+
+{{!-- KSIs have a different structure that is added afterwards --}}
+{{#if KSI}}
+## Key Security Indicators
+  {{#each KSI}}
+    {{#with this}}
+### {{id}}: {{name}}
+
+**{{indicator}}**
+
+      {{#each requirements}}
+#### {{id}}
+> {{statement}}.
+
+      {{/each}}
+    {{/with}}
+  {{/each}}
+{{/if}}
