@@ -356,7 +356,7 @@
         {
           "id": "FRA-SCN-03",
           "applies_to": "FRR-SCN-03",
-          "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change."
+          "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change."
         },
         {
           "id": "FRA-SCN-RR",

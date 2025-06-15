@@ -218,7 +218,7 @@ These categories, and the resulting requirements, apply only to significant chan
 
 #### FRA-SCN-03
 
-Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring. If it is not, work down from the highest impact to lowest to identify the type of change.
+Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.
 
 1. Is it a _significant change_?
 2. If it is, is it a _routine recurring_ change?
