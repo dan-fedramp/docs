@@ -107,7 +107,7 @@
         "id": "FRD-MAS-01",
         "term": "Federal Information",
         "definition": "Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means \"information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.\"",
-        "note": "This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP's Technical Assistance on Federal Information and consult qualified legal experts for additional assistance identifying federal information.",
+        "note": "This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP's Technical Assistance and consult qualified legal experts for additional assistance identifying federal information.",
         "reference": "OMB Circular A-130",
         "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
       },
@@ -150,7 +150,7 @@
         "requirements": [
           {
             "id": "FRR-MAS-01",
-            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of federal information _handled_ by the services. This defines cloud product for FedRAMP.",
+            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the services. This defines cloud product for FedRAMP.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "referenced_fr": [
@@ -176,10 +176,10 @@
           },
           {
             "id": "FRR-MAS-04",
-            "statement": "Providers MUST include metadata (including metadata about federal information), ONLY IF _FRR-MAS-01_ APPLIES.",
+            "statement": "Providers MUST include metadata (including metadata about _federal information_), ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRR-MAS-01"]
+            "referenced_fr": ["FRR-MAS-01", "FRD-MAS-01"]
           },
           {
             "id": "FRR-MAS-05",
