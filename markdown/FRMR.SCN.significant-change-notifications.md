@@ -24,10 +24,10 @@
 ## Background & Authority
 - [FedRAMP Authorization Act (44 USC § 3609 (a) (7))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) directs the Administrator of the General Services Administration to &quot;coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the [OMB] Director and the [DHS] Secretary, to establish and regularly update a framework for continuous monitoring...&quot;  
 
-  ([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp).)
+  _([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp))_
 - [OMB Memorandum M-24-15 on Modernizing FedRAMP](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) section VI states &quot;FedRAMP should seek input from CSPs and develop processes that enable CSPs to maintain an agile deployment lifecycle that does not require advance Government approval, while giving the Government the visibility and information it needs to maintain ongoing confidence in the FedRAMP-authorized system and to respond timely and appropriately to incidents.&quot;  
 
-  ([This responsibility is delegated to the FedRAMP PMO Director](https://www.gsa.gov/fedramp/about-federal-risk-and-authorizations-management-program-fedramp/fedramp-pmo-director).)
+  _([This responsibility is delegated to the FedRAMP PMO Director](https://www.gsa.gov/fedramp/about-federal-risk-and-authorizations-management-program-fedramp/fedramp-pmo-director))_
 
 ### Purpose
 
@@ -116,15 +116,15 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-09
 
 > Providers MUST include at least the following information in Significant Change Notifications:
-> - Service Offering FedRAMP ID
-> - 3PAO Name (if applicable)
-> - Related POA&amp;M (if applicable)
-> - Short description of change
-> - Reason for change
-> - Summary of customer impact, including changes to services and customer configuration responsibilities
-> - Plan and timeline for the change, including for the verification, assessment, and/or validation of impacted Key Security Indicators or controls
-> - Copy of the business or security impact analysis
-> - Name and title of approver
+> 1. Service Offering FedRAMP ID
+> 1. 3PAO Name (if applicable)
+> 1. Related POA&amp;M (if applicable)
+> 1. Short description of change
+> 1. Reason for change
+> 1. Summary of customer impact, including changes to services and customer configuration responsibilities
+> 1. Plan and timeline for the change, including for the verification, assessment, and/or validation of impacted Key Security Indicators or controls
+> 1. Copy of the business or security impact analysis
+> 1. Name and title of approver
 
 #### FRR-SCN-10
 
@@ -157,7 +157,7 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-AD-01
 
 > Providers MUST notify all necessary parties within ten business days AFTER finishing ADAPTIVE changes, also including the following information:
-> - Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
+> 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
 ---   
 ### FRR-SCN-TF
 
@@ -178,14 +178,14 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-TF-04
 
 > Providers MUST notify all necessary parties within 5 business days AFTER finishing TRANSFORMATIVE changes, also including the following information:
-> - Updates to all previously sent information
+> 1. Updates to all previously sent information
 
 #### FRR-SCN-TF-05
 
 > Providers MUST notify all necessary parties within 5 business days AFTER completing the verification, assessment, and/or validation of TRANSFORMATIVE changes, also including the following information:
-> - Updates to all previously sent information
-> - Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
-> - Copy of the security assessment report (if applicable)
+> 1. Updates to all previously sent information
+> 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
+> 1. Copy of the security assessment report (if applicable)
 
 #### FRR-SCN-TF-06
 
