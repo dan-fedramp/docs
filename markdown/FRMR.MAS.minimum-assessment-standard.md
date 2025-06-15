@@ -47,7 +47,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 > **Federal Information**: Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means &quot;information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.&quot;
 >
->  _Note: This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP&#x27;s Technical Assistance on Federal Information and consult qualified legal experts for additional assistance identifying federal information._
+>  _Note: This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP&#x27;s Technical Assistance and consult qualified legal experts for additional assistance identifying federal information._
 >
 >  _[Reference: OMB Circular A-130](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf)_
 #### FRD-MAS-02
@@ -78,7 +78,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-01
 
-> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of federal information _handled_ by the services. This defines cloud product for FedRAMP.
+> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the services. This defines cloud product for FedRAMP.
 
 #### FRR-MAS-02
 
@@ -90,7 +90,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-04
 
-> Providers MUST include metadata (including metadata about federal information), ONLY IF _FRR-MAS-01_ APPLIES.
+> Providers MUST include metadata (including metadata about _federal information_), ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-05
 
