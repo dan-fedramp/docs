@@ -22,7 +22,7 @@
 - [NIST SP 800-53A](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) Section 3.5 states &quot;When organizations employ the concept of capabilities, automated and manual assessments account for all security and privacy controls that comprise the security and privacy capabilities. Assessors are aware of how the controls work together to provide such capabilities.&quot;  
 - [FedRAMP Authorization Act (44 USC § 3609 (a) (1))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) requires that the Administrator of the General Services Administration shall &quot;in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...&quot; 44 USC § 3609 (c) (2) further states that &quot;the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.&quot;  
 
-  ([These responsibilities are delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp).)
+  _([These responsibilities are delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp))_
 
 ### Purpose
 
@@ -108,7 +108,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Enforce system and information resource integrity through cryptographic means.
 
 #### KSI-SVC-06
-> Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates.
+> Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates.
 
 #### KSI-SVC-07
 > Use a consistent, risk-informed approach for applying security patches.
@@ -130,7 +130,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Manage and protect privileged accounts.
 
 #### KSI-IAM-05
-> Regularly review and validate access.
+> _Regularly_ review and validate access.
 
 ### KSI-AUD: Audit Logging
 
@@ -178,14 +178,14 @@ Modern cloud services use automated or code-driven configuration management and 
 > Use automated monitoring tools.
 
 #### KSI-MON-04
-> Regularly review monitoring data.
+> _Regularly_ review monitoring data.
 
 ### KSI-VLN: Vulnerability Management
 
 **A secure cloud service offering will actively manage and remediate vulnerabilities.**
 
 #### KSI-VLN-01
-> Regularly scan for vulnerabilities.
+> _Regularly_ scan for vulnerabilities.
 
 #### KSI-VLN-02
 > Track and remediate identified vulnerabilities.
@@ -211,4 +211,6 @@ Modern cloud services use automated or code-driven configuration management and 
 
 #### KSI-INC-04
 > Review and update incident response procedures.
+
+
 

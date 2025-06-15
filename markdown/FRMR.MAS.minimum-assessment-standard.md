@@ -1,9 +1,9 @@
-# FedRAMP Minimum Assessment Scope Requirements
+# FedRAMP Minimum Assessment Standard
 
 - **Release:** 25.06A
 - **Published:** 2025-06-16  
 - **Designator:** MAS
-- **Description:** Minor non-breaking updates to formatting for clarity; renamed to Minimum Assessment Scope Requirements.
+- **Description:** Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud product; added FRD-MAS-06 to introduce more commercial standard cloud-product terminology.
 
 ## Front Matter
 
@@ -12,7 +12,7 @@
 - **FedRAMP 20x**:
   - This release is effective **2025-06-16** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR.    
+  - Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR.    
 
 - **FedRAMP Rev5**:
   - This release is effective **2025-07-30** for **R5.MAS.B1** _(tentatively)_. 
@@ -26,15 +26,15 @@
 - [NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final) Chapter 2.4 footnote 36 similarly states that &quot;the term authorization boundary is now used exclusively to refer to the set of system elements comprising the system to be authorized for operation or authorized for use by an authorizing official (i.e., the scope of the authorization).&quot;  
 - [FedRAMP Authorization Act (44 USC § 3609 (a) (4))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607) Requires the General Services Administration to &quot;establish and update guidance on the boundaries of FedRAMP authorization packages to enhance the security and protection of Federal information and promote transparency for agencies and users as to which services are included in the scope of a FedRAMP authorization.&quot;  
 
-  ([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp).)
+  _([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp))_
 
 ### Purpose
 
-Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
+Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Standard provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
 
 ### Expected Outcomes
 
-- Boundaries will be scoped to include the minimum number of components to make authorization and assessment easier
+- Boundaries will include the minimum number of components to make authorization and assessment easier
 - Cloud service providers will define clear boundaries for security and assessment of offerings based on the direct risk to federal information
 - Third-party independent assessors will have a simple well documented approach to assess security and implementation decisions
 - Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based Authorization to Operate decisions based on their planned use case
@@ -54,7 +54,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 > **Information Resource**: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
 >
->  _Note: This applies to any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
+>  _Note: This applies to any aspect of the _cloud product_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
 >
 >  _[Reference: 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
 #### FRD-MAS-03
@@ -65,7 +65,10 @@ Application boundaries that are defined too broadly complicate the assessment pr
 > **Likely**: A reasonable degree of probability based on context.
 #### FRD-MAS-05
 
-> **Third-party Information Resource**: Any information resource that is not entirely included in the FedRAMP Minimum Assessment Scope for the cloud service offering seeking authorization.
+> **Third-party Information Resource**: Any _information resource_ that is not entirely included in the assessment for the _cloud product_ seeking authorization.
+#### FRD-MAS-06
+
+> **Cloud Product**: A specific, packaged cloud computing product provided by a cloud service provider that can be used by a customer; commonly referred to as a &quot;cloud service offering&quot; by government agencies.
 
 ## Requirements
 
@@ -75,23 +78,23 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-01
 
-> Providers MUST establish a FedRAMP Minimum Assessment Scope that includes all information resources that are likely to handle federal information or likely to impact the confidentiality, integrity, or availability of federal information.
+> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of federal information _handled_ by the services. This defines cloud product for FedRAMP.
 
 #### FRR-MAS-02
 
-> Providers MUST include the configuration and usage of third-party information resources, ONLY IF FRR-MAS-01 APPLIES.
+> Providers MUST include the configuration and usage of _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-03
 
-> Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to federal information from the configuration and usage of non-FedRAMP authorized third-party information resources, ONLY IF FRR-MAS-01 APPLIES.
+> Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal information_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-04
 
-> Providers MUST include metadata (including metadata about federal information), ONLY IF FRR-MAS-01 APPLIES.
+> Providers MUST include metadata (including metadata about federal information), ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-05
 
-> Providers MUST clearly identify, document, and explain information flows and impact levels for ALL information resources, ONLY IF FRR-MAS-01 APPLIES.
+> Providers MUST clearly identify, document, and explain information flows and impact levels for ALL _information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 ---   
 ### FRR-MAS-EX
 
@@ -99,7 +102,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-EX-01
 
-> Providers MAY include documentation of information resources beyond the Minimum Assessment Scope, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the Minimum Assessment Scope.
+> Providers MAY include documentation of _information resources_ beyond the _cloud product_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud product_.
 ---   
 ### FRR-MAS-AY
 
@@ -107,27 +110,29 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-AY-01
 
-> Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore also outside the Minimum Assessment Scope. For more, see fedramp.gov/scope.
+> Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the _cloud product_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-02
 
-> Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore outside the Minimum Assessment Scope. For more, see fedramp.gov/scope.
+> Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore not included in the _cloud product_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-03
 
-> Information resources (including third-party information resources) that do not meet the conditions in FRR-MAS-01 are outside the Minimum Assessment Scope (FRR-MAS-02).
+> _Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud product_ for FedRAMP(_FRR-MAS-02_).
 
 #### FRR-MAS-AY-04
 
-> Information resources (including third-party information resources) MAY vary by impact level as appropriate to the level of information handled or impacted by the information resource (FRR-MAS-05).
+> _Information resources_ (including _third-party information resources_+_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).
 
 #### FRR-MAS-AY-05
 
-> All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Scope as needed.
+> All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Standard as needed.
 
 #### FRR-MAS-AY-06
 
-> All aspects of the Minimum Assessment Scope are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
+> All aspects of the _cloud product_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
 ---   
+
+
 
 

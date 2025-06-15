@@ -186,8 +186,9 @@
         },
         {
           "id": "KSI-SVC-06",
-          "statement": "Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates",
-          "applied_impact_levels": ["Low"]
+          "statement": "Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
         },
         {
           "id": "KSI-SVC-07",
@@ -223,8 +224,9 @@
         },
         {
           "id": "KSI-IAM-05",
-          "statement": "Regularly review and validate access",
-          "applied_impact_levels": ["Low"]
+          "statement": "_Regularly_ review and validate access",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
         }
       ]
     },
@@ -304,8 +306,9 @@
         },
         {
           "id": "KSI-MON-04",
-          "statement": "Regularly review monitoring data",
-          "applied_impact_levels": ["Low"]
+          "statement": "_Regularly_ review monitoring data",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
         }
       ]
     },
@@ -316,8 +319,9 @@
       "requirements": [
         {
           "id": "KSI-VLN-01",
-          "statement": "Regularly scan for vulnerabilities",
-          "applied_impact_levels": ["Low"]
+          "statement": "_Regularly_ scan for vulnerabilities",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
         },
         {
           "id": "KSI-VLN-02",

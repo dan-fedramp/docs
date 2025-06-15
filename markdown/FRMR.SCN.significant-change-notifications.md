@@ -24,10 +24,10 @@
 ## Background & Authority
 - [FedRAMP Authorization Act (44 USC § 3609 (a) (7))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) directs the Administrator of the General Services Administration to &quot;coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the [OMB] Director and the [DHS] Secretary, to establish and regularly update a framework for continuous monitoring...&quot;  
 
-  ([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp).)
+  _([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp))_
 - [OMB Memorandum M-24-15 on Modernizing FedRAMP](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) section VI states &quot;FedRAMP should seek input from CSPs and develop processes that enable CSPs to maintain an agile deployment lifecycle that does not require advance Government approval, while giving the Government the visibility and information it needs to maintain ongoing confidence in the FedRAMP-authorized system and to respond timely and appropriately to incidents.&quot;  
 
-  ([This responsibility is delegated to the FedRAMP PMO Director](https://www.gsa.gov/fedramp/about-federal-risk-and-authorizations-management-program-fedramp/fedramp-pmo-director).)
+  _([This responsibility is delegated to the FedRAMP PMO Director](https://www.gsa.gov/fedramp/about-federal-risk-and-authorizations-management-program-fedramp/fedramp-pmo-director))_
 
 ### Purpose
 
@@ -52,34 +52,34 @@ These categories, and the resulting requirements, apply only to significant chan
 
 #### FRD-SCN-01
 
-> **Significant Change**: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is likely to SUBSTANTIVELY affect the security or privacy posture of a system.&quot;
+> **Significant change**: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is _likely_ to substantively affect the security or privacy posture of a system.&quot;
 >
 >  _[Reference: NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final)_
 #### FRD-SCN-02
 
-> **Routine Recurring**: The type of significant change that routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.
+> **Routine Recurring**: The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.
 #### FRD-SCN-03
 
-> **Adaptive**: The type of significant change that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.
+> **Adaptive**: The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.
 >
 >  _Note: Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation._
 #### FRD-SCN-04
 
-> **Transformative**: The type of significant change that introduces substantive potential security risks that are likely to affect existing risk determinations and must be assessed in depth.
+> **Transformative**: The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.
 >
 >  _Note: Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation._
 #### FRD-SCN-05
 
-> **Impact Categorization**: The type of significant change that is likely to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).
+> **Impact Categorization**: The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).
 #### FRD-SCN-06
 
-> **Interim Requirement**: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will likely be replaced, updated, or removed prior to the formal wide release of the requirement.
+> **Interim Requirement**: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.
 
 ## Requirements
 
 ### FRR-SCN
 
-**These requirements apply ALWAYS to ALL significant changes based on current Effective Date(s) and Overall Applicability.**
+**These requirements apply ALWAYS to ALL _significant changes_ based on current Effective Date(s) and Overall Applicability**
 
 #### FRR-SCN-01
 
@@ -91,7 +91,7 @@ These categories, and the resulting requirements, apply only to significant chan
 
 #### FRR-SCN-03
 
-> Providers MUST evaluate and type label all significant changes, then follow FedRAMP requirements for the type.
+> Providers MUST evaluate and type label all _significant changes_, then follow FedRAMP requirements for the type.
 
 #### FRR-SCN-04
 
@@ -103,7 +103,7 @@ These categories, and the resulting requirements, apply only to significant chan
 
 #### FRR-SCN-06
 
-> All parties SHOULD follow FedRAMP&#x27;s best practices and technical assistance on significant change assessment and notification where applicable.
+> All parties SHOULD follow FedRAMP&#x27;s best practices and technical assistance on _significant change_ assessment and notification where applicable.
 
 #### FRR-SCN-07
 
@@ -116,15 +116,16 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-09
 
 > Providers MUST include at least the following information in Significant Change Notifications:
-> - Service Offering FedRAMP ID
-> - 3PAO Name (if applicable)
-> - Related POA&amp;M (if applicable)
-> - Short description of change
-> - Reason for change
-> - Summary of customer impact, including changes to services and customer configuration responsibilities
-> - Plan and timeline for the change, including for the verification, assessment, and/or validation of impacted Key Security Indicators or controls
-> - Copy of the business or security impact analysis
-> - Name and title of approver
+> 1. Service Offering FedRAMP ID
+> 1. 3PAO Name (if applicable)
+> 1. Related POA&amp;M (if applicable)
+> 1. Significant Change type and explanation of categorization
+> 1. Short description of change
+> 1. Reason for change
+> 1. Summary of customer impact, including changes to services and customer configuration responsibilities
+> 1. Plan and timeline for the change, including for the verification, assessment, and/or validation of impacted Key Security Indicators or controls
+> 1. Copy of the business or security impact analysis
+> 1. Name and title of approver
 
 #### FRR-SCN-10
 
@@ -136,72 +137,169 @@ These categories, and the resulting requirements, apply only to significant chan
 
 #### FRR-SCN-EX-01
 
-> Providers MAY be required to delay significant changes beyond the standard Significant Change Notification period and/or submit significant changes for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.
+> Providers MAY be required to delay _significant changes_ beyond the standard Significant Change Notification period and/or submit _significant changes_ for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.
 
 #### FRR-SCN-EX-02
 
-> Providers MAY execute significant changes (including TRANSFORMATIVE changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.
+> Providers MAY execute _significant changes_ (including _transformative_ changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.
 ---   
 ### FRR-SCN-RR
 
-**These requirements apply ONLY to significant changes of type ROUTINE RECURRING.**
+**These requirements apply ONLY to _significant changes_ of type _routine recurring_.**
 
 #### FRR-SCN-RR-01
 
-> Providers SHOULD NOT make formal Significant Change Notifications for ROUTINE RECURRING changes; this type of change is exempted from the notification requirements of this standard.
+> Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.
 ---   
 ### FRR-SCN-AD
 
-**These requirements apply ONLY to significant changes of type ADAPTIVE.**
+**These requirements apply ONLY to _significant changes_ of type _adaptive_.**
 
 #### FRR-SCN-AD-01
 
-> Providers MUST notify all necessary parties within ten business days AFTER finishing ADAPTIVE changes, also including the following information:
-> - Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
+> Providers MUST notify all necessary parties within ten business days after finishing _adaptive_ changes, also including the following information:
+> 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
 ---   
 ### FRR-SCN-TF
 
-**These requirements apply ONLY to significant changes of type TRANSFORMATIVE.**
+**These requirements apply ONLY to _significant changes_ of type _transformative_.**
 
 #### FRR-SCN-TF-01
 
-> Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change BEFORE starting TRANSFORMATIVE changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.
+> Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting _transformative_ changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.
 
 #### FRR-SCN-TF-02
 
-> Providers MUST notify all necessary parties of initial plans for TRANSFORMATIVE changes at least 30 business days BEFORE starting TRANSFORMATIVE changes.
+> Providers MUST notify all necessary parties of initial plans for _transformative_ changes at least 30 business days before starting _transformative_ changes.
 
 #### FRR-SCN-TF-03
 
-> Providers MUST notify all necessary parties of final plans for TRANSFORMATIVE changes at least 10 business days BEFORE starting TRANSFORMATIVE changes.
+> Providers MUST notify all necessary parties of final plans for _transformative_ changes at least 10 business days before starting _transformative_ changes.
 
 #### FRR-SCN-TF-04
 
-> Providers MUST notify all necessary parties within 5 business days AFTER finishing TRANSFORMATIVE changes, also including the following information:
-> - Updates to all previously sent information
+> Providers MUST notify all necessary parties within 5 business days after finishing _transformative_ changes, also including the following information:
+> 1. Updates to all previously sent information
 
 #### FRR-SCN-TF-05
 
-> Providers MUST notify all necessary parties within 5 business days AFTER completing the verification, assessment, and/or validation of TRANSFORMATIVE changes, also including the following information:
-> - Updates to all previously sent information
-> - Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
-> - Copy of the security assessment report (if applicable)
+> Providers MUST notify all necessary parties within 5 business days after completing the verification, assessment, and/or validation of _transformative_ changes, also including the following information:
+> 1. Updates to all previously sent information
+> 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
+> 1. Copy of the security assessment report (if applicable)
 
 #### FRR-SCN-TF-06
 
-> Providers MUST publish updated service documentation and other materials to reflect TRANSFORMATIVE changes within 30 business days AFTER finishing TRANSFORMATIVE changes.
+> Providers MUST publish updated service documentation and other materials to reflect _transformative_ changes within 30 business days after finishing _transformative_ changes.
 
 #### FRR-SCN-TF-07
 
-> Providers MUST allow agency customers to OPT OUT of TRANSFORMATIVE changes whenever feasible.
+> Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.
 ---   
 ### FRR-SCN-IM
 
-**These requirements apply ONLY to significant changes of type IMPACT CATEGORIZATION.**
+**These requirements apply ONLY to _significant changes_ of type _impact categorization_.**
 
 #### FRR-SCN-IM-01
 
-> Providers MUST follow the legacy Significant Change Request process or full re-authorization for IMPACT CATEGORIZATION changes, with advance approval from an identified lead agency, until further notice.
+> Providers MUST follow the legacy Significant Change Request process or full re-authorization for _impact categorization_ changes, with advance approval from an identified lead agency, until further notice.
 ---   
 
 
+
+
+# Technical assistance
+
+### FRA-SCN
+
+**Purpose:** This Technical Assistance helps stakeholders evaluate and label _significant changes_ by type as required by _FRR-SCN-03_. This assistance is designed for the 20x Phase One Pilot and Rev5 Closed Beta Balance Improvement Test. The Significant Change Notification Requirements will be tested, evaluated, and improved in partnership with stakeholders based on real-world experience.
+
+**Disclaimer:** Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.
+
+****
+
+#### FRA-SCN-03
+
+Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring. If it is not, work down from the highest impact to lowest to identify the type of change.
+
+1. Is it a _significant change_?
+2. If it is, is it a _routine recurring_ change?
+3. If it is not, is it an _impact categorization_ change?
+4. If it is not, is it a _transformative_ change?
+5. If it is not, then it is an _adaptive_ change.
+
+---   
+
+#### FRA-SCN-RR
+
+Activities that match the _routine recurring_ _significant change_ type are performed _regularly_ and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.
+
+These changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.
+
+If the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g. replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).
+
+##### Ongoing operations
+
+Key Tests:
+- Routine care and feeding by staff during normal duties
+- No major impact to service availability
+- Does not require executive approval
+
+Examples:
+- Provisioning or deprovisioning capacity to support service elasticity
+- Changing or tuning performance configurations for instances or services
+- Updating and maintaining operational handling of information flows and protection across physical and logical networks (e.g., updating firewall rules)
+- Generating or refreshing API or access tokens
+##### Vulnerability Management
+
+Key Tests:
+- Minor, incremental patching or updates
+- Significant refactoring or migration process NOT required
+- No breaking changes
+
+Examples:
+- Updating security service or endpoint signatures
+- Routine patching of devices, operating systems, software or libraries
+- Updating and deploying code that applies normal fixes and improvements as part of a regular development cycle
+- Vulnerability remediation activity that simply replaces a known-bad component(s) with a better version of the exact same thing, running in the exact same way with no changes to processes
+---   
+
+#### FRA-SCN-TF
+
+Activities that match the _transformative_ _significant change_ type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without _transformative_ changes, while hyperscale providers may release multiple _transformative_ changes per year.
+
+##### Transformative changes
+
+Key Tests:
+- Alters the service risk profile or require new or significantly different actions to address customer responsibilities
+- Requires significant new design, development and testing with discrete associated project planning, budget, marketing, etc.
+- Requires extensive updates to security assessments, documentation, and how a large number of security requirements are met and validated
+
+Examples:
+- The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)
+- Increasing the security categorization of a service within the offering that actively handles federal information (does NOT include impact change of entire offering - see impact categorization change)
+- Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)
+- Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations
+- Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)
+---   
+
+#### FRA-SCN-AD
+
+Activities that match the _adaptive_ _significant change_ type are a frequent and normal part of iteratively improving a service by deploying new functionality or modifying existing functionality in a way that is typically transparent to customers and does not introduce significant new security risks.
+
+In general, most changes that do not happen _regularly_ will be _adaptive_ changes. This change type deliberately covers a wide range of activities in a way that requires assessment and consideration.
+
+##### Service adjustments
+
+Key Tests:
+- Requires minimal changes to security plans or procedures
+- Requires some careful planning and project management to implement, but does not rise to the level of planning required for transformative changes
+- Requires verification of existing functionality and secure configuration after implementation
+
+Examples:
+- Updates to operating systems, containers, virtual machines, software or libraries with known breaking changes, complex steps, or service disruption
+- Deploying larger than normal incremental feature improvements in code or libraries that are the work of multiple weeks of development efforts but are not considered a major new service
+- Changing cryptographic modules where the new module meets the same standards and characteristics of the former
+- Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)
+- Adding models to existing approved AI services without exposing federal information to new services
+---   
