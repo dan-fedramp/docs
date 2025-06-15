@@ -107,3 +107,42 @@
     {{/with}}
   {{/each}}
 {{/if}}
+
+
+{{!-- Maybe this has some technical assistance? FRA --}}
+{{#if FRA}}
+# Technical assistance
+
+  {{#each FRA}}
+### {{id}}
+
+**Purpose:** {{this.purpose}}
+
+**Disclaimer:** {{this.disclaimer}}
+
+**{{this.application}}**
+    {{#each requirements}}
+
+#### {{this.id}}
+
+{{this.statement}}
+
+        {{#if this.examples}}
+          {{#each this.examples}}
+##### {{this.id}}
+
+Key Tests:
+          {{#each this.key_tests}}
+- {{this}}
+          {{/each}}
+
+Examples:
+          {{#each this.examples}}
+- {{this}}
+          {{/each}}
+          {{/each}}
+        {{/if}}
+---   
+    {{/each}}      
+  {{/each}}
+{{/if}}

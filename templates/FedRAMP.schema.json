@@ -266,7 +266,7 @@
                 ]
               },
               "is_interim": { "type": "boolean" },
-              "referenced_rules": {
+              "referenced_fr": {
                 "type": "array",
                 "items": { "type": "string" }
               },

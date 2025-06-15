@@ -108,7 +108,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Enforce system and information resource integrity through cryptographic means.
 
 #### KSI-SVC-06
-> Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates.
+> Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates.
 
 #### KSI-SVC-07
 > Use a consistent, risk-informed approach for applying security patches.
@@ -130,7 +130,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Manage and protect privileged accounts.
 
 #### KSI-IAM-05
-> Regularly review and validate access.
+> _Regularly_ review and validate access.
 
 ### KSI-AUD: Audit Logging
 
@@ -178,14 +178,14 @@ Modern cloud services use automated or code-driven configuration management and 
 > Use automated monitoring tools.
 
 #### KSI-MON-04
-> Regularly review monitoring data.
+> _Regularly_ review monitoring data.
 
 ### KSI-VLN: Vulnerability Management
 
 **A secure cloud service offering will actively manage and remediate vulnerabilities.**
 
 #### KSI-VLN-01
-> Regularly scan for vulnerabilities.
+> _Regularly_ scan for vulnerabilities.
 
 #### KSI-VLN-02
 > Track and remediate identified vulnerabilities.
@@ -211,4 +211,6 @@ Modern cloud services use automated or code-driven configuration management and 
 
 #### KSI-INC-04
 > Review and update incident response procedures.
+
+
 
