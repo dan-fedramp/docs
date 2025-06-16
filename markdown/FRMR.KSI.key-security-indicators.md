@@ -10,7 +10,7 @@
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-16** for **20xP1**. 
+  - This release is effective **2025-06-01** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
   - For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized third-party information resources.    
 

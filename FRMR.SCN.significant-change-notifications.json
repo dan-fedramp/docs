@@ -9,14 +9,14 @@
     "releases": [
       {
         "id": "25.06A",
-        "published_date": "2025-06-16",
+        "published_date": "2025-06-17",
         "description": "Initial release of Significant Change Notification Requirements",
         "public_comment": true,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "2025-06-16",
+                "start_date": "2025-06-17",
                 "designator": "20xP1",
                 "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
               }
@@ -361,7 +361,7 @@
         {
           "id": "FRA-SCN-RR",
           "applies_to": "FRR-SCN-RR",
-          "statement": "Activities that match the _routine recurring_ _significant change_ type are performed _regularly_ and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.\n\nThese changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.\n\nIf the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g. replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).",
+          "statement": "Activities that match the _routine recurring_ _significant change_ type are performed _regularly_ and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.\n\nThese changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.\n\nIf the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g., replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).",
           "examples": [
             {
               "id": "Ongoing operations",

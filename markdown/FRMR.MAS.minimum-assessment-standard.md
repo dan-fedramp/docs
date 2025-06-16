@@ -1,7 +1,7 @@
 # FedRAMP Minimum Assessment Standard
 
 - **Release:** 25.06A
-- **Published:** 2025-06-16  
+- **Published:** 2025-06-17  
 - **Designator:** MAS
 - **Description:** Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud service offering
 
@@ -10,7 +10,7 @@
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-16** for **20xP1**. 
+  - This release is effective **2025-06-17** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
   - Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR.    
 

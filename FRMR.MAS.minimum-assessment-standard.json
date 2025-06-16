@@ -9,14 +9,14 @@
     "releases": [
       {
         "id": "25.06A",
-        "published_date": "2025-06-16",
+        "published_date": "2025-06-17",
         "description": "Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud service offering",
         "public_comment": false,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "2025-06-16",
+                "start_date": "2025-06-17",
                 "designator": "20xP1",
                 "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
               }

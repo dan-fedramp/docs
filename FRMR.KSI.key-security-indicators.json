@@ -16,7 +16,7 @@
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "2025-06-16",
+                "start_date": "2025-06-01",
                 "designator": "20xP1",
                 "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
               }

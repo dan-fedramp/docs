@@ -1,7 +1,7 @@
 # FedRAMP Significant Change Notification Requirements
 
 - **Release:** 25.06A
-- **Published:** 2025-06-16  
+- **Published:** 2025-06-17  
 - **Designator:** SCN
 - **Description:** Initial release of Significant Change Notification Requirements
 
@@ -10,7 +10,7 @@
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-16** for **20xP1**. 
+  - This release is effective **2025-06-17** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
   - Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard.    
 
@@ -234,7 +234,7 @@ Activities that match the _routine recurring_ _significant change_ type are perf
 
 These changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.
 
-If the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g. replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).
+If the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g., replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).
 
 ##### Ongoing operations
 
