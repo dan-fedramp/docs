@@ -9,14 +9,14 @@ materials maintained in JSON. This prototype includes:
 - Human readable markdown outputs 
 - Bun scripts for testing and generating docs
 
-## FRMR Markdown Files
+## FRMR Requirements Files
 
-| Materials                                                                                                     | Description                                                                                                                           | Version | Effective Date(s)                                            |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------ |
-| [Key Security Indicators (KSI)](./markdown/FRMR.KSI.key-security-indicators.md)                               | Initial release of Key Security Indicators                                                                                            | 25.05A  | 2025-06-17 (20xP1)                                           |
-| [Minimum Assessment Standard (MAS)](./markdown/FRMR.MAS.minimum-assessment-standard.md)                       | Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard; reframed FRR-MAS-01; added FRD-MAS-06. | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-30 (R5.MAS.B1, tentative) |
-| [Significant Change Notification Requirements (SCN)](./markdown/FRMR.SCN.significant-change-notifications.md) | Initial release of Significant Change Notification Requirements (includes Technical Assistance)                                       | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-07 (R5.SCN.B1, tentative) |
-| [Combined 20x Low Pilot Requirements](./markdown/FRMR.LOW.20x-low-pilot.md)                                 | Combined requirements for the 20x Low Pilot, aggregating KSI, MAS, and SCN materials                                                 | 25.06A  | 2025-06-17 (20xP1)                                            |
+| Materials                                                                                                     | Description                                                                                                                           | Version | Effective Date(s)                                            | PDF                                                                                  |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| [Key Security Indicators (KSI)](./markdown/FRMR.KSI.key-security-indicators.md)                               | Initial release of Key Security Indicators                                                                                            | 25.05A  | 2025-06-17 (20xP1)                                           | [PDF](./pdf/FRMR.KSI.key-security-indicators.pdf)                                    |
+| [Minimum Assessment Standard (MAS)](./markdown/FRMR.MAS.minimum-assessment-standard.md)                       | Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard; reframed FRR-MAS-01; added FRD-MAS-06. | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-30 (R5.MAS.B1, tentative) | [PDF](./pdf/FRMR.MAS.minimum-assessment-standard.pdf)                                |
+| [Significant Change Notification Requirements (SCN)](./markdown/FRMR.SCN.significant-change-notifications.md) | Initial release of Significant Change Notification Requirements (includes Technical Assistance)                                       | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-07 (R5.SCN.B1, tentative) | [PDF](./pdf/FRMR.SCN.significant-change-notifications.pdf)                           |
+| [Combined 20x Low Pilot Requirements](./markdown/FRMR.LOW.20x-low-pilot.md)                                 | Combined requirements for the 20x Low Pilot, aggregating KSI, MAS, and SCN materials                                                 | 25.06A  | 2025-06-17 (20xP1)                                            | [PDF](./pdf/FRMR.LOW.20x-low-pilot.pdf)                                              |
 
 ## Next Steps
 
@@ -53,3 +53,7 @@ materials maintained in JSON. This prototype includes:
    bun run watch
    ```
    (watches for changes and regenerates markdown)
+
+## Conversion to PDF
+
+Manually using md-to-pdf for now.

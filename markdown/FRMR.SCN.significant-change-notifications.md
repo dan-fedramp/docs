@@ -239,11 +239,13 @@ If the activity does not occur _regularly_ and routinely then it cannot be a _si
 ##### Ongoing operations
 
 Key Tests:
+
 - Routine care and feeding by staff during normal duties
 - No major impact to service availability
 - Does not require executive approval
 
 Examples:
+
 - Provisioning or deprovisioning capacity to support service elasticity
 - Changing or tuning performance configurations for instances or services
 - Updating and maintaining operational handling of information flows and protection across physical and logical networks (e.g., updating firewall rules)
@@ -251,11 +253,13 @@ Examples:
 ##### Vulnerability Management
 
 Key Tests:
+
 - Minor, incremental patching or updates
 - Significant refactoring or migration process NOT required
 - No breaking changes
 
 Examples:
+
 - Updating security service or endpoint signatures
 - Routine patching of devices, operating systems, software or libraries
 - Updating and deploying code that applies normal fixes and improvements as part of a regular development cycle
@@ -269,11 +273,13 @@ Activities that match the _transformative_ _significant change_ type are rare fo
 ##### Transformative changes
 
 Key Tests:
+
 - Alters the service risk profile or require new or significantly different actions to address customer responsibilities
 - Requires significant new design, development and testing with discrete associated project planning, budget, marketing, etc.
 - Requires extensive updates to security assessments, documentation, and how a large number of security requirements are met and validated
 
 Examples:
+
 - The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)
 - Increasing the security categorization of a service within the offering that actively handles federal information (does NOT include impact change of entire offering - see impact categorization change)
 - Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)
@@ -290,11 +296,13 @@ In general, most changes that do not happen _regularly_ will be _adaptive_ chang
 ##### Service adjustments
 
 Key Tests:
+
 - Requires minimal changes to security plans or procedures
 - Requires some careful planning and project management to implement, but does not rise to the level of planning required for transformative changes
 - Requires verification of existing functionality and secure configuration after implementation
 
 Examples:
+
 - Updates to operating systems, containers, virtual machines, software or libraries with known breaking changes, complex steps, or service disruption
 - Deploying larger than normal incremental feature improvements in code or libraries that are the work of multiple weeks of development efforts but are not considered a major new service
 - Changing cryptographic modules where the new module meets the same standards and characteristics of the former
