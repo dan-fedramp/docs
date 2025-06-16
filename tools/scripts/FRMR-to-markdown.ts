@@ -28,7 +28,9 @@ async function convertFRMRToMarkdown(jsonFilePath: string, templateFilePath: str
 
 (async () => {
   try {
-    const pattern = path.join(__dirname, '../../', 'FRMR*.json');
+    const pattern1 = path.join(__dirname, '../../', 'FRMR*.json');
+    const pattern2 = path.join(__dirname, '../../combined/', 'FRMR*.json');
+    const pattern = [pattern1, pattern2];
     const files = await glob(pattern);
 
     if (files.length === 0) {

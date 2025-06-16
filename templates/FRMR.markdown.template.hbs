@@ -5,6 +5,7 @@
 - **Designator:** {{info.short_name}}
 - **Description:** {{info.releases.[0].description}}
 
+{{#if info.releases.[0].effective}}
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
@@ -41,6 +42,7 @@
 - {{this}}
 {{/each}}
 
+{{/if}}
 ---
 
 {{!-- Definitions section (FRD) --}}
