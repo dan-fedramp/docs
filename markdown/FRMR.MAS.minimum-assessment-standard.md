@@ -3,7 +3,7 @@
 - **Release:** 25.06A
 - **Published:** 2025-06-16  
 - **Designator:** MAS
-- **Description:** Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud product; added FRD-MAS-06 to introduce more commercial standard cloud-product terminology.
+- **Description:** Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud service offering
 
 ## Front Matter
 
@@ -54,7 +54,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 > **Information Resource**: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
 >
->  _Note: This applies to any aspect of the _cloud product_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
+>  _Note: This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
 >
 >  _[Reference: 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
 #### FRD-MAS-03
@@ -65,10 +65,10 @@ Application boundaries that are defined too broadly complicate the assessment pr
 > **Likely**: A reasonable degree of probability based on context.
 #### FRD-MAS-05
 
-> **Third-party Information Resource**: Any _information resource_ that is not entirely included in the assessment for the _cloud product_ seeking authorization.
+> **Third-party Information Resource**: Any _information resource_ that is not entirely included in the assessment for the _cloud service offering_ seeking authorization.
 #### FRD-MAS-06
 
-> **Cloud Product**: A specific, packaged cloud computing product provided by a cloud service provider that can be used by a customer; commonly referred to as a &quot;cloud service offering&quot; by government agencies.
+> **Cloud Service Offering**: A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.
 
 ## Requirements
 
@@ -78,7 +78,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-01
 
-> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the services. This defines cloud product for FedRAMP.
+> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the services. This defines the cloud service offering for FedRAMP.
 
 #### FRR-MAS-02
 
@@ -102,7 +102,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-EX-01
 
-> Providers MAY include documentation of _information resources_ beyond the _cloud product_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud product_.
+> Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.
 ---   
 ### FRR-MAS-AY
 
@@ -110,15 +110,15 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-AY-01
 
-> Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the _cloud product_ for FedRAMP. For more, see fedramp.gov/scope.
+> Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-02
 
-> Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore not included in the _cloud product_ for FedRAMP. For more, see fedramp.gov/scope.
+> Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-03
 
-> _Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud product_ for FedRAMP(_FRR-MAS-02_).
+> _Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP(_FRR-MAS-02_).
 
 #### FRR-MAS-AY-04
 
@@ -130,7 +130,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-AY-06
 
-> All aspects of the _cloud product_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
+> All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
 ---   
 
 
