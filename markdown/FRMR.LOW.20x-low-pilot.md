@@ -5,6 +5,7 @@
 - **Designator:** FRMR-LOW
 - **Description:** Combined FedRAMP 20x Low Requirements
 
+
 ---
 
 ## Definitions
@@ -14,25 +15,32 @@
 > **Significant change**: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is _likely_ to substantively affect the security or privacy posture of a system.&quot;
 >
 >  _[Reference: NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final)_
+
 #### FRD-SCN-02
 
 > **Routine Recurring**: The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.
+
 #### FRD-SCN-03
 
 > **Adaptive**: The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.
 >
 >  _Note: Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation._
+
 #### FRD-SCN-04
 
 > **Transformative**: The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.
 >
 >  _Note: Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation._
+
 #### FRD-SCN-05
 
 > **Impact Categorization**: The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).
+
 #### FRD-SCN-06
 
 > **Interim Requirement**: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.
+
+
 #### FRD-MAS-01
 
 > **Federal Information**: Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means &quot;information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.&quot;
@@ -40,6 +48,7 @@
 >  _Note: This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP&#x27;s Technical Assistance and consult qualified legal experts for additional assistance identifying federal information._
 >
 >  _[Reference: OMB Circular A-130](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf)_
+
 #### FRD-MAS-02
 
 > **Information Resource**: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
@@ -47,21 +56,30 @@
 >  _Note: This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
 >
 >  _[Reference: 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
+
 #### FRD-MAS-03
 
 > **Handle**: Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.
+
 #### FRD-MAS-04
 
 > **Likely**: A reasonable degree of probability based on context.
+
 #### FRD-MAS-05
 
 > **Third-party Information Resource**: Any _information resource_ that is not entirely included in the assessment for the _cloud service offering_ seeking authorization.
+
 #### FRD-MAS-06
 
 > **Cloud Service Offering**: A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.
+
+
 #### FRD-KSI-01
 
 > **Regularly**: Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.
+
+
+
 
 ## Requirements
 
@@ -118,7 +136,9 @@
 #### FRR-SCN-10
 
 > Providers MAY include additional relevant information in Significant Change Notifications.
+
 ---   
+
 ### FRR-SCN-EX
 
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
@@ -130,7 +150,9 @@
 #### FRR-SCN-EX-02
 
 > Providers MAY execute _significant changes_ (including _transformative_ changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.
+
 ---   
+
 ### FRR-SCN-RR
 
 **These requirements apply ONLY to _significant changes_ of type _routine recurring_.**
@@ -138,7 +160,9 @@
 #### FRR-SCN-RR-01
 
 > Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.
+
 ---   
+
 ### FRR-SCN-AD
 
 **These requirements apply ONLY to _significant changes_ of type _adaptive_.**
@@ -147,7 +171,9 @@
 
 > Providers MUST notify all necessary parties within ten business days after finishing _adaptive_ changes, also including the following information:
 > 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
+
 ---   
+
 ### FRR-SCN-TF
 
 **These requirements apply ONLY to _significant changes_ of type _transformative_.**
@@ -183,7 +209,9 @@
 #### FRR-SCN-TF-07
 
 > Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.
+
 ---   
+
 ### FRR-SCN-IM
 
 **These requirements apply ONLY to _significant changes_ of type _impact categorization_.**
@@ -191,7 +219,10 @@
 #### FRR-SCN-IM-01
 
 > Providers MUST follow the legacy Significant Change Request process or full re-authorization for _impact categorization_ changes, with advance approval from an identified lead agency, until further notice.
+
 ---   
+
+
 ### FRR-MAS
 
 **These requirements apply ALWAYS to ALL FedRAMP authorizations based on the Effective Date(s) and Overall Applicability.**
@@ -215,7 +246,9 @@
 #### FRR-MAS-05
 
 > Providers MUST clearly identify, document, and explain information flows and impact levels for ALL _information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
+
 ---   
+
 ### FRR-MAS-EX
 
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
@@ -223,7 +256,9 @@
 #### FRR-MAS-EX-01
 
 > Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.
+
 ---   
+
 ### FRR-MAS-AY
 
 **These rules provide general guidance on the application of this standard.**
@@ -251,7 +286,10 @@
 #### FRR-MAS-AY-06
 
 > All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
+
 ---   
+
+
 ### FRR-KSI
 
 **These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.**
@@ -267,7 +305,11 @@
 #### FRR-KSI-03
 
 > All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.
+
 ---   
+
+
+
 
 
 ## Key Security Indicators
@@ -422,6 +464,7 @@
 
 
 
+
 # Technical assistance
 
 ### FRA-SCN
@@ -442,7 +485,9 @@ Once a change has been identified as a _significant change_ in general, FedRAMP 
 4. If it is not, is it a _transformative_ change?
 5. If it is not, then it is an _adaptive_ change.
 
+
 ---   
+    
 
 #### FRA-SCN-RR
 
@@ -466,6 +511,7 @@ Examples:
 - Changing or tuning performance configurations for instances or services
 - Updating and maintaining operational handling of information flows and protection across physical and logical networks (e.g., updating firewall rules)
 - Generating or refreshing API or access tokens
+          
 ##### Vulnerability Management
 
 Key Tests:
@@ -480,7 +526,10 @@ Examples:
 - Routine patching of devices, operating systems, software or libraries
 - Updating and deploying code that applies normal fixes and improvements as part of a regular development cycle
 - Vulnerability remediation activity that simply replaces a known-bad component(s) with a better version of the exact same thing, running in the exact same way with no changes to processes
+          
+
 ---   
+    
 
 #### FRA-SCN-TF
 
@@ -501,7 +550,10 @@ Examples:
 - Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)
 - Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations
 - Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)
+          
+
 ---   
+    
 
 #### FRA-SCN-AD
 
@@ -524,4 +576,8 @@ Examples:
 - Changing cryptographic modules where the new module meets the same standards and characteristics of the former
 - Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)
 - Adding models to existing approved AI services without exposing federal information to new services
+          
+
 ---   
+    
+  

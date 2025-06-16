@@ -34,6 +34,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - Third-party independent assessors will have a simpler framework to assess security and implementation decisions based on engineering decisions in context
 - Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based authorization to operate decisions based on their planned use case
 
+
 ---
 
 ## Definitions
@@ -41,6 +42,9 @@ Modern cloud services use automated or code-driven configuration management and 
 #### FRD-KSI-01
 
 > **Regularly**: Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.
+
+
+
 
 ## Requirements
 
@@ -59,7 +63,11 @@ Modern cloud services use automated or code-driven configuration management and 
 #### FRR-KSI-03
 
 > All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.
+
 ---   
+
+
+
 
 
 ## Key Security Indicators
@@ -211,6 +219,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 #### KSI-INC-04
 > Review and update incident response procedures.
+
 
 
 

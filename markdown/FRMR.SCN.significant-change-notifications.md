@@ -44,6 +44,7 @@ These categories, and the resulting requirements, apply only to significant chan
 - Cloud service providers will securely deliver new features and capabilities for government customers at the same speed and pace of delivery for commercial customers, without needing advance government approval
 - Federal agencies will have equal access to features and capabilities as commercial customers without sacrificing the visibility and information they need to maintain ongoing confidence in the service
 
+
 ---
 
 ## Definitions
@@ -53,25 +54,33 @@ These categories, and the resulting requirements, apply only to significant chan
 > **Significant change**: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is _likely_ to substantively affect the security or privacy posture of a system.&quot;
 >
 >  _[Reference: NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final)_
+
 #### FRD-SCN-02
 
 > **Routine Recurring**: The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.
+
 #### FRD-SCN-03
 
 > **Adaptive**: The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.
 >
 >  _Note: Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation._
+
 #### FRD-SCN-04
 
 > **Transformative**: The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.
 >
 >  _Note: Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation._
+
 #### FRD-SCN-05
 
 > **Impact Categorization**: The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).
+
 #### FRD-SCN-06
 
 > **Interim Requirement**: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.
+
+
+
 
 ## Requirements
 
@@ -128,7 +137,9 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-10
 
 > Providers MAY include additional relevant information in Significant Change Notifications.
+
 ---   
+
 ### FRR-SCN-EX
 
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
@@ -140,7 +151,9 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-EX-02
 
 > Providers MAY execute _significant changes_ (including _transformative_ changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.
+
 ---   
+
 ### FRR-SCN-RR
 
 **These requirements apply ONLY to _significant changes_ of type _routine recurring_.**
@@ -148,7 +161,9 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-RR-01
 
 > Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.
+
 ---   
+
 ### FRR-SCN-AD
 
 **These requirements apply ONLY to _significant changes_ of type _adaptive_.**
@@ -157,7 +172,9 @@ These categories, and the resulting requirements, apply only to significant chan
 
 > Providers MUST notify all necessary parties within ten business days after finishing _adaptive_ changes, also including the following information:
 > 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
+
 ---   
+
 ### FRR-SCN-TF
 
 **These requirements apply ONLY to _significant changes_ of type _transformative_.**
@@ -193,7 +210,9 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-TF-07
 
 > Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.
+
 ---   
+
 ### FRR-SCN-IM
 
 **These requirements apply ONLY to _significant changes_ of type _impact categorization_.**
@@ -201,7 +220,11 @@ These categories, and the resulting requirements, apply only to significant chan
 #### FRR-SCN-IM-01
 
 > Providers MUST follow the legacy Significant Change Request process or full re-authorization for _impact categorization_ changes, with advance approval from an identified lead agency, until further notice.
+
 ---   
+
+
+
 
 
 
@@ -226,7 +249,9 @@ Once a change has been identified as a _significant change_ in general, FedRAMP 
 4. If it is not, is it a _transformative_ change?
 5. If it is not, then it is an _adaptive_ change.
 
+
 ---   
+    
 
 #### FRA-SCN-RR
 
@@ -250,6 +275,7 @@ Examples:
 - Changing or tuning performance configurations for instances or services
 - Updating and maintaining operational handling of information flows and protection across physical and logical networks (e.g., updating firewall rules)
 - Generating or refreshing API or access tokens
+          
 ##### Vulnerability Management
 
 Key Tests:
@@ -264,7 +290,10 @@ Examples:
 - Routine patching of devices, operating systems, software or libraries
 - Updating and deploying code that applies normal fixes and improvements as part of a regular development cycle
 - Vulnerability remediation activity that simply replaces a known-bad component(s) with a better version of the exact same thing, running in the exact same way with no changes to processes
+          
+
 ---   
+    
 
 #### FRA-SCN-TF
 
@@ -285,7 +314,10 @@ Examples:
 - Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)
 - Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations
 - Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)
+          
+
 ---   
+    
 
 #### FRA-SCN-AD
 
@@ -308,4 +340,8 @@ Examples:
 - Changing cryptographic modules where the new module meets the same standards and characteristics of the former
 - Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)
 - Adding models to existing approved AI services without exposing federal information to new services
+          
+
 ---   
+    
+  

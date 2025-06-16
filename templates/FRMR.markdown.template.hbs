@@ -43,6 +43,7 @@
 {{/each}}
 
 {{/if}}
+
 ---
 
 {{!-- Definitions section (FRD) --}}
@@ -62,8 +63,11 @@
 >
 >  _[Reference: {{reference}}]({{reference_url}})_
       {{/if}}
+
     {{/each}}
+
   {{/each}}
+
 {{/if}}
 
 {{!-- Requirements section (FRR) --}}
@@ -86,9 +90,13 @@
           {{/each}}
         {{/if}}
       {{/each}}
+
 ---   
+
     {{/each}}      
+
   {{/each}}
+
 {{/if}}
 
 
@@ -108,6 +116,7 @@
       {{/each}}
     {{/with}}
   {{/each}}
+
 {{/if}}
 
 
@@ -144,9 +153,13 @@ Examples:
           {{#each this.examples}}
 - {{this}}
           {{/each}}
+          
           {{/each}}
         {{/if}}
+
 ---   
+    
     {{/each}}      
+  
   {{/each}}
 {{/if}}

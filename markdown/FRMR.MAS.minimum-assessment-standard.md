@@ -39,6 +39,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 - Third-party independent assessors will have a simple well documented approach to assess security and implementation decisions
 - Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based Authorization to Operate decisions based on their planned use case
 
+
 ---
 
 ## Definitions
@@ -50,6 +51,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 >  _Note: This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP&#x27;s Technical Assistance and consult qualified legal experts for additional assistance identifying federal information._
 >
 >  _[Reference: OMB Circular A-130](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf)_
+
 #### FRD-MAS-02
 
 > **Information Resource**: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
@@ -57,18 +59,25 @@ Application boundaries that are defined too broadly complicate the assessment pr
 >  _Note: This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
 >
 >  _[Reference: 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
+
 #### FRD-MAS-03
 
 > **Handle**: Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.
+
 #### FRD-MAS-04
 
 > **Likely**: A reasonable degree of probability based on context.
+
 #### FRD-MAS-05
 
 > **Third-party Information Resource**: Any _information resource_ that is not entirely included in the assessment for the _cloud service offering_ seeking authorization.
+
 #### FRD-MAS-06
 
 > **Cloud Service Offering**: A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.
+
+
+
 
 ## Requirements
 
@@ -95,7 +104,9 @@ Application boundaries that are defined too broadly complicate the assessment pr
 #### FRR-MAS-05
 
 > Providers MUST clearly identify, document, and explain information flows and impact levels for ALL _information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
+
 ---   
+
 ### FRR-MAS-EX
 
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
@@ -103,7 +114,9 @@ Application boundaries that are defined too broadly complicate the assessment pr
 #### FRR-MAS-EX-01
 
 > Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.
+
 ---   
+
 ### FRR-MAS-AY
 
 **These rules provide general guidance on the application of this standard.**
@@ -131,7 +144,11 @@ Application boundaries that are defined too broadly complicate the assessment pr
 #### FRR-MAS-AY-06
 
 > All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
+
 ---   
+
+
+
 
 
 
