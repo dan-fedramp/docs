@@ -78,7 +78,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 
 #### FRR-MAS-01
 
-> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _information resources_. This defines the cloud service offering for FedRAMP.
+> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.
 
 #### FRR-MAS-02
 
