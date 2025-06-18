@@ -1,9 +1,9 @@
 # FedRAMP FedRAMP 20x Combined Requirements
 
-- **Release:** 25.06A
-- **Published:** 2025-06-17  
+- **Release:** 25.06B
+- **Published:** 2025-06-18  
 - **Designator:** FRMR-LOW
-- **Description:** Combined FedRAMP 20x Low Requirements
+- **Description:** Combined FedRAMP 20x Low Requirements (including KSI hotfix to original 25.05 release)
 
 
 ---

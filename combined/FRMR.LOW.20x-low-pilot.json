@@ -2,13 +2,14 @@
   "info": {
     "name": "FedRAMP 20x Combined Requirements",
     "short_name": "FRMR-LOW",
-    "current_release": "25.06A",
-    "types": [
-      "FRR",
-      "FRD",
-      "FRA"
-    ],
+    "current_release": "25.06B",
+    "types": ["FRR", "FRD", "FRA"],
     "releases": [
+      {
+        "id": "25.06B",
+        "published_date": "2025-06-18",
+        "description": "Combined FedRAMP 20x Low Requirements (including KSI hotfix to original 25.05 release)"
+      },
       {
         "id": "25.06A",
         "published_date": "2025-06-17",
