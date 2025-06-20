@@ -436,33 +436,6 @@
         }
       ]
     },
-    "RPL": {
-      "id": "KSI-RPL",
-      "name": "Recovery Planning",
-      "indicator": "A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
-      "requirements": [
-        {
-          "id": "KSI-RPL-01",
-          "statement": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)",
-          "applied_impact_levels": ["Low"]
-        },
-        {
-          "id": "KSI-RPL-02",
-          "statement": "Develop and maintain a recovery plan that aligns with the defined recovery objectives",
-          "applied_impact_levels": ["Low"]
-        },
-        {
-          "id": "KSI-RPL-03",
-          "statement": "Perform system backups aligned with recovery objectives",
-          "applied_impact_levels": ["Low"]
-        },
-        {
-          "id": "KSI-RPL-04",
-          "statement": "Regularly test the capability to recover from incidents and contingencies",
-          "applied_impact_levels": ["Low"]
-        }
-      ]
-    },
     "INR": {
       "id": "KSI-INR",
       "name": "Incident Reporting",
