@@ -1,13 +1,6 @@
 # FedRAMP 20x Machine Readable (FRMR) Docs
 
-This is a prototype for reproducible, consistent FedRAMP docs and related
-materials maintained in JSON. This prototype includes:
-
-- JSON files for FedRAMP 20x materials
-- A handlebars template to create consistent markdown docs from FRMR JSON
-- JSON Schema validation (WIP)
-- Human readable markdown outputs
-- Bun scripts for testing and generating docs
+This repository contains FedRAMP 20x standards, technical assistance, and other materials in both machine-readable and human-readable formats.
 
 ## FRMR Identifiers
 
