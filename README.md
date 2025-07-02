@@ -9,7 +9,11 @@ materials maintained in JSON. This prototype includes:
 - Human readable markdown outputs
 - Bun scripts for testing and generating docs
 
-## FRMR Requirements Files
+## FRMR Identifiers
+
+See [IDENTIFIERS.md](./IDENTIFIERS.md) for explanations about the naming and structure of these materials.
+
+## FRMR Materials
 
 | Materials                                                                                              | Description                                                                                                                                           | Version | Effective Date(s)                                            | Human Readable Versions                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,6 +21,8 @@ materials maintained in JSON. This prototype includes:
 | [Minimum Assessment Standard (MAS)](./FRMR.MAS.minimum-assessment-standard.json)                       | Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard; reframed FRR-MAS-01; added FRD-MAS-06.                 | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-30 (R5.MAS.B1, tentative) | <ul><li>[Markdown](./markdown/FRMR.MAS.minimum-assessment-standard.md)</li><li>[PDF](./pdf/FRMR.MAS.minimum-assessment-standard.pdf)</li></ul>                                                                                                                                                                                               |
 | [Significant Change Notification Requirements (SCN)](./FRMR.SCN.significant-change-notifications.json) | Initial release of Significant Change Notification Requirements (includes Technical Assistance)                                                       | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-07 (R5.SCN.B1, tentative) | <ul><li>[Markdown](./markdown/FRMR.SCN.significant-change-notifications.md)</li><li>[PDF](./pdf/FRMR.SCN.significant-change-notifications.pdf)</li></ul>                                                                                                                                                                                     |
 | [Combined 20x Low Pilot Requirements](./combined/FRMR.LOW.20x-low-pilot.json)                          | Combined FedRAMP 20x Low Requirements (including KSI hotfix to original 25.05 release)                                                                | 25.06B  | 2025-06-18 (20xP1)                                           | <ul><li>[Markdown](./markdown/FRMR.LOW.20x-low-pilot.md)</li><li>[PDF](./pdf/FRMR.LOW.20x-low-pilot.pdf)</li> </ul>                                                                                                                                                                                                                          |
+
+---
 
 ## Next Steps
 
