@@ -3,7 +3,7 @@
 - **Release:** 25.05C
 - **Published:** 2025-06-28  
 - **Designator:** KSI
-- **Description:** Key Security Indicators in this release are unchanged from previously releases. 25.05C adds mappings for each KSI to underlying SP 800-53 controls.
+- **Description:** Key Security Indicators in this release are unchanged from previously releases. 25.05C adds references for each KSI to underlying SP 800-53 controls.
 
 ## Front Matter
 

@@ -10,7 +10,7 @@
       {
         "id": "25.05C",
         "published_date": "2025-06-28",
-        "description": "Key Security Indicators in this release are unchanged from previously releases. 25.05C adds mappings for each KSI to underlying SP 800-53 controls.",
+        "description": "Key Security Indicators in this release are unchanged from previously releases. 25.05C adds references for each KSI to underlying SP 800-53 controls.",
         "public_comment": true,
         "effective": {
           "20x": {
