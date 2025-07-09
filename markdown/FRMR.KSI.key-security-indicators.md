@@ -158,7 +158,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.
 
 #### KSI-INR-03
-> Generate after action reports and regularly incorporate lessons learned into operations].
+> Generate after action reports and regularly incorporate lessons learned into operations.
 
 ### KSI-MLA: Monitoring, Logging, and Auditing
 
