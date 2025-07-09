@@ -912,7 +912,7 @@
         },
         {
           "id": "KSI-INR-03",
-          "statement": "Generate after action reports and regularly incorporate lessons learned into operations]",
+          "statement": "Generate after action reports and regularly incorporate lessons learned into operations",
           "applied_impact_levels": ["Low"],
           "controls": [
             {

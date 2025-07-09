@@ -343,7 +343,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-5 Incident Monitoring
 - ir-8 Incident Response Plan
 #### KSI-INR-03
-> Generate after action reports and regularly incorporate lessons learned into operations].
+> Generate after action reports and regularly incorporate lessons learned into operations.
 
 ##### Controls
 
