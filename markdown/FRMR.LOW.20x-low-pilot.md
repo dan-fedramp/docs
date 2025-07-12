@@ -1,9 +1,9 @@
 # FedRAMP FedRAMP 20x Combined Requirements
 
-- **Release:** 25.06B
-- **Published:** 2025-06-18  
+- **Release:** 25.06A
+- **Published:** 2025-06-17  
 - **Designator:** FRMR-LOW
-- **Description:** Combined FedRAMP 20x Low Requirements (including KSI hotfix to original 25.05 release)
+- **Description:** Combined FedRAMP 20x Low Requirements
 
 
 ---
@@ -53,7 +53,7 @@
 
 > **Information Resource**: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
 >
->  _Note: This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
+>  _Note: This applies to any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
 >
 >  _[Reference: 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
 
@@ -313,6 +313,35 @@
 
 
 ## Key Security Indicators
+### KSI-CED: Cybersecurity Education
+
+**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.**
+
+#### KSI-CED-01
+> Ensure all employees receive security awareness training.
+
+#### KSI-CED-02
+> Require role-specific training for high risk roles, including at least roles with privileged access.
+
+### KSI-CMT: Change Management
+
+**A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.**
+
+#### KSI-CMT-01
+> Log and monitor system modifications.
+
+#### KSI-CMT-02
+> Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible.
+
+#### KSI-CMT-03
+> Implement automated testing and validation of changes prior to deployment.
+
+#### KSI-CMT-04
+> Have a documented change management procedure.
+
+#### KSI-CMT-05
+> Evaluate the risk and potential impact of any change.
+
 ### KSI-CNA: Cloud Native Architecture
 
 **A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
@@ -338,31 +367,6 @@
 #### KSI-CNA-07
 > Ensure cloud-native information resources are implemented based on host provider&#x27;s best practices and documented guidance.
 
-### KSI-SVC: Service Configuration
-
-**A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.**
-
-#### KSI-SVC-01
-> Harden and review network and system configurations.
-
-#### KSI-SVC-02
-> Encrypt or otherwise secure network traffic.
-
-#### KSI-SVC-03
-> Encrypt all federal and sensitive information at rest.
-
-#### KSI-SVC-04
-> Manage configuration centrally.
-
-#### KSI-SVC-05
-> Enforce system and information resource integrity through cryptographic means.
-
-#### KSI-SVC-06
-> Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates.
-
-#### KSI-SVC-07
-> Use a consistent, risk-informed approach for applying security patches.
-
 ### KSI-IAM: Identity and Access Management
 
 **A secure cloud service offering will protect user data, control access, and apply zero trust principles.**
@@ -385,6 +389,19 @@
 #### KSI-IAM-06
 > Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity.
 
+### KSI-INR: Incident Reporting
+
+**A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
+
+#### KSI-INR-01
+> Report incidents according to FedRAMP requirements and cloud service provider policies.
+
+#### KSI-INR-02
+> Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.
+
+#### KSI-INR-03
+> Generate after action reports and regularly incorporate lessons learned into operations.
+
 ### KSI-MLA: Monitoring, Logging, and Auditing
 
 **A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.**
@@ -406,25 +423,6 @@
 
 #### KSI-MLA-06
 > Centrally track and prioritize the mitigation and/or remediation of identified vulnerabilities.
-
-### KSI-CMT: Configuration Management
-
-**A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.**
-
-#### KSI-CMT-01
-> Log and monitor system modifications.
-
-#### KSI-CMT-02
-> Execute changes through redeployment of version controlled immutable resources rather than direct modification wherever possible.
-
-#### KSI-CMT-03
-> Implement automated testing and validation of changes prior to deployment.
-
-#### KSI-CMT-04
-> Have a documented change management procedure.
-
-#### KSI-CMT-05
-> Evaluate the risk and potential impact of any change.
 
 ### KSI-PIY: Policy and Inventory
 
@@ -451,32 +449,6 @@
 #### KSI-PIY-07
 > Document risk management decisions for software supply chain security.
 
-### KSI-TPR: Third-Party Information Resources
-
-**A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.**
-
-#### KSI-TPR-01
-> Identify all third-party information resources .
-
-#### KSI-TPR-02
-> Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured.
-
-#### KSI-TPR-03
-> Identify and prioritize mitigation of potential supply chain risks.
-
-#### KSI-TPR-04
-> Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services.
-
-### KSI-CED: Cybersecurity Education
-
-**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.**
-
-#### KSI-CED-01
-> Ensure all employees receive security awareness training.
-
-#### KSI-CED-02
-> Require role-specific training for high risk roles, including at least roles with privileged access.
-
 ### KSI-RPL: Recovery Planning
 
 **A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
@@ -493,18 +465,46 @@
 #### KSI-RPL-04
 > Regularly test the capability to recover from incidents and contingencies.
 
-### KSI-INR: Incident Reporting
+### KSI-SVC: Service Configuration
 
-**A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
+**A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.**
 
-#### KSI-INR-01
-> Report incidents according to FedRAMP requirements and cloud service provider policies.
+#### KSI-SVC-01
+> Harden and review network and system configurations.
 
-#### KSI-INR-02
-> Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.
+#### KSI-SVC-02
+> Encrypt or otherwise secure network traffic.
 
-#### KSI-INR-03
-> Generate after action reports and regularly incorporate lessons learned into operations.
+#### KSI-SVC-03
+> Encrypt all federal and sensitive information at rest.
+
+#### KSI-SVC-04
+> Manage configuration centrally.
+
+#### KSI-SVC-05
+> Enforce system and information resource integrity through cryptographic means.
+
+#### KSI-SVC-06
+> Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates.
+
+#### KSI-SVC-07
+> Use a consistent, risk-informed approach for applying security patches.
+
+### KSI-TPR: Third-Party Information Resources
+
+**A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.**
+
+#### KSI-TPR-01
+> Identify all third-party information resources.
+
+#### KSI-TPR-02
+> Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured.
+
+#### KSI-TPR-03
+> Identify and prioritize mitigation of potential supply chain risks.
+
+#### KSI-TPR-04
+> Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services.
 
 
 

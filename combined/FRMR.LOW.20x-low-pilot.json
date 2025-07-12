@@ -2,14 +2,13 @@
   "info": {
     "name": "FedRAMP 20x Combined Requirements",
     "short_name": "FRMR-LOW",
-    "current_release": "25.06B",
-    "types": ["FRR", "FRD", "FRA"],
+    "current_release": "25.06A",
+    "types": [
+      "FRR",
+      "FRD",
+      "FRA"
+    ],
     "releases": [
-      {
-        "id": "25.06B",
-        "published_date": "2025-06-18",
-        "description": "Combined FedRAMP 20x Low Requirements (including KSI hotfix to original 25.05 release)"
-      },
       {
         "id": "25.06A",
         "published_date": "2025-06-17",
@@ -594,7 +593,7 @@
         "id": "FRD-MAS-02",
         "term": "Information Resource",
         "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\"",
-        "note": "This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
+        "note": "This applies to any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
         "reference": "44 USC § 3502 (6)",
         "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
       },
@@ -724,6 +723,207 @@
     }
   },
   "KSI": {
+    "CED": {
+      "id": "KSI-CED",
+      "name": "Cybersecurity Education",
+      "indicator": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.",
+      "requirements": [
+        {
+          "id": "KSI-CED-01",
+          "statement": "Ensure all employees receive security awareness training",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "at-2",
+              "title": "Literacy Training and Awareness"
+            },
+            {
+              "control_id": "at-2.2",
+              "title": "Insider Threat"
+            },
+            {
+              "control_id": "at-2.3",
+              "title": "Social Engineering and Mining"
+            },
+            {
+              "control_id": "at-4",
+              "title": "Training Records"
+            }
+          ]
+        },
+        {
+          "id": "KSI-CED-02",
+          "statement": "Require role-specific training for high risk roles, including at least roles with privileged access",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "at-2",
+              "title": "Literacy Training and Awareness"
+            },
+            {
+              "control_id": "at-3",
+              "title": "Role-based Training"
+            },
+            {
+              "control_id": "sr-11.1",
+              "title": "Anti-counterfeit Training"
+            }
+          ]
+        }
+      ]
+    },
+    "CMT": {
+      "id": "KSI-CMT",
+      "name": "Change Management",
+      "indicator": "A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.",
+      "requirements": [
+        {
+          "id": "KSI-CMT-01",
+          "statement": "Log and monitor system modifications",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "au-2",
+              "title": "Event Logging"
+            },
+            {
+              "control_id": "cm-3",
+              "title": "Configuration Change Control"
+            },
+            {
+              "control_id": "cm-4.2",
+              "title": "Verification of Controls"
+            },
+            {
+              "control_id": "cm-6",
+              "title": "Configuration Settings"
+            },
+            {
+              "control_id": "ma-2",
+              "title": "Controlled Maintenance"
+            }
+          ]
+        },
+        {
+          "id": "KSI-CMT-02",
+          "statement": "Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cm-2",
+              "title": "Baseline Configuration"
+            },
+            {
+              "control_id": "cm-3",
+              "title": "Configuration Change Control"
+            },
+            {
+              "control_id": "cm-5",
+              "title": "Access Restrictions for Change"
+            },
+            {
+              "control_id": "cm-6",
+              "title": "Configuration Settings"
+            },
+            {
+              "control_id": "cm-7",
+              "title": "Least Functionality"
+            },
+            {
+              "control_id": "cm-8.1",
+              "title": "Updates During Installation and Removal"
+            },
+            {
+              "control_id": "si-3",
+              "title": "Malicious Code Protection"
+            }
+          ]
+        },
+        {
+          "id": "KSI-CMT-03",
+          "statement": "Implement automated testing and validation of changes prior to deployment",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cm-3",
+              "title": "Configuration Change Control"
+            },
+            {
+              "control_id": "cm-3.2",
+              "title": "Testing, Validation, and Documentation of Changes"
+            },
+            {
+              "control_id": "si-2",
+              "title": "Flaw Remediation"
+            }
+          ]
+        },
+        {
+          "id": "KSI-CMT-04",
+          "statement": "Have a documented change management procedure",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cm-3",
+              "title": "Configuration Change Control"
+            },
+            {
+              "control_id": "cm-3.4",
+              "title": "Security and Privacy Representatives"
+            },
+            {
+              "control_id": "cm-5",
+              "title": "Access Restrictions for Change"
+            },
+            {
+              "control_id": "cm-7.1",
+              "title": "Periodic Review"
+            },
+            {
+              "control_id": "cm-9",
+              "title": "Configuration Management Plan"
+            }
+          ]
+        },
+        {
+          "id": "KSI-CMT-05",
+          "statement": "Evaluate the risk and potential impact of any change",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ca-7.4",
+              "title": "Risk Monitoring"
+            },
+            {
+              "control_id": "cm-3.4",
+              "title": "Security and Privacy Representatives"
+            },
+            {
+              "control_id": "cm-4",
+              "title": "Impact Analyses"
+            },
+            {
+              "control_id": "si-2",
+              "title": "Flaw Remediation"
+            }
+          ]
+        }
+      ]
+    },
     "CNA": {
       "id": "KSI-CNA",
       "name": "Cloud Native Architecture",
@@ -734,6 +934,16 @@
           "statement": "Configure ALL information resources to limit inbound and outbound traffic",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-17.3",
+              "title": "Managed Access Control Points"
+            },
+            {
+              "control_id": "ca-9",
+              "title": "Internal System Connections"
+            }
           ]
         },
         {
@@ -741,6 +951,16 @@
           "statement": "Design systems to minimize the attack surface and minimize lateral movement if compromised",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-17.3",
+              "title": "Managed Access Control Points"
+            },
+            {
+              "control_id": "ca-9",
+              "title": "Internal System Connections"
+            }
           ]
         },
         {
@@ -748,6 +968,20 @@
           "statement": "Use logical networking and related capabilities to enforce traffic flow controls",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-17.3",
+              "title": "Managed Access Control Points"
+            },
+            {
+              "control_id": "ca-9",
+              "title": "Internal System Connections"
+            },
+            {
+              "control_id": "sc-7",
+              "title": "Boundary Protection"
+            }
           ]
         },
         {
@@ -755,6 +989,16 @@
           "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cm-2",
+              "title": "Baseline Configuration"
+            },
+            {
+              "control_id": "si-3",
+              "title": "Malicious Code Protection"
+            }
           ]
         },
         {
@@ -762,6 +1006,12 @@
           "statement": "Have denial of service protection",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "sc-5",
+              "title": "Denial-of-service Protection"
+            }
           ]
         },
         {
@@ -769,72 +1019,28 @@
           "statement": "Design systems for high availability and rapid recovery",
           "applied_impact_levels": [
             "Low"
-          ]
+          ],
+          "controls": []
         },
         {
           "id": "KSI-CNA-07",
           "statement": "Ensure cloud-native information resources are implemented based on host provider's best practices and documented guidance",
           "applied_impact_levels": [
             "Low"
-          ]
-        }
-      ]
-    },
-    "SVC": {
-      "id": "KSI-SVC",
-      "name": "Service Configuration",
-      "indicator": "A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.",
-      "requirements": [
-        {
-          "id": "KSI-SVC-01",
-          "statement": "Harden and review network and system configurations",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-SVC-02",
-          "statement": "Encrypt or otherwise secure network traffic",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-SVC-03",
-          "statement": "Encrypt all federal and sensitive information at rest",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-SVC-04",
-          "statement": "Manage configuration centrally",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-SVC-05",
-          "statement": "Enforce system and information resource integrity through cryptographic means",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-SVC-06",
-          "statement": "Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates",
-          "applied_impact_levels": [
-            "Low"
           ],
-          "referenced_fr": [
-            "FRD-KSI-01"
-          ]
-        },
-        {
-          "id": "KSI-SVC-07",
-          "statement": "Use a consistent, risk-informed approach for applying security patches",
-          "applied_impact_levels": [
-            "Low"
+          "controls": [
+            {
+              "control_id": "ac-17.3",
+              "title": "Managed Access Control Points"
+            },
+            {
+              "control_id": "cm-2",
+              "title": "Baseline Configuration"
+            },
+            {
+              "control_id": "pl-10",
+              "title": "Baseline Selection"
+            }
           ]
         }
       ]
@@ -849,6 +1055,32 @@
           "statement": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2",
+              "title": "Account Management"
+            },
+            {
+              "control_id": "ia-2",
+              "title": "Identification and Authentication (Organizational Users)"
+            },
+            {
+              "control_id": "ia-2.1",
+              "title": "Multi-factor Authentication to Privileged Accounts"
+            },
+            {
+              "control_id": "ia-2.2",
+              "title": "Multi-factor Authentication to Non-privileged Accounts"
+            },
+            {
+              "control_id": "ia-2.8",
+              "title": "Access to Accounts — Replay Resistant"
+            },
+            {
+              "control_id": "ia-8",
+              "title": "Identification and Authentication (Non-organizational Users)"
+            }
           ]
         },
         {
@@ -856,6 +1088,44 @@
           "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2",
+              "title": "Account Management"
+            },
+            {
+              "control_id": "ac-3",
+              "title": "Access Enforcement"
+            },
+            {
+              "control_id": "ia-2.1",
+              "title": "Multi-factor Authentication to Privileged Accounts"
+            },
+            {
+              "control_id": "ia-2.2",
+              "title": "Multi-factor Authentication to Non-privileged Accounts"
+            },
+            {
+              "control_id": "ia-2.8",
+              "title": "Access to Accounts Replay Resistant"
+            },
+            {
+              "control_id": "ia-5.1",
+              "title": "Password-based Authentication"
+            },
+            {
+              "control_id": "ia-5.2",
+              "title": "Public Key-based Authentication"
+            },
+            {
+              "control_id": "ia-5.6",
+              "title": "Protection of Authenticators"
+            },
+            {
+              "control_id": "ia-6",
+              "title": "Authentication Feedback"
+            }
           ]
         },
         {
@@ -863,6 +1133,24 @@
           "statement": "Enforce appropriately secure authentication methods for non-user accounts and services",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2",
+              "title": "Account Management"
+            },
+            {
+              "control_id": "ac-4",
+              "title": "Information Flow Enforcement"
+            },
+            {
+              "control_id": "ia-3",
+              "title": "Device Identification and Authentication"
+            },
+            {
+              "control_id": "ia-5.2",
+              "title": "Public Key-based Authentication"
+            }
           ]
         },
         {
@@ -870,6 +1158,132 @@
           "statement": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2",
+              "title": "Account Management"
+            },
+            {
+              "control_id": "ac-2.2",
+              "title": "Automated Temporary and Emergency Account Management"
+            },
+            {
+              "control_id": "ac-2.3",
+              "title": "Disable Accounts"
+            },
+            {
+              "control_id": "ac-2.4",
+              "title": "Automated Audit Actions"
+            },
+            {
+              "control_id": "ac-2.6",
+              "title": "Dynamic Privilege Management"
+            },
+            {
+              "control_id": "ac-3",
+              "title": "Access Enforcement"
+            },
+            {
+              "control_id": "ac-4",
+              "title": "Information Flow Enforcement"
+            },
+            {
+              "control_id": "ac-5",
+              "title": "Separation of Duties"
+            },
+            {
+              "control_id": "ac-6",
+              "title": "Least Privilege"
+            },
+            {
+              "control_id": "ac-6.1",
+              "title": "Authorize Access to Security Functions"
+            },
+            {
+              "control_id": "ac-6.2",
+              "title": "Non-privileged Access for Nonsecurity Functions"
+            },
+            {
+              "control_id": "ac-6.5",
+              "title": "Privileged Accounts"
+            },
+            {
+              "control_id": "ac-6.7",
+              "title": "Review of User Privileges"
+            },
+            {
+              "control_id": "ac-6.9",
+              "title": "Log Use of Privileged Functions"
+            },
+            {
+              "control_id": "ac-6.10",
+              "title": "Prohibit Non-privileged Users from Executing Privileged Functions"
+            },
+            {
+              "control_id": "ac-7",
+              "title": "Unsuccessful Logon Attempts"
+            },
+            {
+              "control_id": "ac-17",
+              "title": "Remote Access"
+            },
+            {
+              "control_id": "au-9.4",
+              "title": "Access by Subset of Privileged Users"
+            },
+            {
+              "control_id": "cm-5",
+              "title": "Access Restrictions for Change"
+            },
+            {
+              "control_id": "cm-7",
+              "title": "Least Functionality"
+            },
+            {
+              "control_id": "cm-9",
+              "title": "Configuration Management Plan"
+            },
+            {
+              "control_id": "ia-4",
+              "title": "Identifier Management"
+            },
+            {
+              "control_id": "ia-4.4",
+              "title": "Identify User Status"
+            },
+            {
+              "control_id": "ia-7",
+              "title": "Cryptographic Module Authentication"
+            },
+            {
+              "control_id": "ps-2",
+              "title": "Position Risk Designation"
+            },
+            {
+              "control_id": "ps-3",
+              "title": "Personnel Screening"
+            },
+            {
+              "control_id": "ps-4",
+              "title": "Personnel Termination"
+            },
+            {
+              "control_id": "ps-5",
+              "title": "Personnel Transfer"
+            },
+            {
+              "control_id": "ps-6",
+              "title": "Access Agreements"
+            },
+            {
+              "control_id": "ps-9",
+              "title": "Position Descriptions"
+            },
+            {
+              "control_id": "sc-39",
+              "title": "Process Isolation"
+            }
           ]
         },
         {
@@ -877,6 +1291,128 @@
           "statement": "Apply zero trust design principles",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2.5",
+              "title": "Inactivity Logout"
+            },
+            {
+              "control_id": "ac-2.6",
+              "title": "Dynamic Privilege Management"
+            },
+            {
+              "control_id": "ac-3",
+              "title": "Access Enforcement"
+            },
+            {
+              "control_id": "ac-4",
+              "title": "Information Flow Enforcement"
+            },
+            {
+              "control_id": "ac-6",
+              "title": "Least Privilege"
+            },
+            {
+              "control_id": "ac-12",
+              "title": "Session Termination"
+            },
+            {
+              "control_id": "ac-14",
+              "title": "Permitted Actions Without Identification or Authentication"
+            },
+            {
+              "control_id": "ac-17",
+              "title": "Remote Access"
+            },
+            {
+              "control_id": "ac-17.1",
+              "title": "Monitoring and Control"
+            },
+            {
+              "control_id": "ac-17.2",
+              "title": "Protection of Confidentiality and Integrity Using Encryption"
+            },
+            {
+              "control_id": "ac-17.3",
+              "title": "Managed Access Control Points"
+            },
+            {
+              "control_id": "ac-20",
+              "title": "Use of External Systems"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
+            },
+            {
+              "control_id": "cm-9",
+              "title": "Configuration Management Plan"
+            },
+            {
+              "control_id": "ia-2",
+              "title": "Identification and Authentication (Organizational Users)"
+            },
+            {
+              "control_id": "ia-3",
+              "title": "Device Identification and Authentication"
+            },
+            {
+              "control_id": "ia-4",
+              "title": "Identifier Management"
+            },
+            {
+              "control_id": "ia-4.4",
+              "title": "Identify User Status"
+            },
+            {
+              "control_id": "ia-5.2",
+              "title": "Public Key-based Authentication"
+            },
+            {
+              "control_id": "ia-11",
+              "title": "Re-authentication"
+            },
+            {
+              "control_id": "ps-2",
+              "title": "Position Risk Designation"
+            },
+            {
+              "control_id": "ps-3",
+              "title": "Personnel Screening"
+            },
+            {
+              "control_id": "ps-4",
+              "title": "Personnel Termination"
+            },
+            {
+              "control_id": "ps-5",
+              "title": "Personnel Transfer"
+            },
+            {
+              "control_id": "ps-6",
+              "title": "Access Agreements"
+            },
+            {
+              "control_id": "sc-20",
+              "title": "Secure Name/Address Resolution Service (Authoritative Source)"
+            },
+            {
+              "control_id": "sc-21",
+              "title": "Secure Name/Address Resolution Service (Recursive or Caching Resolver)"
+            },
+            {
+              "control_id": "sc-22",
+              "title": "Architecture and Provisioning for Name/Address Resolution Service"
+            },
+            {
+              "control_id": "sc-39",
+              "title": "Process Isolation"
+            },
+            {
+              "control_id": "si-3",
+              "title": "Malicious Code Protection"
+            }
           ]
         },
         {
@@ -884,244 +1420,36 @@
           "statement": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity",
           "applied_impact_levels": [
             "Low"
-          ]
-        }
-      ]
-    },
-    "MLA": {
-      "id": "KSI-MLA",
-      "name": "Monitoring, Logging, and Auditing",
-      "indicator": "A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.",
-      "requirements": [
-        {
-          "id": "KSI-MLA-01",
-          "statement": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-MLA-02",
-          "statement": "Regularly review and audit logs",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-MLA-03",
-          "statement": "Rapidly detect and remediate or mitigate vulnerabilities",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-MLA-04",
-          "statement": "Perform authenticated vulnerability scanning on information resources",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-MLA-05",
-          "statement": "Perform Infrastructure as Code and configuration evaluation and testing",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-MLA-06",
-          "statement": "Centrally track and prioritize the mitigation and/or remediation of identified vulnerabilities",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        }
-      ]
-    },
-    "CMT": {
-      "id": "KSI-CMT",
-      "name": "Configuration Management",
-      "indicator": "A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.",
-      "requirements": [
-        {
-          "id": "KSI-CMT-01",
-          "statement": "Log and monitor system modifications",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-CMT-02",
-          "statement": "Execute changes through redeployment of version controlled immutable resources rather than direct modification wherever possible",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-CMT-03",
-          "statement": "Implement automated testing and validation of changes prior to deployment",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-CMT-04",
-          "statement": "Have a documented change management procedure",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-CMT-05",
-          "statement": "Evaluate the risk and potential impact of any change",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        }
-      ]
-    },
-    "PIY": {
-      "id": "KSI-PIY",
-      "name": "Policy and Inventory",
-      "indicator": "A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.",
-      "requirements": [
-        {
-          "id": "KSI-PIY-01",
-          "statement": "Have an up-to-date information resource inventory or code defining all deployed assets, software, and services",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-PIY-02",
-          "statement": "Have policies outlining the security objectives of all information resources",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-PIY-03",
-          "statement": "Maintain a vulnerability disclosure program",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-PIY-04",
-          "statement": "Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-PIY-05",
-          "statement": "Document methods used to evaluate information resource implementations",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-PIY-06",
-          "statement": "Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-PIY-07",
-          "statement": "Document risk management decisions for software supply chain security",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        }
-      ]
-    },
-    "TPR": {
-      "id": "KSI-TPR",
-      "name": "Third-Party Information Resources",
-      "indicator": "A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.",
-      "requirements": [
-        {
-          "id": "KSI-TPR-01",
-          "statement": "Identify all third-party information resources ",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-TPR-02",
-          "statement": "Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-TPR-03",
-          "statement": "Identify and prioritize mitigation of potential supply chain risks",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-TPR-04",
-          "statement": "Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        }
-      ]
-    },
-    "CED": {
-      "id": "KSI-CED",
-      "name": "Cybersecurity Education",
-      "indicator": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.",
-      "requirements": [
-        {
-          "id": "KSI-CED-01",
-          "statement": "Ensure all employees receive security awareness training",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-CED-02",
-          "statement": "Require role-specific training for high risk roles, including at least roles with privileged access",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        }
-      ]
-    },
-    "RPL": {
-      "id": "KSI-RPL",
-      "name": "Recovery Planning",
-      "indicator": "A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
-      "requirements": [
-        {
-          "id": "KSI-RPL-01",
-          "statement": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-RPL-02",
-          "statement": "Develop and maintain a recovery plan that aligns with the defined recovery objectives",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-RPL-03",
-          "statement": "Perform system backups aligned with recovery objectives",
-          "applied_impact_levels": [
-            "Low"
-          ]
-        },
-        {
-          "id": "KSI-RPL-04",
-          "statement": "Regularly test the capability to recover from incidents and contingencies",
-          "applied_impact_levels": [
-            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2",
+              "title": "Account Management"
+            },
+            {
+              "control_id": "ac-2.1",
+              "title": "Automated System Account Management"
+            },
+            {
+              "control_id": "ac-2.3",
+              "title": "Disable Accounts"
+            },
+            {
+              "control_id": "ac-2.13",
+              "title": "Disable Accounts for High-risk Individuals"
+            },
+            {
+              "control_id": "ac-7",
+              "title": "Unsuccessful Logon Attempts"
+            },
+            {
+              "control_id": "ps-4",
+              "title": "Personnel Termination"
+            },
+            {
+              "control_id": "ps-8",
+              "title": "Personnel Sanctions"
+            }
           ]
         }
       ]
@@ -1136,6 +1464,36 @@
           "statement": "Report incidents according to FedRAMP requirements and cloud service provider policies",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ir-4",
+              "title": "Incident Handling"
+            },
+            {
+              "control_id": "ir-4.1",
+              "title": "Automated Incident Handling Processes"
+            },
+            {
+              "control_id": "ir-6",
+              "title": "Incident Reporting"
+            },
+            {
+              "control_id": "ir-6.1",
+              "title": "Automated Reporting"
+            },
+            {
+              "control_id": "ir-7",
+              "title": "Incident Response Assistance"
+            },
+            {
+              "control_id": "ir-7.1",
+              "title": "Automation Support for Availability of Information and Support"
+            },
+            {
+              "control_id": "ir-8",
+              "title": "Incident Response Plan"
+            }
           ]
         },
         {
@@ -1143,6 +1501,28 @@
           "statement": "Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ir-3",
+              "title": "Incident Response Testing"
+            },
+            {
+              "control_id": "ir-4",
+              "title": "Incident Handling"
+            },
+            {
+              "control_id": "ir-4.1",
+              "title": "Automated Incident Handling Processes"
+            },
+            {
+              "control_id": "ir-5",
+              "title": "Incident Monitoring"
+            },
+            {
+              "control_id": "ir-8",
+              "title": "Incident Response Plan"
+            }
           ]
         },
         {
@@ -1150,6 +1530,914 @@
           "statement": "Generate after action reports and regularly incorporate lessons learned into operations",
           "applied_impact_levels": [
             "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ir-3",
+              "title": "Incident Response Testing"
+            },
+            {
+              "control_id": "ir-4",
+              "title": "Incident Handling"
+            },
+            {
+              "control_id": "ir-4.1",
+              "title": "Automated Incident Handling Processes"
+            },
+            {
+              "control_id": "ir-8",
+              "title": "Incident Response Plan"
+            }
+          ]
+        }
+      ]
+    },
+    "MLA": {
+      "id": "KSI-MLA",
+      "name": "Monitoring, Logging, and Auditing",
+      "indicator": "A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.",
+      "requirements": [
+        {
+          "id": "KSI-MLA-01",
+          "statement": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "au-2",
+              "title": "Event Logging"
+            },
+            {
+              "control_id": "au-3",
+              "title": "Content of Audit Records"
+            },
+            {
+              "control_id": "au-3.1",
+              "title": "Additional Audit Information"
+            },
+            {
+              "control_id": "au-4",
+              "title": "Audit Log Storage Capacity"
+            },
+            {
+              "control_id": "au-5",
+              "title": "Response to Audit Logging Process Failures"
+            },
+            {
+              "control_id": "au-6.1",
+              "title": "Automated Process Integration"
+            },
+            {
+              "control_id": "au-6.3",
+              "title": "Correlate Audit Record Repositories"
+            },
+            {
+              "control_id": "au-7",
+              "title": "Audit Record Reduction and Report Generation"
+            },
+            {
+              "control_id": "au-7.1",
+              "title": "Automatic Processing"
+            },
+            {
+              "control_id": "au-8",
+              "title": "Time Stamps"
+            },
+            {
+              "control_id": "au-9",
+              "title": "Protection of Audit Information"
+            },
+            {
+              "control_id": "au-11",
+              "title": "Audit Record Retention"
+            }
+          ]
+        },
+        {
+          "id": "KSI-MLA-02",
+          "statement": "Regularly review and audit logs",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2.4",
+              "title": "Automated Audit Actions"
+            },
+            {
+              "control_id": "ac-6.9",
+              "title": "Log Use of Privileged Functions"
+            },
+            {
+              "control_id": "au-2",
+              "title": "Event Logging"
+            },
+            {
+              "control_id": "au-6",
+              "title": "Audit Record Review, Analysis, and Reporting"
+            },
+            {
+              "control_id": "si-4",
+              "title": "System Monitoring"
+            }
+          ]
+        },
+        {
+          "id": "KSI-MLA-03",
+          "statement": "Rapidly detect and remediate or mitigate vulnerabilities",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "au-5",
+              "title": "Response to Audit Logging Process Failures"
+            },
+            {
+              "control_id": "ca-7",
+              "title": "Continuous Monitoring"
+            },
+            {
+              "control_id": "ra-5",
+              "title": "Vulnerability Monitoring and Scanning"
+            },
+            {
+              "control_id": "ra-5.2",
+              "title": "Update Vulnerabilities to Be Scanned"
+            },
+            {
+              "control_id": "sa-22",
+              "title": "Unsupported System Components"
+            },
+            {
+              "control_id": "si-2",
+              "title": "Flaw Remediation"
+            },
+            {
+              "control_id": "si-5",
+              "title": "Security Alerts, Advisories, and Directives"
+            }
+          ]
+        },
+        {
+          "id": "KSI-MLA-04",
+          "statement": "Perform authenticated vulnerability scanning on information resources",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ca-7",
+              "title": "Continuous Monitoring"
+            },
+            {
+              "control_id": "ra-5",
+              "title": "Vulnerability Monitoring and Scanning"
+            },
+            {
+              "control_id": "si-3",
+              "title": "Malicious Code Protection"
+            }
+          ]
+        },
+        {
+          "id": "KSI-MLA-05",
+          "statement": "Perform Infrastructure as Code and configuration evaluation and testing",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ca-7",
+              "title": "Continuous Monitoring"
+            },
+            {
+              "control_id": "cm-2",
+              "title": "Baseline Configuration"
+            },
+            {
+              "control_id": "cm-6",
+              "title": "Configuration Settings"
+            }
+          ]
+        },
+        {
+          "id": "KSI-MLA-06",
+          "statement": "Centrally track and prioritize the mitigation and/or remediation of identified vulnerabilities",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ca-5",
+              "title": "Plan of Action and Milestones"
+            }
+          ]
+        }
+      ]
+    },
+    "PIY": {
+      "id": "KSI-PIY",
+      "name": "Policy and Inventory",
+      "indicator": "A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.",
+      "requirements": [
+        {
+          "id": "KSI-PIY-01",
+          "statement": "Have an up-to-date information resource inventory or code defining all deployed assets, software, and services",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cm-7.5",
+              "title": "Authorized Software Allow-by-exception"
+            },
+            {
+              "control_id": "cm-8",
+              "title": "System Component Inventory"
+            },
+            {
+              "control_id": "cm-8.1",
+              "title": "Updates During Installation and Removal"
+            },
+            {
+              "control_id": "cm-12",
+              "title": "Information Location"
+            },
+            {
+              "control_id": "cm-12.1",
+              "title": "Automated Tools to Support Information Location"
+            },
+            {
+              "control_id": "cp-2.8",
+              "title": "Identify Critical Assets"
+            }
+          ]
+        },
+        {
+          "id": "KSI-PIY-02",
+          "statement": "Have policies outlining the security objectives of all information resources",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "at-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "au-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ca-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "cm-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "cp-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "cp-2.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "cp-4.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "ia-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ir-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ma-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "mp-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "pe-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "pl-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "pl-2",
+              "title": "System Security and Privacy Plans"
+            },
+            {
+              "control_id": "pl-4",
+              "title": "Rules of Behavior"
+            },
+            {
+              "control_id": "pl-4.1",
+              "title": "Social Media and External Site/Application Usage Restrictions"
+            },
+            {
+              "control_id": "ps-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ra-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "sa-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "sc-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "si-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "sr-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "sr-2",
+              "title": "Supply Chain Risk Management Plan"
+            },
+            {
+              "control_id": "sr-3",
+              "title": "Supply Chain Controls and Processes"
+            },
+            {
+              "control_id": "sr-11",
+              "title": "Component Authenticity"
+            }
+          ]
+        },
+        {
+          "id": "KSI-PIY-03",
+          "statement": "Maintain a vulnerability disclosure program",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ra-5.11",
+              "title": "Public Disclosure Program"
+            }
+          ]
+        },
+        {
+          "id": "KSI-PIY-04",
+          "statement": "Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-5",
+              "title": "Separation of Duties"
+            },
+            {
+              "control_id": "sa-3",
+              "title": "System Development Life Cycle"
+            }
+          ]
+        },
+        {
+          "id": "KSI-PIY-05",
+          "statement": "Document methods used to evaluate information resource implementations",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": []
+        },
+        {
+          "id": "KSI-PIY-06",
+          "statement": "Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-5",
+              "title": "Separation of Duties"
+            },
+            {
+              "control_id": "cp-2.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "cp-4.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "ir-3.2",
+              "title": "Coordination with Related Plans"
+            },
+            {
+              "control_id": "sa-2",
+              "title": "Allocation of Resources"
+            },
+            {
+              "control_id": "sa-3",
+              "title": "System Development Life Cycle"
+            },
+            {
+              "control_id": "sr-2.1",
+              "title": "Establish SCRM Team"
+            }
+          ]
+        },
+        {
+          "id": "KSI-PIY-07",
+          "statement": "Document risk management decisions for software supply chain security",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ca-7.4",
+              "title": "Risk Monitoring"
+            }
+          ]
+        }
+      ]
+    },
+    "RPL": {
+      "id": "KSI-RPL",
+      "name": "Recovery Planning",
+      "indicator": "A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
+      "requirements": [
+        {
+          "id": "KSI-RPL-01",
+          "statement": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cp-2.3",
+              "title": "Resume Mission and Business Functions"
+            },
+            {
+              "control_id": "cp-10",
+              "title": "System Recovery and Reconstitution"
+            }
+          ]
+        },
+        {
+          "id": "KSI-RPL-02",
+          "statement": "Develop and maintain a recovery plan that aligns with the defined recovery objectives",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cp-2",
+              "title": "Contingency Plan"
+            },
+            {
+              "control_id": "cp-2.3",
+              "title": "Resume Mission and Business Functions"
+            },
+            {
+              "control_id": "cp-6",
+              "title": "Alternate Storage Site"
+            },
+            {
+              "control_id": "cp-10",
+              "title": "System Recovery and Reconstitution"
+            }
+          ]
+        },
+        {
+          "id": "KSI-RPL-03",
+          "statement": "Perform system backups aligned with recovery objectives",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cm-2.3",
+              "title": "Retention of Previous Configurations"
+            },
+            {
+              "control_id": "cp-6",
+              "title": "Alternate Storage Site"
+            },
+            {
+              "control_id": "cp-9",
+              "title": "System Backup"
+            },
+            {
+              "control_id": "cp-10",
+              "title": "System Recovery and Reconstitution"
+            },
+            {
+              "control_id": "cp-10.2",
+              "title": "Transaction Recovery"
+            },
+            {
+              "control_id": "si-12",
+              "title": "Information Management and Retention"
+            }
+          ]
+        },
+        {
+          "id": "KSI-RPL-04",
+          "statement": "Regularly test the capability to recover from incidents and contingencies",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cp-4",
+              "title": "Contingency Plan Testing"
+            },
+            {
+              "control_id": "cp-6",
+              "title": "Alternate Storage Site"
+            },
+            {
+              "control_id": "cp-9.1",
+              "title": "Testing for Reliability and Integrity"
+            },
+            {
+              "control_id": "cp-10",
+              "title": "System Recovery and Reconstitution"
+            },
+            {
+              "control_id": "ir-3",
+              "title": "Incident Response Testing"
+            }
+          ]
+        }
+      ]
+    },
+    "SVC": {
+      "id": "KSI-SVC",
+      "name": "Service Configuration",
+      "indicator": "A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.",
+      "requirements": [
+        {
+          "id": "KSI-SVC-01",
+          "statement": "Harden and review network and system configurations",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ma-2",
+              "title": "Controlled Maintenance"
+            },
+            {
+              "control_id": "sc-7",
+              "title": "Boundary Protection"
+            },
+            {
+              "control_id": "sc-39",
+              "title": "Process Isolation"
+            },
+            {
+              "control_id": "si-4",
+              "title": "System Monitoring"
+            },
+            {
+              "control_id": "sr-10",
+              "title": "Inspection of Systems or Components"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-02",
+          "statement": "Encrypt or otherwise secure network traffic",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ac-17.2",
+              "title": "Protection of Confidentiality and Integrity Using Encryption"
+            },
+            {
+              "control_id": "cp-9.8",
+              "title": "Cryptographic Protection"
+            },
+            {
+              "control_id": "sc-13",
+              "title": "Cryptographic Protection"
+            },
+            {
+              "control_id": "sc-20",
+              "title": "Secure Name/Address Resolution Service (Authoritative Source)"
+            },
+            {
+              "control_id": "sc-21",
+              "title": "Secure Name/Address Resolution Service (Recursive or Caching Resolver)"
+            },
+            {
+              "control_id": "sc-22",
+              "title": "Architecture and Provisioning for Name/Address Resolution Service"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-03",
+          "statement": "Encrypt all federal and sensitive information at rest",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-20.2",
+              "title": "Portable Storage Devices — Restricted Use"
+            },
+            {
+              "control_id": "cm-12",
+              "title": "Information Location"
+            },
+            {
+              "control_id": "cp-9.8",
+              "title": "Cryptographic Protection"
+            },
+            {
+              "control_id": "sc-13",
+              "title": "Cryptographic Protection"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-04",
+          "statement": "Manage configuration centrally",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-2.4",
+              "title": "Automated Audit Actions"
+            },
+            {
+              "control_id": "cm-2",
+              "title": "Baseline Configuration"
+            },
+            {
+              "control_id": "cm-2.2",
+              "title": "Automation Support for Accuracy and Currency"
+            },
+            {
+              "control_id": "cm-2.3",
+              "title": "Retention of Previous Configurations"
+            },
+            {
+              "control_id": "cm-6",
+              "title": "Configuration Settings"
+            },
+            {
+              "control_id": "pl-10",
+              "title": "Baseline Selection"
+            },
+            {
+              "control_id": "sa-5",
+              "title": "System Documentation"
+            },
+            {
+              "control_id": "si-5",
+              "title": "Security Alerts, Advisories, and Directives"
+            },
+            {
+              "control_id": "sr-10",
+              "title": "Inspection of Systems or Components"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-05",
+          "statement": "Enforce system and information resource integrity through cryptographic means",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "cm-2.2",
+              "title": "Automation Support for Accuracy and Currency"
+            },
+            {
+              "control_id": "cm-8.3",
+              "title": "Automated Unauthorized Component Detection"
+            },
+            {
+              "control_id": "sc-13",
+              "title": "Cryptographic Protection"
+            },
+            {
+              "control_id": "sr-10",
+              "title": "Inspection of Systems or Components"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-06",
+          "statement": "Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-17.2",
+              "title": "Protection of Confidentiality and Integrity Using Encryption"
+            },
+            {
+              "control_id": "ia-5.2",
+              "title": "Public Key-based Authentication"
+            },
+            {
+              "control_id": "ia-5.6",
+              "title": "Protection of Authenticators"
+            },
+            {
+              "control_id": "sc-12",
+              "title": "Cryptographic Key Establishment and Management"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-07",
+          "statement": "Use a consistent, risk-informed approach for applying security patches",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ca-7.4",
+              "title": "Risk Monitoring"
+            },
+            {
+              "control_id": "ra-5",
+              "title": "Vulnerability Monitoring and Scanning"
+            },
+            {
+              "control_id": "ra-7",
+              "title": "Risk Response"
+            }
+          ]
+        }
+      ]
+    },
+    "TPR": {
+      "id": "KSI-TPR",
+      "name": "Third-Party Information Resources",
+      "indicator": "A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.",
+      "requirements": [
+        {
+          "id": "KSI-TPR-01",
+          "statement": "Identify all third-party information resources",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ca-3",
+              "title": "Information Exchange"
+            },
+            {
+              "control_id": "cm-10",
+              "title": "Software Usage Restrictions"
+            },
+            {
+              "control_id": "ps-7",
+              "title": "External Personnel Security"
+            }
+          ]
+        },
+        {
+          "id": "KSI-TPR-02",
+          "statement": "Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-21",
+              "title": "Information Sharing"
+            },
+            {
+              "control_id": "ca-3",
+              "title": "Information Exchange"
+            },
+            {
+              "control_id": "cm-12",
+              "title": "Information Location"
+            },
+            {
+              "control_id": "ps-7",
+              "title": "External Personnel Security"
+            },
+            {
+              "control_id": "sa-2",
+              "title": "Allocation of Resources"
+            },
+            {
+              "control_id": "sa-4",
+              "title": "Acquisition Process"
+            },
+            {
+              "control_id": "sa-9",
+              "title": "External System Services"
+            }
+          ]
+        },
+        {
+          "id": "KSI-TPR-03",
+          "statement": "Identify and prioritize mitigation of potential supply chain risks",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-20",
+              "title": "Use of External Systems"
+            },
+            {
+              "control_id": "ra-3.1",
+              "title": "Supply Chain Risk Assessment"
+            },
+            {
+              "control_id": "sa-9",
+              "title": "External System Services"
+            },
+            {
+              "control_id": "sa-22",
+              "title": "Unsupported System Components"
+            },
+            {
+              "control_id": "sr-5",
+              "title": "Acquisition Strategies, Tools, and Methods"
+            }
+          ]
+        },
+        {
+          "id": "KSI-TPR-04",
+          "statement": "Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services",
+          "applied_impact_levels": [
+            "Low"
+          ],
+          "controls": [
+            {
+              "control_id": "ac-20",
+              "title": "Use of External Systems"
+            },
+            {
+              "control_id": "ca-3",
+              "title": "Information Exchange"
+            },
+            {
+              "control_id": "ir-6.3",
+              "title": "Supply Chain Coordination"
+            },
+            {
+              "control_id": "ps-7",
+              "title": "External Personnel Security"
+            },
+            {
+              "control_id": "ra-5",
+              "title": "Vulnerability Monitoring and Scanning"
+            },
+            {
+              "control_id": "sa-9",
+              "title": "External System Services"
+            },
+            {
+              "control_id": "si-5",
+              "title": "Security Alerts, Advisories, and Directives"
+            },
+            {
+              "control_id": "sr-5",
+              "title": "Acquisition Strategies, Tools, and Methods"
+            },
+            {
+              "control_id": "sr-8",
+              "title": "Notification Agreements"
+            }
           ]
         }
       ]
