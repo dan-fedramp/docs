@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "FedRAMP.schema.json",
+  "info": {
+    "name": "Authorization Data Sharing Standard",
+    "short_name": "ADS",
+    "current_release": "25.00A",
+    "types": ["FRR", "FRD", "FRA"],
+    "releases": [
+      {
+        "id": "25.08A",
+        "published_date": "2025-08-25",
+        "description": "Initial release of Standard",
+        "public_comment": true,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-09-01",
+                "designator": "20x",
+                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+              }
+            },
+            "specific_release": "20x.ADS.P1.25.08A",
+            "is_optional": false,
+            "comments": [
+              "20xP1 participants do not need to fully align with this policy to receive pilot authorization.",
+              "Participants in the 20xP1 pilot who receive pilot authorizations must demonstrate progress towards the adoption of this policy and be in full alignment by the expiration date of their pilot authorization."
+            ]
+          },
+          "Rev5": {
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-09-01",
+                "is_tentative": true,
+                "designator": "R5.ADS.B1",
+                "comment": "This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services."
+              }
+            },
+            "is_optional": true,
+            "specific_release": "R5.ADS.B1.25.08A",
+            "comments": [
+              "These requirements will be initially tested and evaluated for Rev5 in the ADS Closed Beta (B1).",
+              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.",
+              "Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test."
+            ]
+          }
+        },
+        "related_rfcs": [
+          {
+            "start_date": "2025-05-23",
+            "end_date": "2025-06-22",
+            "id": "0012",
+            "url": "https://www.fedramp.gov/rfcs/0012/",
+            "discussion_url": "https://github.com/FedRAMP/community/discussions/8",
+            "short_name": "rfc-0011-standard-for-storing-and-sharing",
+            "full_name": "FedRAMP RFC-0011: FedRAMP Pilot Standard for Storing and Sharing Authorization Data"
+          }
+        ]
+      }
+    ],
+    "front_matter": {
+      "authority": [
+        {
+          "reference": "44 USC § 3609 (a)(8)",
+          "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
+          "description": "The FedRAMP Authorization Act directs the Administrator of the General Services Administration to \"provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...\"\n\nOxford Languages defines a mechanism as \"a natural or established process by which something takes place or is brought about.\"",
+          "delegation": "This responsibility is delegated to the FedRAMP Director",
+          "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+        },
+        {
+          "reference": "OMB Memorandum M-24-15 on Modernizing FedRAMP",
+          "reference_url": "https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf",
+          "description": "Section 6 states that \"In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs' commercial customer base.\""
+        }
+      ],
+      "purpose": "Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.\n\nThis security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not federal information in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.\n\nThe FedRAMP Authorization Data Sharing Standard provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.\n\nAt the initial release of this standard there will not be many platforms that directly support the requirements in this standard. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.\n\n_* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._",
+      "expected_outcomes": [
+        "Cloud service providers will be able to manage authorization data in the same platforms used for commercial customers, reusing data as appropriate",
+        "Federal agencies will be able to access necessary authorization data via API or other automated mechanisms integrated into agency authorization systems to simplify the burden of review and continuous monitoring",
+        "Trust center providers and GRC automation tool providers will develop innovative solutions and improvements to ensure standardized automated data sharing and validation within the FedRAMP ecosystem"
+      ]
+    }
+  },
+  "FRD": {
+    "ADS": [
+      {
+        "id": "FRD-ADS-01",
+        "term": "Authorization Package",
+        "definition": "Has meaning from 44 USC § 3607 (b)(8) which is \"the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.\"",
+        "reference": "44 USC § 3607 (b)(8)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607",
+        "note": "In FedRAMP documentation, authorization package always refers to a FedRAMP authorization package unless otherwise specified."
+      },
+      {
+        "id": "FRD-ADS-02",
+        "term": "Authorization Data",
+        "definition": "The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. ",
+        "note": "NOTE: In FedRAMP documentation, authorization data always refers to FedRAMP authorization data unless otherwise specified."
+      },
+      {
+        "id": "FRD-ADS-03",
+        "term": "Trust Center",
+        "definition": "",
+        "reference": "",
+        "reference_url": "",
+        "referenced_fr": ["FRD-ADS-00"],
+        "note": ""
+      },
+      {
+        "id": "FRD-ADS-04",
+        "term": "",
+        "definition": "",
+        "reference": "",
+        "reference_url": "",
+        "referenced_fr": ["FRD-ADS-00"],
+        "note": ""
+      }
+    ]
+  },
+  "FRR": {
+    "ADS": {
+      "base": {
+        "id": "FRR-ADS",
+        "application": "These requirements apply ALWAYS to ALL CHANGEME based on current Effective Date(s) and Overall Applicability",
+        "referenced_fr": ["FRD-ADS-00"],
+        "requirements": [
+          {
+            "id": "FRR-ADS-00",
+            "statement": "",
+            "affects": ["Providers", "3PAOs", "Agencies"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ADS-01"],
+            "is_interim": true,
+            "following_information": ["", ""]
+          }
+        ]
+      },
+      "exceptions": {
+        "application": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+        "id": "FRR-ADS-EX",
+        "requirements": [
+          {
+            "id": "FRR-ADS-EX-01",
+            "statement": "",
+            "affects": ["Providers", "3PAOs", "Agencies"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ADS-01"],
+            "is_interim": true,
+            "following_information": ["", ""]
+          }
+        ]
+      },
+      "another_type": {
+        "application": "These requirements apply ONLY to CHANGEME ANOTHER TYPE.",
+        "id": "FRR-ADS-LL",
+        "referenced_fr": ["FRD-ADS-00", "FRD-ADS-00"],
+        "requirements": [
+          {
+            "id": "FRR-ADS-LL-00",
+            "statement": "",
+            "affects": ["Providers", "3PAOs", "Agencies"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ADS-01"],
+            "is_interim": true,
+            "following_information": ["", ""]
+          }
+        ]
+      }
+    }
+  },
+  "FRA": {
+    "ADS": {
+      "id": "FRA-ADS",
+      "disclaimer": "Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.",
+      "purpose": "This Technical Assistance helps stakeholders ....",
+      "requirements": [
+        {
+          "id": "FRA-ADS-00",
+          "applies_to": "FRR-ADS-00",
+          "statement": "vibes",
+          "examples": [
+            {
+              "id": "example description",
+              "key_tests": ["", "", ""],
+              "examples": ["", "", "", ""]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
