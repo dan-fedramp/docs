@@ -1,7 +1,7 @@
 # FedRAMP Authorization Data Sharing Standard
 
 - **Release:** 25.08A
-- **Published:** 2025-08-25  
+- **Published:** 2025-08-24  
 - **Designator:** ADS
 - **Description:** Initial release of the Authorization Data Sharing Standard
 
@@ -27,9 +27,8 @@
 
 The following FedRAMP documentation guidelines apply to this document:
 
-- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) when capitalized.
-- _**ALL**_ FedRAMP-specific definitions in all FedRAMP standards apply to this document (not just the terms defined in this document).
-- FedRAMP-specific terms with definitions are italicized throughout this document for reference.
+- The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+- FedRAMP-specific terms defined in [FRD-ALL (FedRAMP Definitions)](https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md) are italicized throughout this document for reference.
 
 
 ## Background & Authority
@@ -55,36 +54,6 @@ _* Providers with questions about this should consult with a lawyer who speciali
 - Trust center providers and GRC automation tool providers will develop innovative solutions and improvements to ensure standardized automated data sharing and validation within the FedRAMP ecosystem
 
 ---
-
-## Definitions
-
-#### FRD-ADS-01
-
-> **Authorization Package**: Has meaning from 44 USC § 3607 (b)(8) which is &quot;the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.&quot;
->
->  _Note: In FedRAMP documentation, _authorization package_ always refers to a FedRAMP _authorization package_ unless otherwise specified._
->
->  _[Reference: 44 USC § 3607 (b)(8)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607)_
-
-#### FRD-ADS-02
-
-> **Authorization data**: The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. 
->
->  _Note: In FedRAMP documentation, _authorization data_ always refers to FedRAMP _authorization data_ unless otherwise specified._
-
-#### FRD-ADS-03
-
-> **Trust Center**: A secure repository or service used by cloud service providers to store and share _authorization data_. _Trust centers_ are the complete and definitive source for _authorization data_ and must meet the requirements outlined in the FedRAMP _authorization data_ Sharing Standard to be FedRAMP-compatible.
->
->  _Note: In FedRAMP documentation, all references to _trust centers_ indicate FedRAMP-compatible _trust centers_ unless otherwise specified._
-
-#### FRD-ADS-04
-
-> **Machine-readable**: Has the meaning from 44 U.S. Code § 3502 (18) which is &quot;the term &quot;_machine-readable_&quot;, when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost&quot;
->
->  _[Reference: 44 U.S. Code § 3502 (18)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
-
-
 
 
 ## Requirements

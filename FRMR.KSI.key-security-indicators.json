@@ -5,12 +5,12 @@
     "name": "Key Security Indicators",
     "short_name": "KSI",
     "current_release": "25.05D",
-    "types": ["FRR", "FRD", "KSI"],
+    "types": ["FRR", "KSI"],
     "releases": [
       {
         "id": "25.05D",
         "published_date": "2025-08-24",
-        "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs).",
+        "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL).",
         "public_comment": false,
         "effective": {
           "20x": {
@@ -132,15 +132,6 @@
       ]
     }
   },
-  "FRD": {
-    "KSI": [
-      {
-        "id": "FRD-KSI-01",
-        "term": "Regularly",
-        "definition": "Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements."
-      }
-    ]
-  },
   "FRR": {
     "KSI": {
       "base": {
@@ -152,7 +143,7 @@
             "statement": "Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-MAS-06", "FRR-MAS-01"]
+            "referenced_fr": ["FRD-ALL-06", "FRR-MAS-01"]
           },
           {
             "id": "FRR-KSI-02",
@@ -176,7 +167,7 @@
       "id": "KSI-CED",
       "name": "Cybersecurity Education",
       "indicator": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.",
-      "referenced_fr": ["FRD-KSI-01"],
+      "referenced_fr": ["FRD-ALL-07"],
       "requirements": [
         {
           "id": "KSI-CED-01",
@@ -364,12 +355,12 @@
       "id": "KSI-CNA",
       "name": "Cloud Native Architecture",
       "indicator": "A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
-      "referenced_fr": ["FRD-MAS-06"],
+      "referenced_fr": ["FRD-ALL-06"],
       "requirements": [
         {
           "id": "KSI-CNA-01",
           "statement": "Configure ALL _information resources_ to limit inbound and outbound traffic",
-          "referenced_fr": ["FRD-MAS-02"],
+          "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -451,7 +442,7 @@
         {
           "id": "KSI-CNA-07",
           "statement": "Ensure cloud-native _information resources_ are implemented based on host provider's best practices and documented guidance",
-          "referenced_fr": ["FRD-MAS-02"],
+          "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -474,7 +465,7 @@
       "id": "KSI-IAM",
       "name": "Identity and Access Management",
       "indicator": "A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.",
-      "referenced_fr": ["FRD-MAS-06"],
+      "referenced_fr": ["FRD-ALL-06"],
       "requirements": [
         {
           "id": "KSI-IAM-01",
@@ -872,7 +863,7 @@
       "id": "KSI-INR",
       "name": "Incident Reporting",
       "indicator": "A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
-      "referenced_fr": ["FRD-MAS-06"],
+      "referenced_fr": ["FRD-ALL-06"],
       "requirements": [
         {
           "id": "KSI-INR-01",
@@ -939,7 +930,7 @@
         {
           "id": "KSI-INR-03",
           "statement": "Generate after action reports and _regularly_ incorporate lessons learned into operations",
-          "referenced_fr": ["FRD-KSI-01"],
+          "referenced_fr": ["FRD-ALL-07"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -966,7 +957,7 @@
       "id": "KSI-MLA",
       "name": "Monitoring, Logging, and Auditing",
       "indicator": "A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.",
-      "referenced_fr": ["FRD-MAS-06"],
+      "referenced_fr": ["FRD-ALL-06"],
       "requirements": [
         {
           "id": "KSI-MLA-01",
@@ -1026,7 +1017,7 @@
         {
           "id": "KSI-MLA-02",
           "statement": "_Regularly_ review and audit logs",
-          "referenced_fr": ["FRD-KSI-01"],
+          "referenced_fr": ["FRD-ALL-07"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1089,7 +1080,7 @@
         {
           "id": "KSI-MLA-04",
           "statement": "Perform authenticated vulnerability scanning on _information resources_",
-          "referenced_fr": ["FRD-MAS-02"],
+          "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1142,12 +1133,12 @@
       "id": "KSI-PIY",
       "name": "Policy and Inventory",
       "indicator": "A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.",
-      "referenced_fr": ["FRD-MAS-06", "FRD-MAS-02"],
+      "referenced_fr": ["FRD-ALL-06", "FRD-ALL-02"],
       "requirements": [
         {
           "id": "KSI-PIY-01",
           "statement": "Have an up-to-date _information resource_ inventory or code defining all deployed assets, software, and services",
-          "referenced_fr": ["FRD-MAS-02"],
+          "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1179,7 +1170,7 @@
         {
           "id": "KSI-PIY-02",
           "statement": "Have policies outlining the security objectives of all _information resources_",
-          "referenced_fr": ["FRD-MAS-02"],
+          "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1317,7 +1308,7 @@
         {
           "id": "KSI-PIY-05",
           "statement": "Document methods used to evaluate _information resource_ implementations",
-          "referenced_fr": ["FRD-MAS-02"],
+          "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
           "controls": []
         },
@@ -1373,7 +1364,7 @@
       "id": "KSI-RPL",
       "name": "Recovery Planning",
       "indicator": "A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
-      "referenced_fr": ["FRD-MAS-06"],
+      "referenced_fr": ["FRD-ALL-06"],
       "requirements": [
         {
           "id": "KSI-RPL-01",
@@ -1447,7 +1438,7 @@
         {
           "id": "KSI-RPL-04",
           "statement": "_Regularly_ test the capability to recover from incidents and contingencies",
-          "referenced_fr": ["FRD-KSI-01"],
+          "referenced_fr": ["FRD-ALL-07"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1478,7 +1469,7 @@
       "id": "KSI-SVC",
       "name": "Service Configuration",
       "indicator": "A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.",
-      "referenced_fr": ["FRD-MAS-06", "FRD-MAS-02", "FRD-MAS-05"],
+      "referenced_fr": ["FRD-ALL-06", "FRD-ALL-02", "FRD-ALL-05"],
       "requirements": [
         {
           "id": "KSI-SVC-01",
@@ -1611,7 +1602,7 @@
         {
           "id": "KSI-SVC-05",
           "statement": "Enforce system and _information resource_ integrity through cryptographic means",
-          "referenced_fr": ["FRD-MAS-02"],
+          "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1635,7 +1626,7 @@
         {
           "id": "KSI-SVC-06",
           "statement": "Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates",
-          "referenced_fr": ["FRD-KSI-01"],
+          "referenced_fr": ["FRD-ALL-07"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1681,12 +1672,12 @@
       "id": "KSI-TPR",
       "name": "Third-Party Information Resources",
       "indicator": "A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.",
-      "referenced_fr": ["FRD-MAS-06", "FRD-MAS-05"],
+      "referenced_fr": ["FRD-ALL-06", "FRD-ALL-05"],
       "requirements": [
         {
           "id": "KSI-TPR-01",
           "statement": "Identify all _third-party information resources_",
-          "referenced_fr": ["FRD-MAS-05"],
+          "referenced_fr": ["FRD-ALL-05"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {
@@ -1706,7 +1697,7 @@
         {
           "id": "KSI-TPR-02",
           "statement": "_Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured",
-          "referenced_fr": ["FRD-KSI-01", "FRD-MAS-01"],
+          "referenced_fr": ["FRD-ALL-07", "FRD-ALL-01"],
           "applied_impact_levels": ["Low"],
           "controls": [
             {

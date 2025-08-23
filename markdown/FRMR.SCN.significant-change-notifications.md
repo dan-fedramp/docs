@@ -1,9 +1,9 @@
 # FedRAMP Significant Change Notification Requirements
 
 - **Release:** 25.06B
-- **Published:** 2025-08-23  
+- **Published:** 2025-08-24  
 - **Designator:** SCN
-- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials.
+- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).
 
 ## Front Matter
 
@@ -24,9 +24,8 @@
 
 The following FedRAMP documentation guidelines apply to this document:
 
-- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) when capitalized.
-- _**ALL**_ FedRAMP-specific definitions in all FedRAMP standards apply to this document (not just the terms defined in this document).
-- FedRAMP-specific terms with definitions are italicized throughout this document for reference.
+- The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+- FedRAMP-specific terms defined in [FRD-ALL (FedRAMP Definitions)](https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md) are italicized throughout this document for reference.
 
 
 ## Background & Authority
@@ -51,40 +50,6 @@ These categories, and the resulting requirements, apply only to significant chan
 - Federal agencies will have equal access to features and capabilities as commercial customers without sacrificing the visibility and information they need to maintain ongoing confidence in the service
 
 ---
-
-## Definitions
-
-#### FRD-SCN-01
-
-> **Significant change**: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is _likely_ to substantively affect the security or privacy posture of a system.&quot;
->
->  _[Reference: NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final)_
-
-#### FRD-SCN-02
-
-> **Routine Recurring**: The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.
-
-#### FRD-SCN-03
-
-> **Adaptive**: The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.
->
->  _Note: Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation._
-
-#### FRD-SCN-04
-
-> **Transformative**: The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.
->
->  _Note: Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation._
-
-#### FRD-SCN-05
-
-> **Impact Categorization**: The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).
-
-#### FRD-SCN-06
-
-> **Interim Requirement**: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.
-
-
 
 
 ## Requirements

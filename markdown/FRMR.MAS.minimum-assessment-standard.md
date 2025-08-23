@@ -1,9 +1,9 @@
 # FedRAMP Minimum Assessment Standard
 
 - **Release:** 25.06B
-- **Published:** 2025-08-23  
+- **Published:** 2025-08-24  
 - **Designator:** MAS
-- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials.
+- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).
 
 ## Front Matter
 
@@ -24,9 +24,8 @@
 
 The following FedRAMP documentation guidelines apply to this document:
 
-- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) when capitalized.
-- _**ALL**_ FedRAMP-specific definitions in all FedRAMP standards apply to this document (not just the terms defined in this document).
-- FedRAMP-specific terms with definitions are italicized throughout this document for reference.
+- The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+- FedRAMP-specific terms defined in [FRD-ALL (FedRAMP Definitions)](https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md) are italicized throughout this document for reference.
 
 
 ## Background & Authority
@@ -46,42 +45,6 @@ Application boundaries that are defined too broadly complicate the assessment pr
 - Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based Authorization to Operate decisions based on their planned use case
 
 ---
-
-## Definitions
-
-#### FRD-MAS-01
-
-> **Federal Information**: Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means &quot;information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.&quot;
->
->  _Note: This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP&#x27;s Technical Assistance and consult qualified legal experts for additional assistance identifying federal information._
->
->  _[Reference: OMB Circular A-130](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf)_
-
-#### FRD-MAS-02
-
-> **Information Resource**: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
->
->  _Note: This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
->
->  _[Reference: 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
-
-#### FRD-MAS-03
-
-> **Handle**: Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.
-
-#### FRD-MAS-04
-
-> **Likely**: A reasonable degree of probability based on context.
-
-#### FRD-MAS-05
-
-> **Third-party Information Resource**: Any _information resource_ that is not entirely included in the assessment for the _cloud service offering_ seeking authorization.
-
-#### FRD-MAS-06
-
-> **Cloud Service Offering**: A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.
-
-
 
 
 ## Requirements

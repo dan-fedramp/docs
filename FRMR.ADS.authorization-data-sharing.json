@@ -5,11 +5,11 @@
     "name": "Authorization Data Sharing Standard",
     "short_name": "ADS",
     "current_release": "25.08A",
-    "types": ["FRR", "FRD", "FRA"],
+    "types": ["FRR", "FRA"],
     "releases": [
       {
         "id": "25.08A",
-        "published_date": "2025-08-25",
+        "published_date": "2025-08-24",
         "description": "Initial release of the Authorization Data Sharing Standard",
         "public_comment": true,
         "effective": {
@@ -82,44 +82,6 @@
       ]
     }
   },
-  "FRD": {
-    "ADS": [
-      {
-        "id": "FRD-ADS-01",
-        "term": "Authorization Package",
-        "definition": "Has meaning from 44 USC § 3607 (b)(8) which is \"the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.\"",
-        "reference": "44 USC § 3607 (b)(8)",
-        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607",
-        "note": "In FedRAMP documentation, _authorization package_ always refers to a FedRAMP _authorization package_ unless otherwise specified."
-      },
-      {
-        "id": "FRD-ADS-02",
-        "term": "Authorization data",
-        "definition": "The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. ",
-        "note": "In FedRAMP documentation, _authorization data_ always refers to FedRAMP _authorization data_ unless otherwise specified.",
-        "referenced_fr": [
-          "FRD-MAS-06",
-          "FRD-SCN-02",
-          "FRD-ADS-01",
-          "FRD-ADS-02"
-        ]
-      },
-      {
-        "id": "FRD-ADS-03",
-        "term": "Trust Center",
-        "definition": "A secure repository or service used by cloud service providers to store and share _authorization data_. _Trust centers_ are the complete and definitive source for _authorization data_ and must meet the requirements outlined in the FedRAMP _authorization data_ Sharing Standard to be FedRAMP-compatible.",
-        "note": "In FedRAMP documentation, all references to _trust centers_ indicate FedRAMP-compatible _trust centers_ unless otherwise specified.",
-        "referenced_fr": ["FRD-ADS-02"]
-      },
-      {
-        "id": "FRD-ADS-04",
-        "term": "Machine-readable",
-        "definition": "Has the meaning from 44 U.S. Code § 3502 (18) which is \"the term \"_machine-readable_\", when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost\"",
-        "reference": "44 U.S. Code § 3502 (18)",
-        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
-      }
-    ]
-  },
   "FRR": {
     "ADS": {
       "base": {
@@ -146,10 +108,10 @@
               "Customer support information for the _trust center_ (if applicable)"
             ],
             "referenced_fr": [
-              "FRD-MAS-06",
-              "FRD-SCN-02",
-              "FRD-ADS-04",
-              "FRD-ADS-03"
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-17",
+              "FRD-ALL-16"
             ]
           },
           {
@@ -157,28 +119,28 @@
             "statement": "Providers MUST use automation to ensure information remains consistent between human-readable and _machine-readable_ formats when _authorization data_ is provided in both formats; Providers SHOULD generate human-readable and _machine-readable_ data from the same source at the same time OR generate human-readable formats directly from _machine-readable_ data.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-04", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-17", "FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-03",
             "statement": "Providers MUST share a detailed list of specific services and their impact levels that are included in the _cloud service offering_ using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying _authorization data_.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-MAS-06", "FRD-SCN-02", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-06", "FRD-ALL-09", "FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-04",
             "statement": "Providers MUST share _authorization data_ with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. ",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-05",
             "statement": "Providers MUST provide sufficient information in _authorization data_ to support authorization decisions but SHOULD NOT include sensitive information that would _likely_ enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the _cloud service offering_. ",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-02", "FRD-MAS-04", "FRD-MAS-06"]
+            "referenced_fr": ["FRD-ALL-15", "FRD-ALL-04", "FRD-ALL-06"]
           },
           {
             "id": "FRR-ADS-06",
@@ -186,10 +148,10 @@
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-MAS-06",
-              "FRD-SCN-02",
-              "FRD-ADS-02",
-              "FRD-ADS-03"
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-15",
+              "FRD-ALL-16"
             ]
           },
           {
@@ -198,10 +160,10 @@
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-MAS-06",
-              "FRD-SCN-02",
-              "FRD-ADS-02",
-              "FRD-ADS-03"
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-15",
+              "FRD-ALL-16"
             ]
           },
           {
@@ -209,27 +171,27 @@
             "statement": "Providers MUST notify all necessary parties when migrating to a _trust center_ and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the _trust center_ to obtain _authorization data_.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-03"]
+            "referenced_fr": ["FRD-ALL-16"]
           },
           {
             "id": "FRR-ADS-09",
             "statement": "Providers MUST make historical versions of _authorization data_ available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-10",
             "statement": "Providers SHOULD follow FedRAMP’s best practices and technical assistance for sharing _authorization data_ where applicable.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-15"]
           }
         ]
       },
       "access_control": {
         "application": "These requirements for managing access apply to cloud service providers who establish FedRAMP-compatible _trust centers_ for storing and sharing _authorization data_.",
-        "referenced_fr": ["FRD-ADS-02", "FRD-ADS-03"],
+        "referenced_fr": ["FRD-ALL-15", "FRD-ALL-16"],
         "id": "FRR-ADS-AC",
         "requirements": [
           {
@@ -237,20 +199,20 @@
             "statement": "Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to _authorization data_ stored in the _trust center_.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-02", "FRD-ADS-03"]
+            "referenced_fr": ["FRD-ALL-15", "FRD-ALL-16"]
           },
           {
             "id": "FRR-ADS-AC-02",
             "statement": "Providers SHOULD share at least the _authorization package_ with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  ",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ADS-01"]
+            "referenced_fr": ["FRD-ALL-14"]
           }
         ]
       },
       "trust_center": {
         "application": "These requirements apply to FedRAMP-compatible _trust centers_ used to store and share _authorization data_.",
-        "referenced_fr": ["FRD-ADS-03", "FRD-ADS-02"],
+        "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"],
         "id": "FRR-ADS-TC",
         "requirements": [
           {
@@ -259,10 +221,10 @@
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-ADS-03",
-              "FRD-MAS-02",
-              "FRD-MAS-06",
-              "FRD-SCN-02",
+              "FRD-ALL-16",
+              "FRD-ALL-02",
+              "FRD-ALL-06",
+              "FRD-ALL-09",
               "FRR-MAS-01"
             ]
           },
@@ -271,42 +233,42 @@
             "statement": "_Trust centers_ SHOULD make _authorization data_ available to view and download in both human-readable and _machine-readable_ formats",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ADS-03", "FRD-ADS-02", "FRD-ADS-04"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15", "FRD-ALL-17"]
           },
           {
             "id": "FRR-ADS-TC-03",
             "statement": "_Trust centers_ MUST provide documented programmatic access to all _authorization data_, including programmatic access to human-readable materials.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-03", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-TC-04",
             "statement": "_Trust centers_ SHOULD include features that encourage all necessary parties to provision and manage access to _authorization data_ for their users and services directly.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ADS-03", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-TC-05",
             "statement": "_Trust centers_ MUST maintain an inventory and history of federal agency users or systems with access to _authorization data_ and MUST make this information available to FedRAMP without interruption. ",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-03", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-TC-06",
             "statement": "_Trust centers_ MUST log access to _authorization data_ and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ADS-03", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
           },
           {
             "id": "FRR-ADS-TC-07",
             "statement": "_Trust centers_ SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ADS-03", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
           }
         ]
       },
@@ -319,7 +281,7 @@
             "statement": "Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.",
             "affects": ["Providers"],
             "primary_key_word": "MAY",
-            "referenced_fr": ["FRD-MAS-06", "FRD-SCN-02", "FRD-ADS-02"]
+            "referenced_fr": ["FRD-ALL-06", "FRD-ALL-09", "FRD-ALL-15"]
           }
         ]
       }
@@ -330,23 +292,23 @@
       "id": "FRA-ADS",
       "disclaimer": "Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.",
       "purpose": "This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP _authorization data_ Sharing Standard.",
-      "referenced_fr": ["FRD-ADS-02"],
+      "referenced_fr": ["FRD-ALL-15"],
       "requirements": [
         {
           "id": "FRA-ADS-04",
           "applies_to": "FRR-ADS-04",
           "statement": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access _authorization data_ or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
-          "referenced_fr": ["FRD-ADS-02"]
+          "referenced_fr": ["FRD-ALL-15"]
         },
         {
           "id": "FRA-ADS-05",
           "applies_to": "FRR-ADS-05",
           "statement": "This is not a license to exclude accurate risk information, but specifics that would _likely_ lead to compromise should be abstracted. A breach of confidentiality with _authorization data_ should be anticipated by a secure cloud service provider.",
-          "referenced_fr": ["FRD-MAS-04"],
+          "referenced_fr": ["FRD-ALL-04"],
           "examples": [
             {
               "id": "Examples of unnecessary sensitive information in _authorization data_",
-              "referenced_fr": ["FRD-ADS-02"],
+              "referenced_fr": ["FRD-ALL-15"],
               "key_tests": [
                 "Passwords, API keys, access credentials, etc.",
                 "Excessive detail about methodology that exposes weaknesses",

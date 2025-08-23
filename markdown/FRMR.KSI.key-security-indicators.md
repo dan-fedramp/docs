@@ -3,7 +3,7 @@
 - **Release:** 25.05D
 - **Published:** 2025-08-24  
 - **Designator:** KSI
-- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs).
+- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL).
 
 ## Front Matter
 
@@ -19,9 +19,8 @@
 
 The following FedRAMP documentation guidelines apply to this document:
 
-- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) when capitalized.
-- _**ALL**_ FedRAMP-specific definitions in all FedRAMP standards apply to this document (not just the terms defined in this document).
-- FedRAMP-specific terms with definitions are italicized throughout this document for reference.
+- The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+- FedRAMP-specific terms defined in [FRD-ALL (FedRAMP Definitions)](https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md) are italicized throughout this document for reference.
 
 
 ## Background & Authority
@@ -41,14 +40,6 @@ Modern cloud services use automated or code-driven configuration management and 
 - Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based authorization to operate decisions based on their planned use case
 
 ---
-
-## Definitions
-
-#### FRD-KSI-01
-
-> **Regularly**: Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.
-
-
 
 
 ## Requirements
