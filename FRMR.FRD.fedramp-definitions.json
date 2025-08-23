@@ -4,7 +4,7 @@
   "info": {
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
-    "current_release": "25.00A",
+    "current_release": "25.08A",
     "types": ["FRR"],
     "releases": [
       {
@@ -54,7 +54,7 @@
       "purpose": "This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.",
       "expected_outcomes": [
         "All stakeholders will have a common understanding of key terms used in FedRAMP standards."
-      ] 
+      ]
     }
   },
   "FRD": {

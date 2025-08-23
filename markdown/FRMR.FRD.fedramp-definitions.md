@@ -1,6 +1,6 @@
 # FedRAMP FedRAMP Definitions
 
-- **Release:** 25.00A
+- **Release:** 25.08A
 - **Published:** 2025-08-24  
 - **Designator:** FRD
 - **Description:** Initial release of compiled FedRAMP definitions as a standalone document.
