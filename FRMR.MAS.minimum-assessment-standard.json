@@ -4,9 +4,42 @@
     "$id": "FedRAMP.schema.json",
     "name": "Minimum Assessment Standard",
     "short_name": "MAS",
-    "current_release": "25.06A",
+    "current_release": "25.06B",
     "types": ["FRR", "FRD"],
     "releases": [
+      {
+        "id": "25.06B",
+        "published_date": "2025-08-23",
+        "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-17",
+                "designator": "20xP1",
+                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+              }
+            },
+            "specific_release": "20x.MAS.P1.25.06A",
+            "is_optional": false,
+            "comment": "Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR."
+          },
+          "Rev5": {
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-07-30",
+                "is_tentative": true,
+                "designator": "R5.MAS.B1",
+                "comment": "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1)."
+              }
+            },
+            "specific_release": "R5.MAS.B1.25.06A",
+            "is_optional": true,
+            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+          }
+        }
+      },
       {
         "id": "25.06A",
         "published_date": "2025-06-17",
@@ -115,9 +148,10 @@
         "id": "FRD-MAS-02",
         "term": "Information Resource",
         "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\"",
-        "note": "This applies to any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
+        "note": "This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
         "reference": "44 USC § 3502 (6)",
-        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
+        "referenced_fr": ["FRD-MAS-06"]
       },
       {
         "id": "FRD-MAS-03",
@@ -133,7 +167,7 @@
         "id": "FRD-MAS-05",
         "term": "Third-party Information Resource",
         "definition": "Any _information resource_ that is not entirely included in the assessment for the _cloud service offering_ seeking authorization.",
-        "referenced_fr": ["FRD-SCN-02"]
+        "referenced_fr": ["FRD-MAS-02", "FRD-MAS-06"]
       },
       {
         "id": "FRD-MAS-06",
@@ -150,7 +184,7 @@
         "requirements": [
           {
             "id": "FRR-MAS-01",
-            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.",
+            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "referenced_fr": [
@@ -199,7 +233,7 @@
             "statement": "Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.",
             "affects": ["Providers"],
             "primary_key_word": "MAY",
-            "referenced_fr": ["FRD-MAS-02"]
+            "referenced_fr": ["FRD-MAS-02", "FRD-MAS-06"]
           }
         ]
       },
@@ -213,7 +247,8 @@
             "affects": ["All"],
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
-            "reference_url": "http://fedramp.gov/scope"
+            "reference_url": "http://fedramp.gov/scope",
+            "referenced_fr": ["FRD-MAS-06"]
           },
           {
             "id": "FRR-MAS-AY-02",
@@ -230,9 +265,10 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRR-MAS-01",
-              "FRR-MAS-02",
               "FRD-MAS-02",
-              "FRD-MAS-05"
+              "FRD-MAS-05",
+              "FRD-MAS-06",
+              "FRR-MAS-02"
             ]
           },
           {
@@ -257,7 +293,8 @@
             "id": "FRR-MAS-AY-06",
             "statement": "All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.",
             "affects": ["Providers"],
-            "primary_key_word": "MUST"
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-MAS-06"]
           }
         ]
       }

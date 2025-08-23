@@ -1,9 +1,9 @@
 # FedRAMP Key Security Indicators
 
-- **Release:** 25.05C
-- **Published:** 2025-06-28  
+- **Release:** 25.05D
+- **Published:** 2025-08-24  
 - **Designator:** KSI
-- **Description:** Key Security Indicators in this release are unchanged from previously releases. 25.05C adds references for each KSI to underlying SP 800-53 controls.
+- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs).
 
 ## Front Matter
 
@@ -12,7 +12,7 @@
 - **FedRAMP 20x**:
   - This release is effective **2025-06-01** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized third-party information resources.    
+  - For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_.    
 
 
 
@@ -54,7 +54,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 #### FRR-KSI-01
 
-> Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope.
+> Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.
 
 #### FRR-KSI-02
 
@@ -73,7 +73,7 @@ Modern cloud services use automated or code-driven configuration management and 
 ## Key Security Indicators
 ### KSI-CED: Cybersecurity Education
 
-**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.**
+**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.**
 
 #### KSI-CED-01
 > Ensure all employees receive security awareness training.
@@ -147,10 +147,10 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-2 Flaw Remediation
 ### KSI-CNA: Cloud Native Architecture
 
-**A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
+**A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
 
 #### KSI-CNA-01
-> Configure ALL information resources to limit inbound and outbound traffic.
+> Configure ALL _information resources_ to limit inbound and outbound traffic.
 
 ##### Controls
 
@@ -188,7 +188,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Design systems for high availability and rapid recovery.
 
 #### KSI-CNA-07
-> Ensure cloud-native information resources are implemented based on host provider&#x27;s best practices and documented guidance.
+> Ensure cloud-native _information resources_ are implemented based on host provider&#x27;s best practices and documented guidance.
 
 ##### Controls
 
@@ -197,7 +197,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - pl-10 Baseline Selection
 ### KSI-IAM: Identity and Access Management
 
-**A secure cloud service offering will protect user data, control access, and apply zero trust principles.**
+**A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.**
 
 #### KSI-IAM-01
 > Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.
@@ -318,7 +318,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ps-8 Personnel Sanctions
 ### KSI-INR: Incident Reporting
 
-**A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
+**A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
 
 #### KSI-INR-01
 > Report incidents according to FedRAMP requirements and cloud service provider policies.
@@ -343,7 +343,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-5 Incident Monitoring
 - ir-8 Incident Response Plan
 #### KSI-INR-03
-> Generate after action reports and regularly incorporate lessons learned into operations.
+> Generate after action reports and _regularly_ incorporate lessons learned into operations.
 
 ##### Controls
 
@@ -353,7 +353,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-8 Incident Response Plan
 ### KSI-MLA: Monitoring, Logging, and Auditing
 
-**A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.**
+**A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.**
 
 #### KSI-MLA-01
 > Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.
@@ -373,7 +373,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - au-9 Protection of Audit Information
 - au-11 Audit Record Retention
 #### KSI-MLA-02
-> Regularly review and audit logs.
+> _Regularly_ review and audit logs.
 
 ##### Controls
 
@@ -395,7 +395,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-2 Flaw Remediation
 - si-5 Security Alerts, Advisories, and Directives
 #### KSI-MLA-04
-> Perform authenticated vulnerability scanning on information resources.
+> Perform authenticated vulnerability scanning on _information resources_.
 
 ##### Controls
 
@@ -418,10 +418,10 @@ Modern cloud services use automated or code-driven configuration management and 
 - ca-5 Plan of Action and Milestones
 ### KSI-PIY: Policy and Inventory
 
-**A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.**
+**A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.**
 
 #### KSI-PIY-01
-> Have an up-to-date information resource inventory or code defining all deployed assets, software, and services.
+> Have an up-to-date _information resource_ inventory or code defining all deployed assets, software, and services.
 
 ##### Controls
 
@@ -432,7 +432,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-12.1 Automated Tools to Support Information Location
 - cp-2.8 Identify Critical Assets
 #### KSI-PIY-02
-> Have policies outlining the security objectives of all information resources.
+> Have policies outlining the security objectives of all _information resources_.
 
 ##### Controls
 
@@ -476,7 +476,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ac-5 Separation of Duties
 - sa-3 System Development Life Cycle
 #### KSI-PIY-05
-> Document methods used to evaluate information resource implementations.
+> Document methods used to evaluate _information resource_ implementations.
 
 #### KSI-PIY-06
 > Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering.
@@ -498,7 +498,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ca-7.4 Risk Monitoring
 ### KSI-RPL: Recovery Planning
 
-**A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
+**A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
 
 #### KSI-RPL-01
 > Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
@@ -528,7 +528,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cp-10.2 Transaction Recovery
 - si-12 Information Management and Retention
 #### KSI-RPL-04
-> Regularly test the capability to recover from incidents and contingencies.
+> _Regularly_ test the capability to recover from incidents and contingencies.
 
 ##### Controls
 
@@ -539,7 +539,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-3 Incident Response Testing
 ### KSI-SVC: Service Configuration
 
-**A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.**
+**A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.**
 
 #### KSI-SVC-01
 > Harden and review network and system configurations.
@@ -587,7 +587,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-5 Security Alerts, Advisories, and Directives
 - sr-10 Inspection of Systems or Components
 #### KSI-SVC-05
-> Enforce system and information resource integrity through cryptographic means.
+> Enforce system and _information resource_ integrity through cryptographic means.
 
 ##### Controls
 
@@ -596,7 +596,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sc-13 Cryptographic Protection
 - sr-10 Inspection of Systems or Components
 #### KSI-SVC-06
-> Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates.
+> Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates.
 
 ##### Controls
 
@@ -614,10 +614,10 @@ Modern cloud services use automated or code-driven configuration management and 
 - ra-7 Risk Response
 ### KSI-TPR: Third-Party Information Resources
 
-**A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.**
+**A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.**
 
 #### KSI-TPR-01
-> Identify all third-party information resources.
+> Identify all _third-party information resources_.
 
 ##### Controls
 
@@ -625,7 +625,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-10 Software Usage Restrictions
 - ps-7 External Personnel Security
 #### KSI-TPR-02
-> Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured.
+> _Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured.
 
 ##### Controls
 

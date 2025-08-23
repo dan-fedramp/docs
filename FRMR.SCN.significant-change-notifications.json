@@ -4,9 +4,42 @@
   "info": {
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
-    "current_release": "25.06A",
+    "current_release": "25.06B",
     "types": ["FRR", "FRD", "FRA"],
     "releases": [
+      {
+        "id": "25.06B",
+        "published_date": "2025-08-23",
+        "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-17",
+                "designator": "20xP1",
+                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+              }
+            },
+            "specific_release": "20x.SCN.P1.25.06A",
+            "is_optional": false,
+            "comment": "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
+          },
+          "Rev5": {
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-07-07",
+                "is_tentative": true,
+                "designator": "R5.SCN.B1",
+                "comment": "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1)."
+              }
+            },
+            "is_optional": true,
+            "specific_release": "R5.SCN.B1.25.06A",
+            "comment": "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+          }
+        }
+      },
       {
         "id": "25.06A",
         "published_date": "2025-06-17",
@@ -181,10 +214,11 @@
           },
           {
             "id": "FRR-SCN-08",
-            "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible machine-readable formats.",
+            "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "is_interim": true
+            "is_interim": true,
+            "referenced_fr": ["FRD-ADS-04"]
           },
           {
             "id": "FRR-SCN-09",
@@ -362,6 +396,7 @@
           "id": "FRA-SCN-RR",
           "applies_to": "FRR-SCN-RR",
           "statement": "Activities that match the _routine recurring_ _significant change_ type are performed _regularly_ and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.\n\nThese changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.\n\nIf the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g., replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).",
+          "referenced_fr": ["FRD-SCN-02", "FRD-SCN-01", "FRD-KSI-01"],
           "examples": [
             {
               "id": "Ongoing operations",
@@ -419,6 +454,7 @@
           "id": "FRA-SCN-AD",
           "applies_to": "FRR-SCN-AD",
           "statement": "Activities that match the _adaptive_ _significant change_ type are a frequent and normal part of iteratively improving a service by deploying new functionality or modifying existing functionality in a way that is typically transparent to customers and does not introduce significant new security risks.\n\nIn general, most changes that do not happen _regularly_ will be _adaptive_ changes. This change type deliberately covers a wide range of activities in a way that requires assessment and consideration.",
+          "referenced_fr": ["FRD-SCN-03", "FRD-SCN-01", "FRD-KSI-01"],
           "examples": [
             {
               "id": "Service adjustments",

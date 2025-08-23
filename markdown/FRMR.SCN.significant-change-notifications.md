@@ -1,9 +1,9 @@
 # FedRAMP Significant Change Notification Requirements
 
-- **Release:** 25.06A
-- **Published:** 2025-06-17  
+- **Release:** 25.06B
+- **Published:** 2025-08-23  
 - **Designator:** SCN
-- **Description:** Initial release of Significant Change Notification Requirements
+- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials.
 
 ## Front Matter
 
@@ -118,7 +118,7 @@ These categories, and the resulting requirements, apply only to significant chan
 
 #### FRR-SCN-08
 
-> Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible machine-readable formats.
+> Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.
 
 #### FRR-SCN-09
 
