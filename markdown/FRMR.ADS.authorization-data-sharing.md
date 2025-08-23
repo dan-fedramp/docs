@@ -12,20 +12,29 @@
 - **FedRAMP 20x**:
   - This release is effective **2025-09-01** for **20x**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
+  - 20xP1 participants do not need to fully align with this policy to receive pilot authorization.
+  - Participants in the 20xP1 pilot who receive pilot authorizations must demonstrate progress towards the adoption of this policy and be in full alignment by the expiration date of their pilot authorization.
 
 - **FedRAMP Rev5**:
   - This release is effective **2025-09-01** for **R5.ADS.B1** _(tentatively)_. 
   - This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services.
+  - These requirements will be initially tested and evaluated for Rev5 in the ADS Closed Beta (B1).
+  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
+  - Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test.
 
+
+### Documentation Guidelines
+
+The following FedRAMP documentation guidelines apply to this document:
+
+- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) when capitalized.
+- _**ALL**_ FedRAMP-specific definitions in all FedRAMP standards apply to this document (not just the terms defined in this document).
+- FedRAMP-specific terms with definitions are italicized throughout this document for reference.
 
 
 ## Background & Authority
 - [44 USC § 3609 (a)(8)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) The FedRAMP Authorization Act directs the Administrator of the General Services Administration to &quot;provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...&quot;
-
-Oxford Languages defines a mechanism as &quot;a natural or established process by which something takes place or is brought about.&quot;  
-
-  _([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp))_
-- [OMB Memorandum M-24-15 on Modernizing FedRAMP](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) Section 6 states that &quot;In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs&#x27; commercial customer base.&quot;  
+- [OMB Memorandum M-24-15 on Modernizing FedRAMP](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) Section 6 states that &quot;In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs&#x27; commercial customer base.&quot;
 
 ### Purpose
 
@@ -45,7 +54,6 @@ _* Providers with questions about this should consult with a lawyer who speciali
 - Federal agencies will be able to access necessary authorization data via API or other automated mechanisms integrated into agency authorization systems to simplify the burden of review and continuous monitoring
 - Trust center providers and GRC automation tool providers will develop innovative solutions and improvements to ensure standardized automated data sharing and validation within the FedRAMP ecosystem
 
-
 ---
 
 ## Definitions
@@ -60,7 +68,7 @@ _* Providers with questions about this should consult with a lawyer who speciali
 
 #### FRD-ADS-02
 
-> **authorization data**: The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. 
+> **Authorization data**: The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. 
 >
 >  _Note: In FedRAMP documentation, _authorization data_ always refers to FedRAMP _authorization data_ unless otherwise specified._
 

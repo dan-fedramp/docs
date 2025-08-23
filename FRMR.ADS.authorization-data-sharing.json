@@ -64,7 +64,7 @@
         {
           "reference": "44 USC § 3609 (a)(8)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
-          "description": "The FedRAMP Authorization Act directs the Administrator of the General Services Administration to \"provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...\"\n\nOxford Languages defines a mechanism as \"a natural or established process by which something takes place or is brought about.\"",
+          "description": "The FedRAMP Authorization Act directs the Administrator of the General Services Administration to \"provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...\"",
           "delegation": "This responsibility is delegated to the FedRAMP Director",
           "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
         },
@@ -94,7 +94,7 @@
       },
       {
         "id": "FRD-ADS-02",
-        "term": "authorization data",
+        "term": "Authorization data",
         "definition": "The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. ",
         "note": "In FedRAMP documentation, _authorization data_ always refers to FedRAMP _authorization data_ unless otherwise specified.",
         "referenced_fr": [

@@ -14,22 +14,33 @@
 - **FedRAMP {{@key}}**:
   {{#each this.timeline}}
   - This release is effective **{{start_date}}** for **{{designator}}**{{#if is_tentative}} _(tentatively)_{{/if}}. 
-  - {{#if comment}}{{comment}}{{/if}}
+  {{#if comment}}
+  - {{comment}}
+  {{/if}}
   {{/each}}
   {{#if comment}}
-  - {{comment}}    
+  - {{comment}}  
+  {{/if}}
+  {{#if comments}}
+    {{#each comments}}
+  - {{this}}
+    {{/each}}
   {{/if}}
 
 {{/each}}
 
+### Documentation Guidelines
+
+The following FedRAMP documentation guidelines apply to this document:
+
+- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) when capitalized.
+- _**ALL**_ FedRAMP-specific definitions in all FedRAMP standards apply to this document (not just the terms defined in this document).
+- FedRAMP-specific terms with definitions are italicized throughout this document for reference.
+
 
 ## Background & Authority
 {{#each info.front_matter.authority}}
-- [{{reference}}]({{reference_url}}) {{description}}  
-  {{#if delegation}}
-
-  _([{{delegation}}]({{delegation_url}}))_
-  {{/if}}
+- [{{reference}}]({{reference_url}}) {{description}}
 {{/each}}
 
 ### Purpose
@@ -43,7 +54,6 @@
 {{/each}}
 
 {{/if}}
-
 ---
 
 {{!-- Definitions section (FRD) --}}

@@ -12,20 +12,26 @@
 - **FedRAMP 20x**:
   - This release is effective **2025-06-17** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard.    
+  - Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard.  
 
 - **FedRAMP Rev5**:
   - This release is effective **2025-07-07** for **R5.SCN.B1** _(tentatively)_. 
   - These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1).
-  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.    
+  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.  
 
+
+### Documentation Guidelines
+
+The following FedRAMP documentation guidelines apply to this document:
+
+- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) when capitalized.
+- _**ALL**_ FedRAMP-specific definitions in all FedRAMP standards apply to this document (not just the terms defined in this document).
+- FedRAMP-specific terms with definitions are italicized throughout this document for reference.
 
 
 ## Background & Authority
-- [FedRAMP Authorization Act (44 USC § 3609 (a) (7))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) directs the Administrator of the General Services Administration to &quot;coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the [OMB] Director and the [DHS] Secretary, to establish and regularly update a framework for continuous monitoring...&quot;  
-
-  _([This responsibility is delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp))_
-- [OMB Memorandum M-24-15 on Modernizing FedRAMP](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) section VI states &quot;FedRAMP should seek input from CSPs and develop processes that enable CSPs to maintain an agile deployment lifecycle that does not require advance Government approval, while giving the Government the visibility and information it needs to maintain ongoing confidence in the FedRAMP-authorized system and to respond timely and appropriately to incidents.&quot;  
+- [FedRAMP Authorization Act (44 USC § 3609 (a) (7))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) directs the Administrator of the General Services Administration to &quot;coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the [OMB] Director and the [DHS] Secretary, to establish and regularly update a framework for continuous monitoring...&quot;
+- [OMB Memorandum M-24-15 on Modernizing FedRAMP](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) section VI states &quot;FedRAMP should seek input from CSPs and develop processes that enable CSPs to maintain an agile deployment lifecycle that does not require advance Government approval, while giving the Government the visibility and information it needs to maintain ongoing confidence in the FedRAMP-authorized system and to respond timely and appropriately to incidents.&quot;
 
 ### Purpose
 
@@ -43,7 +49,6 @@ These categories, and the resulting requirements, apply only to significant chan
 
 - Cloud service providers will securely deliver new features and capabilities for government customers at the same speed and pace of delivery for commercial customers, without needing advance government approval
 - Federal agencies will have equal access to features and capabilities as commercial customers without sacrificing the visibility and information they need to maintain ongoing confidence in the service
-
 
 ---
 

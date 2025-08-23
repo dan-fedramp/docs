@@ -5,7 +5,6 @@
 - **Designator:** FRMR-LOW
 - **Description:** Combined FedRAMP 20x Low Requirements
 
-
 ---
 
 ## Definitions
