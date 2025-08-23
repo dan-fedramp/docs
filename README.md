@@ -19,12 +19,6 @@ See [IDENTIFIERS.md](./IDENTIFIERS.md) for explanations about the naming and str
 
 ---
 
-## Next Steps
-
-- Auto-generate indexes and combined docs
-- Make JSON the source of truth for all releases
-- Add GitHub actions for automation
-
 ## Folders
 
 - `FRMR.*.json` — Requirement files
@@ -43,18 +37,36 @@ See [IDENTIFIERS.md](./IDENTIFIERS.md) for explanations about the naming and str
    bun install
    ```
 
-3. **Validate JSON:**
+### Things you can do include:
 
-   ```sh
-   bun test
-   ```
+> If changes are made, all of these things need to be run manually at the moment, in the following order:
 
-4. **Generate Markdown:**
-   ```sh
-   bun run watch
-   ```
-   (watches for changes and regenerates markdown)
+**Validate JSON:**
 
-## Conversion to PDF
+```sh
+bun test
+```
+
+**Create Combined JSON files**
+
+```sh
+bun run scripts/combine-frmr-json.ts
+```
+
+ **Generate Markdown:**
+
+```sh
+bun run watch
+```
+(watches for changes and regenerates markdown)
+
+**Generate Updated TOC:**
+
+```sh
+bun run scripts/generate-table-of-docs.ts
+```
+(copy/paste to README.md)
+
+**Conversion to PDF:**
 
 Manually using md-to-pdf for now.
