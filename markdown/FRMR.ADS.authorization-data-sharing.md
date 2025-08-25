@@ -19,7 +19,7 @@
   - This release is effective **2025-09-01** for **R5.ADS.B1** _(tentatively)_. 
   - This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services.
   - These requirements will be initially tested and evaluated for Rev5 in the ADS Closed Beta (B1).
-  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
+  - Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
   - Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test.
 
 
