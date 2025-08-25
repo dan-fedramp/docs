@@ -1,47 +1,15 @@
 # FedRAMP FedRAMP 20x Combined Requirements
 
-- **Release:** 25.06A
-- **Published:** 2025-06-17  
+- **Release:** 25.08A
+- **Published:** 2025-08-24  
 - **Designator:** FRMR-LOW
 - **Description:** Combined FedRAMP 20x Low Requirements
-
 
 ---
 
 ## Definitions
 
-#### FRD-SCN-01
-
-> **Significant change**: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is _likely_ to substantively affect the security or privacy posture of a system.&quot;
->
->  _[Reference: NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final)_
-
-#### FRD-SCN-02
-
-> **Routine Recurring**: The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.
-
-#### FRD-SCN-03
-
-> **Adaptive**: The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.
->
->  _Note: Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation._
-
-#### FRD-SCN-04
-
-> **Transformative**: The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.
->
->  _Note: Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation._
-
-#### FRD-SCN-05
-
-> **Impact Categorization**: The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).
-
-#### FRD-SCN-06
-
-> **Interim Requirement**: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.
-
-
-#### FRD-MAS-01
+#### FRD-ALL-01
 
 > **Federal Information**: Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means &quot;information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.&quot;
 >
@@ -49,39 +17,211 @@
 >
 >  _[Reference: OMB Circular A-130](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf)_
 
-#### FRD-MAS-02
+#### FRD-ALL-02
 
 > **Information Resource**: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
 >
->  _Note: This applies to any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
+>  _Note: This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._
 >
 >  _[Reference: 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
 
-#### FRD-MAS-03
+#### FRD-ALL-03
 
 > **Handle**: Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.
 
-#### FRD-MAS-04
+#### FRD-ALL-04
 
 > **Likely**: A reasonable degree of probability based on context.
 
-#### FRD-MAS-05
+#### FRD-ALL-05
 
 > **Third-party Information Resource**: Any _information resource_ that is not entirely included in the assessment for the _cloud service offering_ seeking authorization.
 
-#### FRD-MAS-06
+#### FRD-ALL-06
 
 > **Cloud Service Offering**: A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.
 
-
-#### FRD-KSI-01
+#### FRD-ALL-07
 
 > **Regularly**: Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.
+
+#### FRD-ALL-08
+
+> **Significant change**: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is _likely_ to substantively affect the security or privacy posture of a system.&quot;
+>
+>  _[Reference: NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final)_
+
+#### FRD-ALL-09
+
+> **Routine Recurring**: The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.
+
+#### FRD-ALL-10
+
+> **Adaptive**: The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.
+>
+>  _Note: Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation._
+
+#### FRD-ALL-11
+
+> **Transformative**: The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.
+>
+>  _Note: Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation._
+
+#### FRD-ALL-12
+
+> **Impact Categorization**: The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).
+
+#### FRD-ALL-13
+
+> **Interim Requirement**: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.
+
+#### FRD-ALL-14
+
+> **Authorization Package**: Has meaning from 44 USC § 3607 (b)(8) which is &quot;the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.&quot;
+>
+>  _Note: In FedRAMP documentation, _authorization package_ always refers to a FedRAMP _authorization package_ unless otherwise specified._
+>
+>  _[Reference: 44 USC § 3607 (b)(8)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607)_
+
+#### FRD-ALL-15
+
+> **Authorization data**: The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. 
+>
+>  _Note: In FedRAMP documentation, _authorization data_ always refers to FedRAMP _authorization data_ unless otherwise specified._
+
+#### FRD-ALL-16
+
+> **Trust Center**: A secure repository or service used by cloud service providers to store and share _authorization data_. _Trust centers_ are the complete and definitive source for _authorization data_ and must meet the requirements outlined in the FedRAMP _authorization data_ Sharing Standard to be FedRAMP-compatible.
+>
+>  _Note: In FedRAMP documentation, all references to _trust centers_ indicate FedRAMP-compatible _trust centers_ unless otherwise specified._
+
+#### FRD-ALL-17
+
+> **Machine-readable**: Has the meaning from 44 U.S. Code § 3502 (18) which is &quot;the term &quot;_machine-readable_&quot;, when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost&quot;
+>
+>  _[Reference: 44 U.S. Code § 3502 (18)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
 
 
 
 
 ## Requirements
+
+### FRR-ADS
+
+**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+
+#### FRR-ADS-01
+
+> Providers MUST publicly share up-to-date information about the _cloud service offering_ in both human-readable and _machine-readable_ formats, including at least:
+> 1. Direct link to the FedRAMP Marketplace for the offering
+> 1. Service Model
+> 1. Deployment Model
+> 1. Business Category
+> 1. UEI Number
+> 1. Contact Information
+> 1. Overall Service Description
+> 1. Detailed list of specific services and their impact levels (see FRR-ADS-03)
+> 1. Summary of customer responsibilities and secure configuration guidance
+> 1. Process for accessing information in the _trust center_ (if applicable)
+> 1. Availability status and recent disruptions for the _trust center_ (if applicable)
+> 1. Customer support information for the _trust center_ (if applicable)
+
+#### FRR-ADS-02
+
+> Providers MUST use automation to ensure information remains consistent between human-readable and _machine-readable_ formats when _authorization data_ is provided in both formats; Providers SHOULD generate human-readable and _machine-readable_ data from the same source at the same time OR generate human-readable formats directly from _machine-readable_ data.
+
+#### FRR-ADS-03
+
+> Providers MUST share a detailed list of specific services and their impact levels that are included in the _cloud service offering_ using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying _authorization data_.
+
+#### FRR-ADS-04
+
+> Providers MUST share _authorization data_ with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. 
+
+#### FRR-ADS-05
+
+> Providers MUST provide sufficient information in _authorization data_ to support authorization decisions but SHOULD NOT include sensitive information that would _likely_ enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the _cloud service offering_. 
+
+#### FRR-ADS-06
+
+> Providers of FedRAMP Rev5 Authorized _cloud service offerings_ MUST share _authorization data_ via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible _trust center_.
+
+#### FRR-ADS-07
+
+> Providers of FedRAMP 20x Authorized _cloud service offerings_ MUST use a FedRAMP-compatible _trust center_ to store and share _authorization data_ with all necessary parties.
+
+#### FRR-ADS-08
+
+> Providers MUST notify all necessary parties when migrating to a _trust center_ and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the _trust center_ to obtain _authorization data_.
+
+#### FRR-ADS-09
+
+> Providers MUST make historical versions of _authorization data_ available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.
+
+#### FRR-ADS-10
+
+> Providers SHOULD follow FedRAMP’s best practices and technical assistance for sharing _authorization data_ where applicable.
+
+---   
+
+### FRR-ADS-AC
+
+**These requirements for managing access apply to cloud service providers who establish FedRAMP-compatible _trust centers_ for storing and sharing _authorization data_.**
+
+#### FRR-ADS-AC-01
+
+> Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to _authorization data_ stored in the _trust center_.
+
+#### FRR-ADS-AC-02
+
+> Providers SHOULD share at least the _authorization package_ with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  
+
+---   
+
+### FRR-ADS-TC
+
+**These requirements apply to FedRAMP-compatible _trust centers_ used to store and share _authorization data_.**
+
+#### FRR-ADS-TC-01
+
+> _Trust centers_ MUST be included as an _information resource_ included in the _cloud service offering_ for assessment if FRR-MAS-01 applies. 
+
+#### FRR-ADS-TC-02
+
+> _Trust centers_ SHOULD make _authorization data_ available to view and download in both human-readable and _machine-readable_ formats
+
+#### FRR-ADS-TC-03
+
+> _Trust centers_ MUST provide documented programmatic access to all _authorization data_, including programmatic access to human-readable materials.
+
+#### FRR-ADS-TC-04
+
+> _Trust centers_ SHOULD include features that encourage all necessary parties to provision and manage access to _authorization data_ for their users and services directly.
+
+#### FRR-ADS-TC-05
+
+> _Trust centers_ MUST maintain an inventory and history of federal agency users or systems with access to _authorization data_ and MUST make this information available to FedRAMP without interruption. 
+
+#### FRR-ADS-TC-06
+
+> _Trust centers_ MUST log access to _authorization data_ and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.
+
+#### FRR-ADS-TC-07
+
+> _Trust centers_ SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.
+
+---   
+
+### FRR-ADS-EX
+
+**These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
+
+#### FRR-ADS-EX-01
+
+> Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.
+
+---   
+
 
 ### FRR-SCN
 
@@ -117,7 +257,7 @@
 
 #### FRR-SCN-08
 
-> Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible machine-readable formats.
+> Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.
 
 #### FRR-SCN-09
 
@@ -229,7 +369,7 @@
 
 #### FRR-MAS-01
 
-> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.
+> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.
 
 #### FRR-MAS-02
 
@@ -296,7 +436,7 @@
 
 #### FRR-KSI-01
 
-> Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope.
+> Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.
 
 #### FRR-KSI-02
 
@@ -315,7 +455,7 @@
 ## Key Security Indicators
 ### KSI-CED: Cybersecurity Education
 
-**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.**
+**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.**
 
 #### KSI-CED-01
 > Ensure all employees receive security awareness training.
@@ -344,10 +484,10 @@
 
 ### KSI-CNA: Cloud Native Architecture
 
-**A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
+**A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
 
 #### KSI-CNA-01
-> Configure ALL information resources to limit inbound and outbound traffic.
+> Configure ALL _information resources_ to limit inbound and outbound traffic.
 
 #### KSI-CNA-02
 > Design systems to minimize the attack surface and minimize lateral movement if compromised.
@@ -365,11 +505,11 @@
 > Design systems for high availability and rapid recovery.
 
 #### KSI-CNA-07
-> Ensure cloud-native information resources are implemented based on host provider&#x27;s best practices and documented guidance.
+> Ensure cloud-native _information resources_ are implemented based on host provider&#x27;s best practices and documented guidance.
 
 ### KSI-IAM: Identity and Access Management
 
-**A secure cloud service offering will protect user data, control access, and apply zero trust principles.**
+**A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.**
 
 #### KSI-IAM-01
 > Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.
@@ -391,7 +531,7 @@
 
 ### KSI-INR: Incident Reporting
 
-**A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
+**A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
 
 #### KSI-INR-01
 > Report incidents according to FedRAMP requirements and cloud service provider policies.
@@ -400,23 +540,23 @@
 > Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.
 
 #### KSI-INR-03
-> Generate after action reports and regularly incorporate lessons learned into operations.
+> Generate after action reports and _regularly_ incorporate lessons learned into operations.
 
 ### KSI-MLA: Monitoring, Logging, and Auditing
 
-**A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.**
+**A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.**
 
 #### KSI-MLA-01
 > Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.
 
 #### KSI-MLA-02
-> Regularly review and audit logs.
+> _Regularly_ review and audit logs.
 
 #### KSI-MLA-03
 > Rapidly detect and remediate or mitigate vulnerabilities.
 
 #### KSI-MLA-04
-> Perform authenticated vulnerability scanning on information resources.
+> Perform authenticated vulnerability scanning on _information resources_.
 
 #### KSI-MLA-05
 > Perform Infrastructure as Code and configuration evaluation and testing.
@@ -426,13 +566,13 @@
 
 ### KSI-PIY: Policy and Inventory
 
-**A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.**
+**A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.**
 
 #### KSI-PIY-01
-> Have an up-to-date information resource inventory or code defining all deployed assets, software, and services.
+> Have an up-to-date _information resource_ inventory or code defining all deployed assets, software, and services.
 
 #### KSI-PIY-02
-> Have policies outlining the security objectives of all information resources.
+> Have policies outlining the security objectives of all _information resources_.
 
 #### KSI-PIY-03
 > Maintain a vulnerability disclosure program.
@@ -441,7 +581,7 @@
 > Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles.
 
 #### KSI-PIY-05
-> Document methods used to evaluate information resource implementations.
+> Document methods used to evaluate _information resource_ implementations.
 
 #### KSI-PIY-06
 > Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering.
@@ -451,7 +591,7 @@
 
 ### KSI-RPL: Recovery Planning
 
-**A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
+**A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
 
 #### KSI-RPL-01
 > Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
@@ -463,11 +603,11 @@
 > Perform system backups aligned with recovery objectives.
 
 #### KSI-RPL-04
-> Regularly test the capability to recover from incidents and contingencies.
+> _Regularly_ test the capability to recover from incidents and contingencies.
 
 ### KSI-SVC: Service Configuration
 
-**A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.**
+**A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.**
 
 #### KSI-SVC-01
 > Harden and review network and system configurations.
@@ -482,23 +622,23 @@
 > Manage configuration centrally.
 
 #### KSI-SVC-05
-> Enforce system and information resource integrity through cryptographic means.
+> Enforce system and _information resource_ integrity through cryptographic means.
 
 #### KSI-SVC-06
-> Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates.
+> Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates.
 
 #### KSI-SVC-07
 > Use a consistent, risk-informed approach for applying security patches.
 
 ### KSI-TPR: Third-Party Information Resources
 
-**A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.**
+**A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.**
 
 #### KSI-TPR-01
-> Identify all third-party information resources.
+> Identify all _third-party information resources_.
 
 #### KSI-TPR-02
-> Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured.
+> _Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured.
 
 #### KSI-TPR-03
 > Identify and prioritize mitigation of potential supply chain risks.
@@ -511,6 +651,44 @@
 
 # Technical assistance
 
+### FRA-ADS
+
+**Purpose:** This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP _authorization data_ Sharing Standard.
+
+**Disclaimer:** Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.
+
+****
+
+#### FRA-ADS-04
+
+&quot;Without interruption&quot; means that parties should not have to request manual approval each time they need to access _authorization data_ or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.
+
+
+---   
+    
+
+#### FRA-ADS-05
+
+This is not a license to exclude accurate risk information, but specifics that would _likely_ lead to compromise should be abstracted. A breach of confidentiality with _authorization data_ should be anticipated by a secure cloud service provider.
+
+##### Examples of unnecessary sensitive information in _authorization data_
+
+Key Tests:
+
+- Passwords, API keys, access credentials, etc.
+- Excessive detail about methodology that exposes weaknesses
+- Personally identifiable information about employees
+
+Examples:
+
+- DON&#x27;T: &quot;In an emergency, an administrator with physical access to a system can log in using &quot;secretadmin&quot; with the password &quot;pleasewutno&quot;&quot; DO: &quot;In an emergency, administrators with physical access can log in directly.&quot;
+- DON&#x27;T: &quot;All backup MFA credentials are stored in a SuperSafe Series 9000 safe in the CEOs office.&quot; DO: &quot;All backup MFA credentials are stored in a UL Class 350 safe in a secure location with limited access.&quot;
+- DON&#x27;T: &quot;During an incident, the incident response team lead by Jim Smith (555-0505) will open a channel at the conference line (555-0101 #97808 passcode 99731)...&quot; DO: &quot;During an incident, the incident response team will coordinate over secure channels.&quot;
+          
+
+---   
+    
+  
 ### FRA-SCN
 
 **Purpose:** This Technical Assistance helps stakeholders evaluate and label _significant changes_ by type as required by _FRR-SCN-03_. This assistance is designed for the 20x Phase One Pilot and Rev5 Closed Beta Balance Improvement Test. The Significant Change Notification Requirements will be tested, evaluated, and improved in partnership with stakeholders based on real-world experience.

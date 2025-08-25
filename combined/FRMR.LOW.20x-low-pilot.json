@@ -2,27 +2,322 @@
   "info": {
     "name": "FedRAMP 20x Combined Requirements",
     "short_name": "FRMR-LOW",
-    "current_release": "25.06A",
+    "current_release": "25.08A",
     "types": [
       "FRR",
-      "FRD",
       "FRA"
     ],
     "releases": [
       {
-        "id": "25.06A",
-        "published_date": "2025-06-17",
+        "id": "25.08A",
+        "published_date": "2025-08-24",
         "description": "Combined FedRAMP 20x Low Requirements"
       }
     ]
   },
   "FRR": {
+    "ADS": {
+      "base": {
+        "id": "FRR-ADS",
+        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-ADS-01",
+            "statement": "Providers MUST publicly share up-to-date information about the _cloud service offering_ in both human-readable and _machine-readable_ formats, including at least:",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "following_information": [
+              "Direct link to the FedRAMP Marketplace for the offering",
+              "Service Model",
+              "Deployment Model",
+              "Business Category",
+              "UEI Number",
+              "Contact Information",
+              "Overall Service Description",
+              "Detailed list of specific services and their impact levels (see FRR-ADS-03)",
+              "Summary of customer responsibilities and secure configuration guidance",
+              "Process for accessing information in the _trust center_ (if applicable)",
+              "Availability status and recent disruptions for the _trust center_ (if applicable)",
+              "Customer support information for the _trust center_ (if applicable)"
+            ],
+            "referenced_fr": [
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-17",
+              "FRD-ALL-16"
+            ]
+          },
+          {
+            "id": "FRR-ADS-02",
+            "statement": "Providers MUST use automation to ensure information remains consistent between human-readable and _machine-readable_ formats when _authorization data_ is provided in both formats; Providers SHOULD generate human-readable and _machine-readable_ data from the same source at the same time OR generate human-readable formats directly from _machine-readable_ data.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-17",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-03",
+            "statement": "Providers MUST share a detailed list of specific services and their impact levels that are included in the _cloud service offering_ using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying _authorization data_.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-04",
+            "statement": "Providers MUST share _authorization data_ with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. ",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-05",
+            "statement": "Providers MUST provide sufficient information in _authorization data_ to support authorization decisions but SHOULD NOT include sensitive information that would _likely_ enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the _cloud service offering_. ",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-15",
+              "FRD-ALL-04",
+              "FRD-ALL-06"
+            ]
+          },
+          {
+            "id": "FRR-ADS-06",
+            "statement": "Providers of FedRAMP Rev5 Authorized _cloud service offerings_ MUST share _authorization data_ via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible _trust center_.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-15",
+              "FRD-ALL-16"
+            ]
+          },
+          {
+            "id": "FRR-ADS-07",
+            "statement": "Providers of FedRAMP 20x Authorized _cloud service offerings_ MUST use a FedRAMP-compatible _trust center_ to store and share _authorization data_ with all necessary parties.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-15",
+              "FRD-ALL-16"
+            ]
+          },
+          {
+            "id": "FRR-ADS-08",
+            "statement": "Providers MUST notify all necessary parties when migrating to a _trust center_ and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the _trust center_ to obtain _authorization data_.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-16"
+            ]
+          },
+          {
+            "id": "FRR-ADS-09",
+            "statement": "Providers MUST make historical versions of _authorization data_ available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-10",
+            "statement": "Providers SHOULD follow FedRAMP’s best practices and technical assistance for sharing _authorization data_ where applicable.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-15"
+            ]
+          }
+        ]
+      },
+      "access_control": {
+        "application": "These requirements for managing access apply to cloud service providers who establish FedRAMP-compatible _trust centers_ for storing and sharing _authorization data_.",
+        "referenced_fr": [
+          "FRD-ALL-15",
+          "FRD-ALL-16"
+        ],
+        "id": "FRR-ADS-AC",
+        "requirements": [
+          {
+            "id": "FRR-ADS-AC-01",
+            "statement": "Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to _authorization data_ stored in the _trust center_.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-15",
+              "FRD-ALL-16"
+            ]
+          },
+          {
+            "id": "FRR-ADS-AC-02",
+            "statement": "Providers SHOULD share at least the _authorization package_ with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  ",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-14"
+            ]
+          }
+        ]
+      },
+      "trust_center": {
+        "application": "These requirements apply to FedRAMP-compatible _trust centers_ used to store and share _authorization data_.",
+        "referenced_fr": [
+          "FRD-ALL-16",
+          "FRD-ALL-15"
+        ],
+        "id": "FRR-ADS-TC",
+        "requirements": [
+          {
+            "id": "FRR-ADS-TC-01",
+            "statement": "_Trust centers_ MUST be included as an _information resource_ included in the _cloud service offering_ for assessment if FRR-MAS-01 applies. ",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-16",
+              "FRD-ALL-02",
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRR-MAS-01"
+            ]
+          },
+          {
+            "id": "FRR-ADS-TC-02",
+            "statement": "_Trust centers_ SHOULD make _authorization data_ available to view and download in both human-readable and _machine-readable_ formats",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-16",
+              "FRD-ALL-15",
+              "FRD-ALL-17"
+            ]
+          },
+          {
+            "id": "FRR-ADS-TC-03",
+            "statement": "_Trust centers_ MUST provide documented programmatic access to all _authorization data_, including programmatic access to human-readable materials.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-16",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-TC-04",
+            "statement": "_Trust centers_ SHOULD include features that encourage all necessary parties to provision and manage access to _authorization data_ for their users and services directly.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-16",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-TC-05",
+            "statement": "_Trust centers_ MUST maintain an inventory and history of federal agency users or systems with access to _authorization data_ and MUST make this information available to FedRAMP without interruption. ",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-16",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-TC-06",
+            "statement": "_Trust centers_ MUST log access to _authorization data_ and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-16",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-ADS-TC-07",
+            "statement": "_Trust centers_ SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-16",
+              "FRD-ALL-15"
+            ]
+          }
+        ]
+      },
+      "exceptions": {
+        "application": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+        "id": "FRR-ADS-EX",
+        "requirements": [
+          {
+            "id": "FRR-ADS-EX-01",
+            "statement": "Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MAY",
+            "referenced_fr": [
+              "FRD-ALL-06",
+              "FRD-ALL-09",
+              "FRD-ALL-15"
+            ]
+          }
+        ]
+      }
+    },
     "SCN": {
       "base": {
         "id": "FRR-SCN",
         "application": "These requirements apply ALWAYS to ALL _significant changes_ based on current Effective Date(s) and Overall Applicability",
         "referenced_fr": [
-          "FRD-SCN-01"
+          "FRD-ALL-08"
         ],
         "requirements": [
           {
@@ -49,7 +344,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-01"
+              "FRD-ALL-08"
             ]
           },
           {
@@ -78,7 +373,7 @@
             ],
             "primary_key_word": "SHOULD",
             "referenced_fr": [
-              "FRD-SCN-01"
+              "FRD-ALL-08"
             ]
           },
           {
@@ -92,12 +387,15 @@
           },
           {
             "id": "FRR-SCN-08",
-            "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible machine-readable formats.",
+            "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.",
             "affects": [
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true
+            "is_interim": true,
+            "referenced_fr": [
+              "FRD-ALL-17"
+            ]
           },
           {
             "id": "FRR-SCN-09",
@@ -143,7 +441,7 @@
             ],
             "primary_key_word": "MAY",
             "referenced_fr": [
-              "FRD-SCN-01"
+              "FRD-ALL-08"
             ]
           },
           {
@@ -154,7 +452,7 @@
             ],
             "primary_key_word": "MAY",
             "referenced_fr": [
-              "FRD-SCN-01"
+              "FRD-ALL-08"
             ]
           }
         ]
@@ -163,8 +461,8 @@
         "application": "These requirements apply ONLY to _significant changes_ of type _routine recurring_.",
         "id": "FRR-SCN-RR",
         "referenced_fr": [
-          "FRD-SCN-01",
-          "FRD-SCN-02"
+          "FRD-ALL-08",
+          "FRD-ALL-09"
         ],
         "requirements": [
           {
@@ -175,7 +473,7 @@
             ],
             "primary_key_word": "SHOULD NOT",
             "referenced_fr": [
-              "FRD-SCN-02"
+              "FRD-ALL-09"
             ]
           }
         ]
@@ -184,8 +482,8 @@
         "application": "These requirements apply ONLY to _significant changes_ of type _adaptive_.",
         "id": "FRR-SCN-AD",
         "referenced_fr": [
-          "FRD-SCN-01",
-          "FRD-SCN-03"
+          "FRD-ALL-08",
+          "FRD-ALL-10"
         ],
         "requirements": [
           {
@@ -199,7 +497,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-03"
+              "FRD-ALL-10"
             ]
           }
         ]
@@ -208,8 +506,8 @@
         "application": "These requirements apply ONLY to _significant changes_ of type _transformative_.",
         "id": "FRR-SCN-TF",
         "referenced_fr": [
-          "FRD-SCN-01",
-          "FRD-SCN-04"
+          "FRD-ALL-08",
+          "FRD-ALL-11"
         ],
         "requirements": [
           {
@@ -221,7 +519,7 @@
             "primary_key_word": "SHOULD",
             "is_interim": true,
             "referenced_fr": [
-              "FRD-SCN-04"
+              "FRD-ALL-11"
             ]
           },
           {
@@ -232,7 +530,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-04"
+              "FRD-ALL-11"
             ]
           },
           {
@@ -243,7 +541,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-04"
+              "FRD-ALL-11"
             ]
           },
           {
@@ -257,7 +555,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-04"
+              "FRD-ALL-11"
             ]
           },
           {
@@ -273,7 +571,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-04"
+              "FRD-ALL-11"
             ]
           },
           {
@@ -284,7 +582,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-04"
+              "FRD-ALL-11"
             ]
           },
           {
@@ -295,7 +593,7 @@
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-SCN-04"
+              "FRD-ALL-11"
             ]
           }
         ]
@@ -304,8 +602,8 @@
         "application": "These requirements apply ONLY to _significant changes_ of type _impact categorization_.",
         "id": "FRR-SCN-IM",
         "referenced_fr": [
-          "FRD-SCN-01",
-          "FRD-SCN-05"
+          "FRD-ALL-08",
+          "FRD-ALL-12"
         ],
         "requirements": [
           {
@@ -317,7 +615,7 @@
             "primary_key_word": "MUST",
             "is_interim": true,
             "referenced_fr": [
-              "FRD-SCN-05"
+              "FRD-ALL-12"
             ]
           }
         ]
@@ -330,16 +628,16 @@
         "requirements": [
           {
             "id": "FRR-MAS-01",
-            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are likely to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.",
+            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.",
             "affects": [
               "Providers"
             ],
             "primary_key_word": "MUST",
             "referenced_fr": [
-              "FRD-MAS-01",
-              "FRD-MAS-02",
-              "FRD-MAS-03",
-              "FRD-MAS-04"
+              "FRD-ALL-01",
+              "FRD-ALL-02",
+              "FRD-ALL-03",
+              "FRD-ALL-04"
             ]
           },
           {
@@ -351,7 +649,7 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRR-MAS-01",
-              "FRD-MAS-05"
+              "FRD-ALL-05"
             ]
           },
           {
@@ -363,8 +661,8 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRR-MAS-01",
-              "FRD-MAS-01",
-              "FRD-MAS-05"
+              "FRD-ALL-01",
+              "FRD-ALL-05"
             ]
           },
           {
@@ -376,7 +674,7 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRR-MAS-01",
-              "FRD-MAS-01"
+              "FRD-ALL-01"
             ]
           },
           {
@@ -388,7 +686,7 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRR-MAS-01",
-              "FRD-MAS-02"
+              "FRD-ALL-02"
             ]
           }
         ]
@@ -405,7 +703,8 @@
             ],
             "primary_key_word": "MAY",
             "referenced_fr": [
-              "FRD-MAS-02"
+              "FRD-ALL-02",
+              "FRD-ALL-06"
             ]
           }
         ]
@@ -422,7 +721,10 @@
             ],
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
-            "reference_url": "http://fedramp.gov/scope"
+            "reference_url": "http://fedramp.gov/scope",
+            "referenced_fr": [
+              "FRD-ALL-06"
+            ]
           },
           {
             "id": "FRR-MAS-AY-02",
@@ -443,9 +745,10 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRR-MAS-01",
-              "FRR-MAS-02",
-              "FRD-MAS-02",
-              "FRD-MAS-05"
+              "FRD-ALL-02",
+              "FRD-ALL-05",
+              "FRD-ALL-06",
+              "FRR-MAS-02"
             ]
           },
           {
@@ -457,9 +760,9 @@
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRR-MAS-05",
-              "FRD-MAS-02",
-              "FRD-MAS-03",
-              "FRD-MAS-05"
+              "FRD-ALL-02",
+              "FRD-ALL-03",
+              "FRD-ALL-05"
             ]
           },
           {
@@ -476,7 +779,10 @@
             "affects": [
               "Providers"
             ],
-            "primary_key_word": "MUST"
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-06"
+            ]
           }
         ]
       }
@@ -488,12 +794,13 @@
         "requirements": [
           {
             "id": "FRR-KSI-01",
-            "statement": "Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope.",
+            "statement": "Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
             "affects": [
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "referenced_rules": [
+            "referenced_fr": [
+              "FRD-ALL-06",
               "FRR-MAS-01"
             ]
           },
@@ -523,66 +830,9 @@
     }
   },
   "FRD": {
-    "SCN": [
+    "ALL": [
       {
-        "id": "FRD-SCN-01",
-        "term": "Significant change",
-        "definition": "Has the meaning given in NIST SP 800-37 Rev. 2 which is \"a change that is _likely_ to substantively affect the security or privacy posture of a system.\"",
-        "reference": "NIST SP 800-37 Rev. 2",
-        "reference_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
-        "referenced_fr": [
-          "FRD-MAS-04"
-        ]
-      },
-      {
-        "id": "FRD-SCN-02",
-        "term": "Routine Recurring",
-        "definition": "The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.",
-        "referenced_fr": [
-          "FRD-SCN-01",
-          "FRD-KSI-01"
-        ]
-      },
-      {
-        "id": "FRD-SCN-03",
-        "term": "Adaptive",
-        "definition": "The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.",
-        "note": "Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation.",
-        "referenced_fr": [
-          "FRD-SCN-01"
-        ]
-      },
-      {
-        "id": "FRD-SCN-04",
-        "term": "Transformative",
-        "definition": "The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.",
-        "note": "Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation.",
-        "referenced_fr": [
-          "FRD-SCN-01",
-          "FRD-MAS-04"
-        ]
-      },
-      {
-        "id": "FRD-SCN-05",
-        "term": "Impact Categorization",
-        "definition": "The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).",
-        "referenced_fr": [
-          "FRD-SCN-01",
-          "FRD-MAS-04"
-        ]
-      },
-      {
-        "id": "FRD-SCN-06",
-        "term": "Interim Requirement",
-        "definition": "A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.",
-        "referenced_fr": [
-          "FRD-MAS-04"
-        ]
-      }
-    ],
-    "MAS": [
-      {
-        "id": "FRD-MAS-01",
+        "id": "FRD-ALL-01",
         "term": "Federal Information",
         "definition": "Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means \"information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.\"",
         "note": "This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP's Technical Assistance and consult qualified legal experts for additional assistance identifying federal information.",
@@ -590,46 +840,183 @@
         "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
       },
       {
-        "id": "FRD-MAS-02",
+        "id": "FRD-ALL-02",
         "term": "Information Resource",
         "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\"",
-        "note": "This applies to any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
+        "note": "This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
         "reference": "44 USC § 3502 (6)",
-        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
+        "referenced_fr": [
+          "FRD-ALL-06"
+        ]
       },
       {
-        "id": "FRD-MAS-03",
+        "id": "FRD-ALL-03",
         "term": "Handle",
         "definition": "Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc."
       },
       {
-        "id": "FRD-MAS-04",
+        "id": "FRD-ALL-04",
         "term": "Likely",
         "definition": "A reasonable degree of probability based on context."
       },
       {
-        "id": "FRD-MAS-05",
+        "id": "FRD-ALL-05",
         "term": "Third-party Information Resource",
         "definition": "Any _information resource_ that is not entirely included in the assessment for the _cloud service offering_ seeking authorization.",
         "referenced_fr": [
-          "FRD-SCN-02"
+          "FRD-ALL-02",
+          "FRD-ALL-06"
         ]
       },
       {
-        "id": "FRD-MAS-06",
+        "id": "FRD-ALL-06",
         "term": "Cloud Service Offering",
         "definition": "A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard."
-      }
-    ],
-    "KSI": [
+      },
       {
-        "id": "FRD-KSI-01",
+        "id": "FRD-ALL-07",
         "term": "Regularly",
         "definition": "Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements."
+      },
+      {
+        "id": "FRD-ALL-08",
+        "term": "Significant change",
+        "definition": "Has the meaning given in NIST SP 800-37 Rev. 2 which is \"a change that is _likely_ to substantively affect the security or privacy posture of a system.\"",
+        "reference": "NIST SP 800-37 Rev. 2",
+        "reference_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
+        "referenced_fr": [
+          "FRD-ALL-04"
+        ]
+      },
+      {
+        "id": "FRD-ALL-09",
+        "term": "Routine Recurring",
+        "definition": "The type of _significant change_ that _regularly_ and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.",
+        "referenced_fr": [
+          "FRD-ALL-08",
+          "FRD-ALL-07"
+        ]
+      },
+      {
+        "id": "FRD-ALL-10",
+        "term": "Adaptive",
+        "definition": "The type of _significant change_ that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.",
+        "note": "Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation.",
+        "referenced_fr": [
+          "FRD-ALL-08"
+        ]
+      },
+      {
+        "id": "FRD-ALL-11",
+        "term": "Transformative",
+        "definition": "The type of _significant change_ that introduces substantive potential security risks that are _likely_ to affect existing risk determinations and must be assessed in depth.",
+        "note": "Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation.",
+        "referenced_fr": [
+          "FRD-ALL-08",
+          "FRD-ALL-04"
+        ]
+      },
+      {
+        "id": "FRD-ALL-12",
+        "term": "Impact Categorization",
+        "definition": "The type of _significant change_ that is _likely_ to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).",
+        "referenced_fr": [
+          "FRD-ALL-08",
+          "FRD-ALL-04"
+        ]
+      },
+      {
+        "id": "FRD-ALL-13",
+        "term": "Interim Requirement",
+        "definition": "A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement.",
+        "referenced_fr": [
+          "FRD-ALL-04"
+        ]
+      },
+      {
+        "id": "FRD-ALL-14",
+        "term": "Authorization Package",
+        "definition": "Has meaning from 44 USC § 3607 (b)(8) which is \"the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.\"",
+        "reference": "44 USC § 3607 (b)(8)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607",
+        "note": "In FedRAMP documentation, _authorization package_ always refers to a FedRAMP _authorization package_ unless otherwise specified."
+      },
+      {
+        "id": "FRD-ALL-15",
+        "term": "Authorization data",
+        "definition": "The collective information required by FedRAMP for initial and ongoing assessment and authorization of a _cloud service offering_, including the _authorization package_. ",
+        "note": "In FedRAMP documentation, _authorization data_ always refers to FedRAMP _authorization data_ unless otherwise specified.",
+        "referenced_fr": [
+          "FRD-ALL-06",
+          "FRD-ALL-09",
+          "FRD-ALL-14",
+          "FRD-ALL-15"
+        ]
+      },
+      {
+        "id": "FRD-ALL-16",
+        "term": "Trust Center",
+        "definition": "A secure repository or service used by cloud service providers to store and share _authorization data_. _Trust centers_ are the complete and definitive source for _authorization data_ and must meet the requirements outlined in the FedRAMP _authorization data_ Sharing Standard to be FedRAMP-compatible.",
+        "note": "In FedRAMP documentation, all references to _trust centers_ indicate FedRAMP-compatible _trust centers_ unless otherwise specified.",
+        "referenced_fr": [
+          "FRD-ALL-15"
+        ]
+      },
+      {
+        "id": "FRD-ALL-17",
+        "term": "Machine-readable",
+        "definition": "Has the meaning from 44 U.S. Code § 3502 (18) which is \"the term \"_machine-readable_\", when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost\"",
+        "reference": "44 U.S. Code § 3502 (18)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
       }
     ]
   },
   "FRA": {
+    "ADS": {
+      "id": "FRA-ADS",
+      "disclaimer": "Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.",
+      "purpose": "This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP _authorization data_ Sharing Standard.",
+      "referenced_fr": [
+        "FRD-ALL-15"
+      ],
+      "requirements": [
+        {
+          "id": "FRA-ADS-04",
+          "applies_to": "FRR-ADS-04",
+          "statement": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access _authorization data_ or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
+          "referenced_fr": [
+            "FRD-ALL-15"
+          ]
+        },
+        {
+          "id": "FRA-ADS-05",
+          "applies_to": "FRR-ADS-05",
+          "statement": "This is not a license to exclude accurate risk information, but specifics that would _likely_ lead to compromise should be abstracted. A breach of confidentiality with _authorization data_ should be anticipated by a secure cloud service provider.",
+          "referenced_fr": [
+            "FRD-ALL-04"
+          ],
+          "examples": [
+            {
+              "id": "Examples of unnecessary sensitive information in _authorization data_",
+              "referenced_fr": [
+                "FRD-ALL-15"
+              ],
+              "key_tests": [
+                "Passwords, API keys, access credentials, etc.",
+                "Excessive detail about methodology that exposes weaknesses",
+                "Personally identifiable information about employees"
+              ],
+              "examples": [
+                "DON'T: \"In an emergency, an administrator with physical access to a system can log in using \"secretadmin\" with the password \"pleasewutno\"\" DO: \"In an emergency, administrators with physical access can log in directly.\"",
+                "DON'T: \"All backup MFA credentials are stored in a SuperSafe Series 9000 safe in the CEOs office.\" DO: \"All backup MFA credentials are stored in a UL Class 350 safe in a secure location with limited access.\"",
+                "DON'T: \"During an incident, the incident response team lead by Jim Smith (555-0505) will open a channel at the conference line (555-0101 #97808 passcode 99731)...\" DO: \"During an incident, the incident response team will coordinate over secure channels.\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
     "SCN": {
       "id": "FRA-SCN",
       "disclaimer": "Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.",
@@ -644,6 +1031,11 @@
           "id": "FRA-SCN-RR",
           "applies_to": "FRR-SCN-RR",
           "statement": "Activities that match the _routine recurring_ _significant change_ type are performed _regularly_ and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.\n\nThese changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.\n\nIf the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g., replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).",
+          "referenced_fr": [
+            "FRD-ALL-09",
+            "FRD-ALL-08",
+            "FRD-ALL-07"
+          ],
           "examples": [
             {
               "id": "Ongoing operations",
@@ -701,6 +1093,11 @@
           "id": "FRA-SCN-AD",
           "applies_to": "FRR-SCN-AD",
           "statement": "Activities that match the _adaptive_ _significant change_ type are a frequent and normal part of iteratively improving a service by deploying new functionality or modifying existing functionality in a way that is typically transparent to customers and does not introduce significant new security risks.\n\nIn general, most changes that do not happen _regularly_ will be _adaptive_ changes. This change type deliberately covers a wide range of activities in a way that requires assessment and consideration.",
+          "referenced_fr": [
+            "FRD-ALL-10",
+            "FRD-ALL-08",
+            "FRD-ALL-07"
+          ],
           "examples": [
             {
               "id": "Service adjustments",
@@ -726,7 +1123,10 @@
     "CED": {
       "id": "KSI-CED",
       "name": "Cybersecurity Education",
-      "indicator": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.",
+      "indicator": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.",
+      "referenced_fr": [
+        "FRD-ALL-07"
+      ],
       "requirements": [
         {
           "id": "KSI-CED-01",
@@ -927,11 +1327,17 @@
     "CNA": {
       "id": "KSI-CNA",
       "name": "Cloud Native Architecture",
-      "indicator": "A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
+      "indicator": "A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
+      "referenced_fr": [
+        "FRD-ALL-06"
+      ],
       "requirements": [
         {
           "id": "KSI-CNA-01",
-          "statement": "Configure ALL information resources to limit inbound and outbound traffic",
+          "statement": "Configure ALL _information resources_ to limit inbound and outbound traffic",
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1024,7 +1430,10 @@
         },
         {
           "id": "KSI-CNA-07",
-          "statement": "Ensure cloud-native information resources are implemented based on host provider's best practices and documented guidance",
+          "statement": "Ensure cloud-native _information resources_ are implemented based on host provider's best practices and documented guidance",
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1048,7 +1457,10 @@
     "IAM": {
       "id": "KSI-IAM",
       "name": "Identity and Access Management",
-      "indicator": "A secure cloud service offering will protect user data, control access, and apply zero trust principles.",
+      "indicator": "A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.",
+      "referenced_fr": [
+        "FRD-ALL-06"
+      ],
       "requirements": [
         {
           "id": "KSI-IAM-01",
@@ -1457,7 +1869,10 @@
     "INR": {
       "id": "KSI-INR",
       "name": "Incident Reporting",
-      "indicator": "A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+      "indicator": "A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+      "referenced_fr": [
+        "FRD-ALL-06"
+      ],
       "requirements": [
         {
           "id": "KSI-INR-01",
@@ -1527,7 +1942,10 @@
         },
         {
           "id": "KSI-INR-03",
-          "statement": "Generate after action reports and regularly incorporate lessons learned into operations",
+          "statement": "Generate after action reports and _regularly_ incorporate lessons learned into operations",
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1555,7 +1973,10 @@
     "MLA": {
       "id": "KSI-MLA",
       "name": "Monitoring, Logging, and Auditing",
-      "indicator": "A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.",
+      "indicator": "A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.",
+      "referenced_fr": [
+        "FRD-ALL-06"
+      ],
       "requirements": [
         {
           "id": "KSI-MLA-01",
@@ -1616,7 +2037,10 @@
         },
         {
           "id": "KSI-MLA-02",
-          "statement": "Regularly review and audit logs",
+          "statement": "_Regularly_ review and audit logs",
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1682,7 +2106,10 @@
         },
         {
           "id": "KSI-MLA-04",
-          "statement": "Perform authenticated vulnerability scanning on information resources",
+          "statement": "Perform authenticated vulnerability scanning on _information resources_",
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1740,11 +2167,18 @@
     "PIY": {
       "id": "KSI-PIY",
       "name": "Policy and Inventory",
-      "indicator": "A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.",
+      "indicator": "A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.",
+      "referenced_fr": [
+        "FRD-ALL-06",
+        "FRD-ALL-02"
+      ],
       "requirements": [
         {
           "id": "KSI-PIY-01",
-          "statement": "Have an up-to-date information resource inventory or code defining all deployed assets, software, and services",
+          "statement": "Have an up-to-date _information resource_ inventory or code defining all deployed assets, software, and services",
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1777,7 +2211,10 @@
         },
         {
           "id": "KSI-PIY-02",
-          "statement": "Have policies outlining the security objectives of all information resources",
+          "statement": "Have policies outlining the security objectives of all _information resources_",
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1920,7 +2357,10 @@
         },
         {
           "id": "KSI-PIY-05",
-          "statement": "Document methods used to evaluate information resource implementations",
+          "statement": "Document methods used to evaluate _information resource_ implementations",
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -1981,7 +2421,10 @@
     "RPL": {
       "id": "KSI-RPL",
       "name": "Recovery Planning",
-      "indicator": "A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
+      "indicator": "A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
+      "referenced_fr": [
+        "FRD-ALL-06"
+      ],
       "requirements": [
         {
           "id": "KSI-RPL-01",
@@ -2060,7 +2503,10 @@
         },
         {
           "id": "KSI-RPL-04",
-          "statement": "Regularly test the capability to recover from incidents and contingencies",
+          "statement": "_Regularly_ test the capability to recover from incidents and contingencies",
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -2092,7 +2538,12 @@
     "SVC": {
       "id": "KSI-SVC",
       "name": "Service Configuration",
-      "indicator": "A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.",
+      "indicator": "A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.",
+      "referenced_fr": [
+        "FRD-ALL-06",
+        "FRD-ALL-02",
+        "FRD-ALL-05"
+      ],
       "requirements": [
         {
           "id": "KSI-SVC-01",
@@ -2232,7 +2683,10 @@
         },
         {
           "id": "KSI-SVC-05",
-          "statement": "Enforce system and information resource integrity through cryptographic means",
+          "statement": "Enforce system and _information resource_ integrity through cryptographic means",
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -2257,7 +2711,10 @@
         },
         {
           "id": "KSI-SVC-06",
-          "statement": "Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates",
+          "statement": "Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates",
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -2306,11 +2763,18 @@
     "TPR": {
       "id": "KSI-TPR",
       "name": "Third-Party Information Resources",
-      "indicator": "A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.",
+      "indicator": "A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.",
+      "referenced_fr": [
+        "FRD-ALL-06",
+        "FRD-ALL-05"
+      ],
       "requirements": [
         {
           "id": "KSI-TPR-01",
-          "statement": "Identify all third-party information resources",
+          "statement": "Identify all _third-party information resources_",
+          "referenced_fr": [
+            "FRD-ALL-05"
+          ],
           "applied_impact_levels": [
             "Low"
           ],
@@ -2331,7 +2795,11 @@
         },
         {
           "id": "KSI-TPR-02",
-          "statement": "Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured",
+          "statement": "_Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured",
+          "referenced_fr": [
+            "FRD-ALL-07",
+            "FRD-ALL-01"
+          ],
           "applied_impact_levels": [
             "Low"
           ],

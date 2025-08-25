@@ -25,6 +25,8 @@ Designators include a prefix, a label, an optional suffix, then a number.
 - `KSI`: Key Security Indicators _(this can be either a prefix or a label)_
 - `MAS`: Minimum Assessment Standard
 - `SCN`: Significant Change Notifications
+- `ADS`: Authorization Data Sharing Standard
+- `ALL`: Applies to all documents, used for definitions and general rules
 
 **Key Security Indicator Labels:**
 
@@ -51,11 +53,11 @@ Designators include a prefix, a label, an optional suffix, then a number.
 
 Here are a few examples to illustrate the format:
 
-- `FRD-MAS-01`: A **definition** related to the **Minimum Assessment Standard**:
+- `FRD-ALL-01`: A **definition** for all FedRAMP materials:
 
   - `FRD` indicates a FedRAMP Definition.
-  - `MAS` specifies it's from the Minimum Assessment Standard.
-  - `01` is the unique number for that definition within the MAS.
+  - `ALL` specifies it applies to all FedRAMP materials.
+  - `01` is the unique number for that definition within the FRD-ALL.
 
 - `FRR-KSI-03`: A **requirement** for **Key Security Indicators**:
 

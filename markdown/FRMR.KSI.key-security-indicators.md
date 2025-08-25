@@ -1,9 +1,9 @@
 # FedRAMP Key Security Indicators
 
-- **Release:** 25.05C
-- **Published:** 2025-06-28  
+- **Release:** 25.05D
+- **Published:** 2025-08-24  
 - **Designator:** KSI
-- **Description:** Key Security Indicators in this release are unchanged from previously releases. 25.05C adds references for each KSI to underlying SP 800-53 controls.
+- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL).
 
 ## Front Matter
 
@@ -12,17 +12,22 @@
 - **FedRAMP 20x**:
   - This release is effective **2025-06-01** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized third-party information resources.    
+  - For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_.  
 
+
+### Documentation Guidelines
+
+The following FedRAMP documentation guidelines apply to this document:
+
+- The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+- FedRAMP-specific terms defined in [FRD-ALL (FedRAMP Definitions)](https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md) are italicized throughout this document for reference.
 
 
 ## Background & Authority
-- [OMB Circular A-130](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf) Appendix I states &quot;Agencies may also develop overlays for specific types of information or communities of interest (e.g., all web-based applications, all health care-related systems) as part of the security control selection process. Overlays provide a specification of security or privacy controls, control enhancements, supplemental guidance, and other supporting information as part of the tailoring process, that is intended to complement (and further refine) security control baselines. The overlay may be more stringent or less stringent than the original security control baseline and can be applied to multiple information systems.&quot;  
-- [NIST SP 800-53B](https://csrc.nist.gov/pubs/sp/800/53/b/upd1/final) Section 2.5 states &quot;As the number of controls in [SP 800-53] grows in response to an increasingly sophisticated threat space, it is important for organizations to have the ability to describe key capabilities needed to protect organizational missions and business functions, and to subsequently select controls that—if properly designed, developed, and implemented—produce such capabilities. The use of capabilities simplifies how the protection problem is viewed conceptually. Using the construct of a capability provides a method of grouping controls that are employed for a common purpose or to achieve a common objective.&quot; This section later states &quot;Ultimately, authorization decisions (i.e., risk acceptance decisions) are made based on the degree to which the desired capabilities have been effectively achieved.&quot;  
-- [NIST SP 800-53A](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) Section 3.5 states &quot;When organizations employ the concept of capabilities, automated and manual assessments account for all security and privacy controls that comprise the security and privacy capabilities. Assessors are aware of how the controls work together to provide such capabilities.&quot;  
-- [FedRAMP Authorization Act (44 USC § 3609 (a) (1))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) requires that the Administrator of the General Services Administration shall &quot;in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...&quot; 44 USC § 3609 (c) (2) further states that &quot;the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.&quot;  
-
-  _([These responsibilities are delegated to the FedRAMP Director](https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp))_
+- [OMB Circular A-130](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf) Appendix I states &quot;Agencies may also develop overlays for specific types of information or communities of interest (e.g., all web-based applications, all health care-related systems) as part of the security control selection process. Overlays provide a specification of security or privacy controls, control enhancements, supplemental guidance, and other supporting information as part of the tailoring process, that is intended to complement (and further refine) security control baselines. The overlay may be more stringent or less stringent than the original security control baseline and can be applied to multiple information systems.&quot;
+- [NIST SP 800-53B](https://csrc.nist.gov/pubs/sp/800/53/b/upd1/final) Section 2.5 states &quot;As the number of controls in [SP 800-53] grows in response to an increasingly sophisticated threat space, it is important for organizations to have the ability to describe key capabilities needed to protect organizational missions and business functions, and to subsequently select controls that—if properly designed, developed, and implemented—produce such capabilities. The use of capabilities simplifies how the protection problem is viewed conceptually. Using the construct of a capability provides a method of grouping controls that are employed for a common purpose or to achieve a common objective.&quot; This section later states &quot;Ultimately, authorization decisions (i.e., risk acceptance decisions) are made based on the degree to which the desired capabilities have been effectively achieved.&quot;
+- [NIST SP 800-53A](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) Section 3.5 states &quot;When organizations employ the concept of capabilities, automated and manual assessments account for all security and privacy controls that comprise the security and privacy capabilities. Assessors are aware of how the controls work together to provide such capabilities.&quot;
+- [FedRAMP Authorization Act (44 USC § 3609 (a) (1))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) requires that the Administrator of the General Services Administration shall &quot;in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...&quot; 44 USC § 3609 (c) (2) further states that &quot;the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.&quot;
 
 ### Purpose
 
@@ -34,16 +39,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - Third-party independent assessors will have a simpler framework to assess security and implementation decisions based on engineering decisions in context
 - Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based authorization to operate decisions based on their planned use case
 
-
 ---
-
-## Definitions
-
-#### FRD-KSI-01
-
-> **Regularly**: Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.
-
-
 
 
 ## Requirements
@@ -54,7 +50,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 #### FRR-KSI-01
 
-> Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope.
+> Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.
 
 #### FRR-KSI-02
 
@@ -73,7 +69,7 @@ Modern cloud services use automated or code-driven configuration management and 
 ## Key Security Indicators
 ### KSI-CED: Cybersecurity Education
 
-**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.**
+**A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.**
 
 #### KSI-CED-01
 > Ensure all employees receive security awareness training.
@@ -102,10 +98,10 @@ Modern cloud services use automated or code-driven configuration management and 
 
 ### KSI-CNA: Cloud Native Architecture
 
-**A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
+**A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
 
 #### KSI-CNA-01
-> Configure ALL information resources to limit inbound and outbound traffic.
+> Configure ALL _information resources_ to limit inbound and outbound traffic.
 
 #### KSI-CNA-02
 > Design systems to minimize the attack surface and minimize lateral movement if compromised.
@@ -123,11 +119,11 @@ Modern cloud services use automated or code-driven configuration management and 
 > Design systems for high availability and rapid recovery.
 
 #### KSI-CNA-07
-> Ensure cloud-native information resources are implemented based on host provider&#x27;s best practices and documented guidance.
+> Ensure cloud-native _information resources_ are implemented based on host provider&#x27;s best practices and documented guidance.
 
 ### KSI-IAM: Identity and Access Management
 
-**A secure cloud service offering will protect user data, control access, and apply zero trust principles.**
+**A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.**
 
 #### KSI-IAM-01
 > Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.
@@ -149,7 +145,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 ### KSI-INR: Incident Reporting
 
-**A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
+**A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
 
 #### KSI-INR-01
 > Report incidents according to FedRAMP requirements and cloud service provider policies.
@@ -158,23 +154,23 @@ Modern cloud services use automated or code-driven configuration management and 
 > Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.
 
 #### KSI-INR-03
-> Generate after action reports and regularly incorporate lessons learned into operations.
+> Generate after action reports and _regularly_ incorporate lessons learned into operations.
 
 ### KSI-MLA: Monitoring, Logging, and Auditing
 
-**A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.**
+**A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.**
 
 #### KSI-MLA-01
 > Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.
 
 #### KSI-MLA-02
-> Regularly review and audit logs.
+> _Regularly_ review and audit logs.
 
 #### KSI-MLA-03
 > Rapidly detect and remediate or mitigate vulnerabilities.
 
 #### KSI-MLA-04
-> Perform authenticated vulnerability scanning on information resources.
+> Perform authenticated vulnerability scanning on _information resources_.
 
 #### KSI-MLA-05
 > Perform Infrastructure as Code and configuration evaluation and testing.
@@ -184,13 +180,13 @@ Modern cloud services use automated or code-driven configuration management and 
 
 ### KSI-PIY: Policy and Inventory
 
-**A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.**
+**A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.**
 
 #### KSI-PIY-01
-> Have an up-to-date information resource inventory or code defining all deployed assets, software, and services.
+> Have an up-to-date _information resource_ inventory or code defining all deployed assets, software, and services.
 
 #### KSI-PIY-02
-> Have policies outlining the security objectives of all information resources.
+> Have policies outlining the security objectives of all _information resources_.
 
 #### KSI-PIY-03
 > Maintain a vulnerability disclosure program.
@@ -199,7 +195,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles.
 
 #### KSI-PIY-05
-> Document methods used to evaluate information resource implementations.
+> Document methods used to evaluate _information resource_ implementations.
 
 #### KSI-PIY-06
 > Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering.
@@ -209,7 +205,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 ### KSI-RPL: Recovery Planning
 
-**A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
+**A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
 
 #### KSI-RPL-01
 > Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
@@ -221,11 +217,11 @@ Modern cloud services use automated or code-driven configuration management and 
 > Perform system backups aligned with recovery objectives.
 
 #### KSI-RPL-04
-> Regularly test the capability to recover from incidents and contingencies.
+> _Regularly_ test the capability to recover from incidents and contingencies.
 
 ### KSI-SVC: Service Configuration
 
-**A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.**
+**A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.**
 
 #### KSI-SVC-01
 > Harden and review network and system configurations.
@@ -240,23 +236,23 @@ Modern cloud services use automated or code-driven configuration management and 
 > Manage configuration centrally.
 
 #### KSI-SVC-05
-> Enforce system and information resource integrity through cryptographic means.
+> Enforce system and _information resource_ integrity through cryptographic means.
 
 #### KSI-SVC-06
-> Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates.
+> Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates.
 
 #### KSI-SVC-07
 > Use a consistent, risk-informed approach for applying security patches.
 
 ### KSI-TPR: Third-Party Information Resources
 
-**A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.**
+**A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.**
 
 #### KSI-TPR-01
-> Identify all third-party information resources.
+> Identify all _third-party information resources_.
 
 #### KSI-TPR-02
-> Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured.
+> _Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured.
 
 #### KSI-TPR-03
 > Identify and prioritize mitigation of potential supply chain risks.

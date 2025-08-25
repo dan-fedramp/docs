@@ -8,20 +8,16 @@ See [IDENTIFIERS.md](./IDENTIFIERS.md) for explanations about the naming and str
 
 ## FRMR Materials
 
-| Materials                                                                                              | Description                                                                                                                                           | Version | Effective Date(s)                                            | Human Readable Versions                                                                                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Key Security Indicators (KSI)](./FRMR.KSI.key-security-indicators.json)                               | Key Security Indicators in this release are unchanged from previously releases. 25.05C adds references for each KSI to underlying SP 800-53 controls. | 25.05C  | 2025-06-28 (20xP1)                                           | Basic:<br><br><ul><li>[Markdown](./markdown/FRMR.KSI.key-security-indicators.md)</li><li>[PDF](./pdf/FRMR.KSI.key-security-indicators.pdf)</li></ul>With Control References:<br><br><ul><li>[Markdown](./markdown/FRMR.KSI.key-security-indicators-with-controls.md)</li><li>[PDF](./pdf/FRMR.KSI.key-security-indicators.pdf)</li></ul> |
-| [Minimum Assessment Standard (MAS)](./FRMR.MAS.minimum-assessment-standard.json)                       | Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard; reframed FRR-MAS-01; added FRD-MAS-06.                 | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-30 (R5.MAS.B1, tentative) | <ul><li>[Markdown](./markdown/FRMR.MAS.minimum-assessment-standard.md)</li><li>[PDF](./pdf/FRMR.MAS.minimum-assessment-standard.pdf)</li></ul>                                                                                                                                                                                               |
-| [Significant Change Notification Requirements (SCN)](./FRMR.SCN.significant-change-notifications.json) | Initial release of Significant Change Notification Requirements (includes Technical Assistance)                                                       | 25.06A  | 2025-06-17 (20xP1)<br><br> 2025-07-07 (R5.SCN.B1, tentative) | <ul><li>[Markdown](./markdown/FRMR.SCN.significant-change-notifications.md)</li><li>[PDF](./pdf/FRMR.SCN.significant-change-notifications.pdf)</li></ul>                                                                                                                                                                                     |
-| [Combined 20x Low Pilot Requirements](./combined/FRMR.LOW.20x-low-pilot.json)                          | Combined FedRAMP 20x Low Requirements (including KSI hotfix to original 25.05 release)                                                                | 25.06B  | 2025-06-18 (20xP1)                                           | <ul><li>[Markdown](./markdown/FRMR.LOW.20x-low-pilot.md)</li><li>[PDF](./pdf/FRMR.LOW.20x-low-pilot.pdf)</li> </ul>                                                                                                                                                                                                                          |
+| Markdown | PDF | Description | Version | Published Date |
+|-----------|---|-------------|---------|----------------|
+| [Authorization Data Sharing Standard (ADS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.ADS.authorization-data-sharing.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.ADS.authorization-data-sharing.pdf) | Initial release of the Authorization Data Sharing Standard | 25.08A | 2025-08-24 |
+| [Significant Change Notification Requirements (SCN)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.SCN.significant-change-notifications.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.SCN.significant-change-notifications.pdf) | Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL). | 25.06B | 2025-08-24 |
+| [FedRAMP Definitions (FRD)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.FRD.fedramp-definitions.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.FRD.fedramp-definitions.pdf) | Initial release of compiled FedRAMP definitions as a standalone document. | 25.08A | 2025-08-24 |
+| [Minimum Assessment Standard (MAS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.MAS.minimum-assessment-standard.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.MAS.minimum-assessment-standard.pdf) | Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL). | 25.06B | 2025-08-24 |
+| [Key Security Indicators (KSI)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.KSI.key-security-indicators.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.KSI.key-security-indicators.pdf) | Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL). | 25.05D | 2025-08-24 |
+| [Key Security Indicators with Controls (KSI)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.KSI.key-security-indicators-with-controls.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.KSI.key-security-indicators-with-controls.pdf) | Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL). | 25.05D | 2025-08-24 |
 
 ---
-
-## Next Steps
-
-- Auto-generate indexes and combined docs
-- Make JSON the source of truth for all releases
-- Add GitHub actions for automation
 
 ## Folders
 
@@ -41,18 +37,36 @@ See [IDENTIFIERS.md](./IDENTIFIERS.md) for explanations about the naming and str
    bun install
    ```
 
-3. **Validate JSON:**
+### Things you can do include:
 
-   ```sh
-   bun test
-   ```
+> If changes are made, all of these things need to be run manually at the moment, in the following order:
 
-4. **Generate Markdown:**
-   ```sh
-   bun run watch
-   ```
-   (watches for changes and regenerates markdown)
+**Validate JSON:**
 
-## Conversion to PDF
+```sh
+bun test
+```
+
+**Create Combined JSON files**
+
+```sh
+bun run scripts/combine-frmr-json.ts
+```
+
+ **Generate Markdown:**
+
+```sh
+bun run watch
+```
+(watches for changes and regenerates markdown)
+
+**Generate Updated TOC:**
+
+```sh
+bun run scripts/generate-table-of-docs.ts
+```
+(copy/paste to README.md)
+
+**Conversion to PDF:**
 
 Manually using md-to-pdf for now.
