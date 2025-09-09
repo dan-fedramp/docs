@@ -4,13 +4,13 @@
   "info": {
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
-    "current_release": "25.08A",
+    "current_release": "25.09A",
     "types": ["FRR"],
     "releases": [
       {
-        "id": "25.08A",
-        "published_date": "2025-08-24",
-        "description": "Initial release of compiled FedRAMP definitions as a standalone document.",
+        "id": "25.09A",
+        "published_date": "2025-09-10",
+        "description": "Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard.",
         "public_comment": true,
         "effective": {
           "20x": {
@@ -21,7 +21,7 @@
                 "comment": "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
               }
             },
-            "specific_release": "20x.FRD.P1.25.08A",
+            "specific_release": "20x.FRD.P2.25.09A",
             "is_optional": false,
             "comment": ""
           },
@@ -35,7 +35,7 @@
               }
             },
             "is_optional": false,
-            "specific_release": "R5.FRD.WR.25.08A",
+            "specific_release": "R5.FRD.WR.25.09A",
             "comment": ""
           }
         }
@@ -74,7 +74,7 @@
         "note": "This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
         "reference": "44 USC § 3502 (6)",
         "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
-        "referenced_fr": ["FRD-ALL-06"]        
+        "referenced_fr": ["FRD-ALL-06"]
       },
       {
         "id": "FRD-ALL-03",
@@ -175,7 +175,163 @@
         "definition": "Has the meaning from 44 U.S. Code § 3502 (18) which is \"the term \"_machine-readable_\", when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost\"",
         "reference": "44 U.S. Code § 3502 (18)",
         "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
-      }                                                                                    
+      },
+      {
+        "id": "FRD-ALL-18",
+        "term": "All Necessary Parties",
+        "definition": "All entities whose interests are affected directly by activity related to a specific _cloud service offering_ in the context of a FedRAMP authorization. This always includes FedRAMP and any _agency_ customer who is operating the _cloud service offering_, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential _agency_ customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.",
+        "referenced_fr": ["FRD-ALL-06", "FRD-ALL-19"]
+      },
+      {
+        "id": "FRD-ALL-19",
+        "term": "Agency",
+        "definition": "Has the meaning given in 44 U.S. Code § 3502 (1), which is \"any executive department, military department, Government corporation, Government controlled corporation, or other establishment in the executive branch of the Government (including the Executive Office of the President), or any independent regulatory agency, but does not include—(A) the Government Accountability Office; (B) Federal Election Commission; (C) the governments of the District of Columbia and of the territories and possessions of the United States, and their various subdivisions; or (D) Government-owned contractor-operated facilities, including laboratories engaged in national defense research and production activities.\"",
+        "reference": "44 U.S. Code § 3502 (1)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
+      },
+      {
+        "id": "FRD-ALL-20",
+        "term": "Vulnerability",
+        "definition": "Has the meaning given to \"security vulnerability\" in 6 USC § 650 (25), which is \"any attribute of hardware, software, process, or procedure that could enable or facilitate the defeat of [...] management, operational, and technical controls used to protect against an unauthorized effort to adversely affect the confidentiality, integrity, and availability of an information system or its information.\" This includes gaps in Rev5 controls and 20x Key Security Indicators, software vulnerabilities, misconfigurations, exposures, weak credentials, insecure services, and all other such potential weaknesses in protection (intentional or unintentional).",
+        "reference": "6 USC § 650 (25)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650"
+      },
+      {
+        "id": "FRD-ALL-21",
+        "term": "Vulnerability Detection",
+        "definition": "The systematic process of discovering and identifying security vulnerabilities in _information resources_ through assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other capabilities. This process includes the initial discovery of a _vulnerability's_ existence and the determination of affected _information resources_ within a _cloud service offering._",
+        "note": "This definition applies to other forms such as \"detect vulnerabilities\" or simply \"detection\" / \"detected\" used in FedRAMP materials.",
+        "referenced_fr": ["FRD-ALL-02", "FRD-ALL-20", "FRD-ALL-06"]
+      },
+      {
+        "id": "FRD-ALL-22",
+        "term": "Vulnerability Response",
+        "definition": "The systematic process of tracking, evaluating, mitigating, monitoring, remediating, assessing exploitation, reporting, and otherwise managing _detected vulnerabilities_.",
+        "note": "This definition applies to other forms such as \"respond to vulnerabilities\" or simply \"response\" / \"responded\" used in FedRAMP materials.",
+        "referenced_fr": ["FRD-ALL-21"]
+      },
+      {
+        "id": "FRD-ALL-23",
+        "term": "Likely Exploitable Vulnerability (LEV)",
+        "definition": "A vulnerability that is not _fully mitigated_, AND is reachable by a _likely_ threat actor, AND a _likely_ threat actor with knowledge of the _vulnerability_ would likely be able to gain unauthorized access, cause harm, disrupt operations, or otherwise have an undesired adverse impact within the _cloud service offering_ by exploiting the _vulnerability_.",
+        "note": "At the absolute minimum, any _vulnerability_ that an automated unauthenticated system can exploit over the internet is a _likely exploitable vulnerability_.",
+        "referenced_fr": [
+          "FRD-ALL-28",
+          "FRD-ALL-04",
+          "FRD-ALL-20",
+          "FRD-ALL-06"
+        ]
+      },
+      {
+        "id": "FRD-ALL-24",
+        "term": "Internet-reachable Vulnerability (IRV)",
+        "definition": "A _vulnerability_ in a machine-based _information resource_ that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based _information resources_ that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.",
+        "note": "Internet-reachability applies only to the specific vulnerable machine-based _information resources_ processing the payload; please review the relevant FedRAMP technical assistance on _internet-reachable vulnerabilities_ for examples.",
+        "referenced_fr": ["FRD-ALL-20", "FRD-ALL-02"]
+      },
+      {
+        "id": "FRD-ALL-25",
+        "term": "Known Exploited Vulnerability (KEV)",
+        "definition": "Has the meaning given in CISA Binding Operational Directive 22-01, which is any _vulnerability_ identified in CISA's Known Exploited Vulnerabilities catalog.",
+        "reference": "CISA BOD 22-01",
+        "reference_url": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities",
+        "referenced_fr": ["FRD-ALL-20"]
+      },
+      {
+        "id": "FRD-ALL-26",
+        "term": "Remediated Vulnerability",
+        "definition": "A _vulnerability_ that has been neutralized or eliminated and is no longer _detected_.",
+        "referenced_fr": ["FRD-ALL-20", "FRD-ALL-21"]
+      },
+      {
+        "id": "FRD-ALL-27",
+        "term": "Partially Mitigated Vulnerability",
+        "definition": "A _vulnerability_ where the likelihood or _potential adverse impact_ of exploitation has been reduced from the original evaluation but the risk of exploitation still exists and the _vulnerability_ is still _detected_.",
+        "referenced_fr": ["FRD-ALL-20", "FRD-ALL-36", "FRD-ALL-21"]
+      },
+      {
+        "id": "FRD-ALL-28",
+        "term": "Fully Mitigated Vulnerability",
+        "definition": "A _vulnerability_ where the likelihood of exploitation or _potential adverse impact_ of exploitation has been reduced from the original evaluation until either are negligible, but the _vulnerability_ is still _detected_.",
+        "referenced_fr": ["FRD-ALL-20", "FRD-ALL-36", "FRD-ALL-21"]
+      },
+      {
+        "id": "FRD-ALL-29",
+        "term": "False Positive Vulnerability",
+        "definition": "A _detected vulnerability_ that is not actually present in an exploitable state in the _information resource_; this includes situations where vulnerable software or code exist on an machine-based _information resource_ but are not loaded, running, or otherwise in an operating state required for exploitation.",
+        "note": "This only applies if the _vulnerability_ is not and was not present; a _remediated vulnerability_ or a _fully mitigated vulnerability_ cannot also be a _false positive vulnerability_.",
+        "referenced_fr": [
+          "FRD-ALL-21",
+          "FRD-ALL-02",
+          "FRD-ALL-20",
+          "FRD-ALL-26",
+          "FRD-ALL-28",
+          "FRD-ALL-29"
+        ]
+      },
+      {
+        "id": "FRD-ALL-30",
+        "term": "Overdue Vulnerability",
+        "definition": "A _vulnerability_ that the provider intends to _fully mitigate_ or _remediate_ but has not or will not do so within the time frames recommended or required by FedRAMP.",
+        "note": "",
+        "referenced_fr": ["FRD-ALL-20", "FRD-ALL-28", "FRD-ALL-26"]
+      },
+      {
+        "id": "FRD-ALL-31",
+        "term": "Accepted Vulnerability",
+        "definition": "A _vulnerability_ that the provider does not intend to _fully mitigate_ or _remediate_, OR that has not or will not be _fully mitigated_ or _remediated_ within the maximum overdue period recommended or required by FedRAMP.",
+        "referenced_fr": ["FRD-ALL-20", "FRD-ALL-28", "FRD-ALL-26"]
+      },
+      {
+        "id": "FRD-ALL-32",
+        "term": "Catastrophic Adverse Effect",
+        "definition": "A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would _likely_: (i) result in a severe degradation in the availability or performance of services within the _cloud service offering_ for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the _federal information_ stored within the _cloud service offering_.",
+        "referenced_fr": ["FRD-ALL-01", "FRD-ALL-06"]
+      },
+      {
+        "id": "FRD-ALL-33",
+        "term": "Serious Adverse Effect",
+        "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the _cloud service offering_, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the _federal information_ stored within the _cloud service offering_.",
+        "referenced_fr": ["FRD-ALL-01", "FRD-ALL-06"]
+      },
+      {
+        "id": "FRD-ALL-34",
+        "term": "Limited Adverse Effect",
+        "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the _cloud service offering_ for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the _federal information_ stored within the _cloud service offering_ by only a few relevant users.",
+        "referenced_fr": ["FRD-ALL-01", "FRD-ALL-06"]
+      },
+      {
+        "id": "FRD-ALL-35",
+        "term": "Negligible Adverse Effect",
+        "definition": "A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the _cloud service offering_; OR (ii) result in degradation of the availability or performance of services within the _cloud service offering_ for only a few relevant users.",
+        "referenced_fr": ["FRD-ALL-06"]
+      },
+      {
+        "id": "FRD-ALL-36",
+        "term": "Potential adverse impact (of vulnerability exploitation)",
+        "definition": "The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.",
+        "referenced_fr": ["FRD-ALL-04", "FRD-ALL-20", "FRD-ALL-06"]
+      },
+      {
+        "id": "FRD-ALL-37",
+        "term": "Promptly",
+        "definition": "Without unnecessary delay.",
+        "note": "The use of _promptly_ in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a _cloud service offering_.",
+        "referenced_fr": ["FRD-ALL-37", "FRD-ALL-04"]
+      },
+      {
+        "id": "FRD-ALL-38",
+        "term": "Persistently",
+        "definition": "Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. ",
+        "note": "The use of _persistently_ indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of \"continuous\" in federal information security policies.",
+        "referenced_fr": ["FRD-ALL-38", "FRD-ALL-07"]
+      },
+      {
+        "id": "FRD-ALL-39",
+        "term": "Drift",
+        "definition": "Changes to _information resources_ that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.",
+        "referenced_fr": ["FRD-ALL-02"]
+      }
     ]
   }
 }
