@@ -165,13 +165,17 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 
 > **Likely Exploitable Vulnerability (LEV)**: A vulnerability that is not _fully mitigated_, AND is reachable by a _likely_ threat actor, AND a _likely_ threat actor with knowledge of the _vulnerability_ would likely be able to gain unauthorized access, cause harm, disrupt operations, or otherwise have an undesired adverse impact within the _cloud service offering_ by exploiting the _vulnerability_.
 >
->  _Note: At the absolute minimum, any _vulnerability_ that an automated unauthenticated system can exploit over the internet is a _likely exploitable vulnerability_._
+>  _Notes:_
+>  - _The opposite of this is a &quot;Not Likely Exploitable Vulnerability&quot; (NLEV)._
+>  - _At the absolute minimum, any _vulnerability_ that an automated unauthenticated system can exploit over the internet is a _likely exploitable vulnerability_._
 
 #### FRD-ALL-24
 
 > **Internet-reachable Vulnerability (IRV)**: A _vulnerability_ in a machine-based _information resource_ that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based _information resources_ that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.
 >
->  _Note: Internet-reachability applies only to the specific vulnerable machine-based _information resources_ processing the payload; please review the relevant FedRAMP technical assistance on _internet-reachable vulnerabilities_ for examples._
+>  _Notes:_
+>  - _The opposite of this is a &quot;Not Internet-reachable Vulnerability&quot; (NIRV)._
+>  - _Internet-reachability applies only to the specific vulnerable machine-based _information resources_ processing the payload; please review the relevant FedRAMP technical assistance on _internet-reachable vulnerabilities_ for examples._
 
 #### FRD-ALL-25
 

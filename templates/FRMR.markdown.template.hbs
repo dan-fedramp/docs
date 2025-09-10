@@ -68,6 +68,13 @@ The following FedRAMP documentation guidelines apply to this document:
 >
 >  _Note: {{note}}_
       {{/if}}
+      {{#if notes}}
+>
+>  _Notes:_
+        {{#each notes}}
+>  - _{{this}}_
+        {{/each}}
+      {{/if}}      
       {{#if reference}}
 >
 >  _[Reference: {{reference}}]({{reference_url}})_
@@ -110,6 +117,10 @@ The following FedRAMP documentation guidelines apply to this document:
 > | N{{this.pain}} | {{this.max_days_irv_lev}}|{{this.max_days_nirv_lev}} | {{this.max_days_nlev}}|
           {{/each}}
         {{/if}}
+      {{#if note}}
+>
+>  _Note: {{note}}_
+      {{/if}}
       {{/each}}
 
 ---   

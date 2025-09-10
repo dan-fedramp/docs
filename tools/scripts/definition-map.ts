@@ -50,20 +50,20 @@ async function buildDefinitionMap(): Promise<DefinitionMap> {
 async function main() {
   try {
     // Check for --dryrun flag
-    const isDryRun = process.argv.includes('--dryrun');
-    
-    console.log('Building definition map...');
+    const isDryRun = process.argv.includes("--dryrun");
+
+    //console.log('Building definition map...');
     const definitionMap = await buildDefinitionMap();
-    
-    console.log('Definition Map:');
-    console.log('---------------');
+
+    //console.log('Definition Map:');
+    //console.log('---------------');
     Object.entries(definitionMap)
-      .sort(([,a], [,b]) => a.localeCompare(b))
+      .sort(([, a], [, b]) => a.localeCompare(b))
       .forEach(([term, id]) => {
-        console.log(`${id}: "${term}"`);
+        console.log(`\"${term}\",\"${id}\",`);
       });
-    
-    console.log('Processing complete!');
+
+    //console.log("Processing complete!");
   } catch (error) {
     console.error('Failed to process definitions:', error);
   }
