@@ -68,6 +68,13 @@ The following FedRAMP documentation guidelines apply to this document:
 >
 >  _Note: {{note}}_
       {{/if}}
+      {{#if notes}}
+>
+>  _Notes:_
+        {{#each notes}}
+>  - _{{this}}_
+        {{/each}}
+      {{/if}}      
       {{#if reference}}
 >
 >  _[Reference: {{reference}}]({{reference_url}})_
@@ -98,6 +105,22 @@ The following FedRAMP documentation guidelines apply to this document:
 > 1. {{this}}
           {{/each}}
         {{/if}}
+        {{#if following_information_bullets}}
+          {{#each following_information_bullets}}
+> - {{this}}
+          {{/each}}
+        {{/if}}
+        {{#if pain_timeframes}}
+> | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
+> |-------------------------|-----------|------------|------|
+          {{#each pain_timeframes}}
+> | N{{this.pain}} | {{this.max_days_irv_lev}}|{{this.max_days_nirv_lev}} | {{this.max_days_nlev}}|
+          {{/each}}
+        {{/if}}
+      {{#if note}}
+>
+>  _Note: {{note}}_
+      {{/if}}
       {{/each}}
 
 ---   

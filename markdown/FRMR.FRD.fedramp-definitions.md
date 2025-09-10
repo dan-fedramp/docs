@@ -1,9 +1,9 @@
 # FedRAMP FedRAMP Definitions
 
-- **Release:** 25.08A
-- **Published:** 2025-08-24  
+- **Release:** 25.09A
+- **Published:** 2025-09-10  
 - **Designator:** FRD
-- **Description:** Initial release of compiled FedRAMP definitions as a standalone document.
+- **Description:** Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard.
 
 ## Front Matter
 
@@ -132,6 +132,118 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 > **Machine-readable**: Has the meaning from 44 U.S. Code § 3502 (18) which is &quot;the term &quot;_machine-readable_&quot;, when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost&quot;
 >
 >  _[Reference: 44 U.S. Code § 3502 (18)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
+
+#### FRD-ALL-18
+
+> **All Necessary Parties**: All entities whose interests are affected directly by activity related to a specific _cloud service offering_ in the context of a FedRAMP authorization. This always includes FedRAMP and any _agency_ customer who is operating the _cloud service offering_, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential _agency_ customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.
+
+#### FRD-ALL-19
+
+> **Agency**: Has the meaning given in 44 U.S. Code § 3502 (1), which is &quot;any executive department, military department, Government corporation, Government controlled corporation, or other establishment in the executive branch of the Government (including the Executive Office of the President), or any independent regulatory agency, but does not include—(A) the Government Accountability Office; (B) Federal Election Commission; (C) the governments of the District of Columbia and of the territories and possessions of the United States, and their various subdivisions; or (D) Government-owned contractor-operated facilities, including laboratories engaged in national defense research and production activities.&quot;
+>
+>  _[Reference: 44 U.S. Code § 3502 (1)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
+
+#### FRD-ALL-20
+
+> **Vulnerability**: Has the meaning given to &quot;security vulnerability&quot; in 6 USC § 650 (25), which is &quot;any attribute of hardware, software, process, or procedure that could enable or facilitate the defeat of [...] management, operational, and technical controls used to protect against an unauthorized effort to adversely affect the confidentiality, integrity, and availability of an information system or its information.&quot; This includes gaps in Rev5 controls and 20x Key Security Indicators, software vulnerabilities, misconfigurations, exposures, weak credentials, insecure services, and all other such potential weaknesses in protection (intentional or unintentional).
+>
+>  _[Reference: 6 USC § 650 (25)](https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650)_
+
+#### FRD-ALL-21
+
+> **Vulnerability Detection**: The systematic process of discovering and identifying security vulnerabilities in _information resources_ through assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other capabilities. This process includes the initial discovery of a _vulnerability&#x27;s_ existence and the determination of affected _information resources_ within a _cloud service offering._
+>
+>  _Note: This definition applies to other forms such as &quot;detect vulnerabilities&quot; or simply &quot;detection&quot; / &quot;detected&quot; used in FedRAMP materials._
+
+#### FRD-ALL-22
+
+> **Vulnerability Response**: The systematic process of tracking, evaluating, mitigating, monitoring, remediating, assessing exploitation, reporting, and otherwise managing _detected vulnerabilities_.
+>
+>  _Note: This definition applies to other forms such as &quot;respond to vulnerabilities&quot; or simply &quot;response&quot; / &quot;responded&quot; used in FedRAMP materials._
+
+#### FRD-ALL-23
+
+> **Likely Exploitable Vulnerability (LEV)**: A vulnerability that is not _fully mitigated_, AND is reachable by a _likely_ threat actor, AND a _likely_ threat actor with knowledge of the _vulnerability_ would likely be able to gain unauthorized access, cause harm, disrupt operations, or otherwise have an undesired adverse impact within the _cloud service offering_ by exploiting the _vulnerability_.
+>
+>  _Notes:_
+>  - _The opposite of this is a &quot;Not Likely Exploitable Vulnerability&quot; (NLEV)._
+>  - _At the absolute minimum, any _vulnerability_ that an automated unauthenticated system can exploit over the internet is a _likely exploitable vulnerability_._
+
+#### FRD-ALL-24
+
+> **Internet-reachable Vulnerability (IRV)**: A _vulnerability_ in a machine-based _information resource_ that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based _information resources_ that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.
+>
+>  _Notes:_
+>  - _The opposite of this is a &quot;Not Internet-reachable Vulnerability&quot; (NIRV)._
+>  - _Internet-reachability applies only to the specific vulnerable machine-based _information resources_ processing the payload; please review the relevant FedRAMP technical assistance on _internet-reachable vulnerabilities_ for examples._
+
+#### FRD-ALL-25
+
+> **Known Exploited Vulnerability (KEV)**: Has the meaning given in CISA Binding Operational Directive 22-01, which is any _vulnerability_ identified in CISA&#x27;s Known Exploited Vulnerabilities catalog.
+>
+>  _[Reference: CISA BOD 22-01](https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities)_
+
+#### FRD-ALL-26
+
+> **Remediated Vulnerability**: A _vulnerability_ that has been neutralized or eliminated and is no longer _detected_.
+
+#### FRD-ALL-27
+
+> **Partially Mitigated Vulnerability**: A _vulnerability_ where the likelihood or _potential adverse impact_ of exploitation has been reduced from the original evaluation but the risk of exploitation still exists and the _vulnerability_ is still _detected_.
+
+#### FRD-ALL-28
+
+> **Fully Mitigated Vulnerability**: A _vulnerability_ where the likelihood of exploitation or _potential adverse impact_ of exploitation has been reduced from the original evaluation until either are negligible, but the _vulnerability_ is still _detected_.
+
+#### FRD-ALL-29
+
+> **False Positive Vulnerability**: A _detected vulnerability_ that is not actually present in an exploitable state in the _information resource_; this includes situations where vulnerable software or code exist on an machine-based _information resource_ but are not loaded, running, or otherwise in an operating state required for exploitation.
+>
+>  _Note: This only applies if the _vulnerability_ is not and was not present; a _remediated vulnerability_ or a _fully mitigated vulnerability_ cannot also be a _false positive vulnerability_._
+
+#### FRD-ALL-30
+
+> **Overdue Vulnerability**: A _vulnerability_ that the provider intends to _fully mitigate_ or _remediate_ but has not or will not do so within the time frames recommended or required by FedRAMP.
+
+#### FRD-ALL-31
+
+> **Accepted Vulnerability**: A _vulnerability_ that the provider does not intend to _fully mitigate_ or _remediate_, OR that has not or will not be _fully mitigated_ or _remediated_ within the maximum overdue period recommended or required by FedRAMP.
+
+#### FRD-ALL-32
+
+> **Catastrophic Adverse Effect**: A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would _likely_: (i) result in a severe degradation in the availability or performance of services within the _cloud service offering_ for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the _federal information_ stored within the _cloud service offering_.
+
+#### FRD-ALL-33
+
+> **Serious Adverse Effect**: A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the _cloud service offering_, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the _federal information_ stored within the _cloud service offering_.
+
+#### FRD-ALL-34
+
+> **Limited Adverse Effect**: A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the _cloud service offering_ for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the _federal information_ stored within the _cloud service offering_ by only a few relevant users.
+
+#### FRD-ALL-35
+
+> **Negligible Adverse Effect**: A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the _cloud service offering_; OR (ii) result in degradation of the availability or performance of services within the _cloud service offering_ for only a few relevant users.
+
+#### FRD-ALL-36
+
+> **Potential adverse impact (of vulnerability exploitation)**: The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.
+
+#### FRD-ALL-37
+
+> **Promptly**: Without unnecessary delay.
+>
+>  _Note: The use of _promptly_ in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a _cloud service offering_._
+
+#### FRD-ALL-38
+
+> **Persistently**: Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. 
+>
+>  _Note: The use of _persistently_ indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of &quot;continuous&quot; in federal information security policies._
+
+#### FRD-ALL-39
+
+> **Drift**: Changes to _information resources_ that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.
 
 
 

@@ -101,6 +101,118 @@
 >
 >  _[Reference: 44 U.S. Code § 3502 (18)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
 
+#### FRD-ALL-18
+
+> **All Necessary Parties**: All entities whose interests are affected directly by activity related to a specific _cloud service offering_ in the context of a FedRAMP authorization. This always includes FedRAMP and any _agency_ customer who is operating the _cloud service offering_, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential _agency_ customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.
+
+#### FRD-ALL-19
+
+> **Agency**: Has the meaning given in 44 U.S. Code § 3502 (1), which is &quot;any executive department, military department, Government corporation, Government controlled corporation, or other establishment in the executive branch of the Government (including the Executive Office of the President), or any independent regulatory agency, but does not include—(A) the Government Accountability Office; (B) Federal Election Commission; (C) the governments of the District of Columbia and of the territories and possessions of the United States, and their various subdivisions; or (D) Government-owned contractor-operated facilities, including laboratories engaged in national defense research and production activities.&quot;
+>
+>  _[Reference: 44 U.S. Code § 3502 (1)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)_
+
+#### FRD-ALL-20
+
+> **Vulnerability**: Has the meaning given to &quot;security vulnerability&quot; in 6 USC § 650 (25), which is &quot;any attribute of hardware, software, process, or procedure that could enable or facilitate the defeat of [...] management, operational, and technical controls used to protect against an unauthorized effort to adversely affect the confidentiality, integrity, and availability of an information system or its information.&quot; This includes gaps in Rev5 controls and 20x Key Security Indicators, software vulnerabilities, misconfigurations, exposures, weak credentials, insecure services, and all other such potential weaknesses in protection (intentional or unintentional).
+>
+>  _[Reference: 6 USC § 650 (25)](https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650)_
+
+#### FRD-ALL-21
+
+> **Vulnerability Detection**: The systematic process of discovering and identifying security vulnerabilities in _information resources_ through assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other capabilities. This process includes the initial discovery of a _vulnerability&#x27;s_ existence and the determination of affected _information resources_ within a _cloud service offering._
+>
+>  _Note: This definition applies to other forms such as &quot;detect vulnerabilities&quot; or simply &quot;detection&quot; / &quot;detected&quot; used in FedRAMP materials._
+
+#### FRD-ALL-22
+
+> **Vulnerability Response**: The systematic process of tracking, evaluating, mitigating, monitoring, remediating, assessing exploitation, reporting, and otherwise managing _detected vulnerabilities_.
+>
+>  _Note: This definition applies to other forms such as &quot;respond to vulnerabilities&quot; or simply &quot;response&quot; / &quot;responded&quot; used in FedRAMP materials._
+
+#### FRD-ALL-23
+
+> **Likely Exploitable Vulnerability (LEV)**: A vulnerability that is not _fully mitigated_, AND is reachable by a _likely_ threat actor, AND a _likely_ threat actor with knowledge of the _vulnerability_ would likely be able to gain unauthorized access, cause harm, disrupt operations, or otherwise have an undesired adverse impact within the _cloud service offering_ by exploiting the _vulnerability_.
+>
+>  _Notes:_
+>  - _The opposite of this is a &quot;Not Likely Exploitable Vulnerability&quot; (NLEV)._
+>  - _At the absolute minimum, any _vulnerability_ that an automated unauthenticated system can exploit over the internet is a _likely exploitable vulnerability_._
+
+#### FRD-ALL-24
+
+> **Internet-reachable Vulnerability (IRV)**: A _vulnerability_ in a machine-based _information resource_ that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based _information resources_ that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.
+>
+>  _Notes:_
+>  - _The opposite of this is a &quot;Not Internet-reachable Vulnerability&quot; (NIRV)._
+>  - _Internet-reachability applies only to the specific vulnerable machine-based _information resources_ processing the payload; please review the relevant FedRAMP technical assistance on _internet-reachable vulnerabilities_ for examples._
+
+#### FRD-ALL-25
+
+> **Known Exploited Vulnerability (KEV)**: Has the meaning given in CISA Binding Operational Directive 22-01, which is any _vulnerability_ identified in CISA&#x27;s Known Exploited Vulnerabilities catalog.
+>
+>  _[Reference: CISA BOD 22-01](https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities)_
+
+#### FRD-ALL-26
+
+> **Remediated Vulnerability**: A _vulnerability_ that has been neutralized or eliminated and is no longer _detected_.
+
+#### FRD-ALL-27
+
+> **Partially Mitigated Vulnerability**: A _vulnerability_ where the likelihood or _potential adverse impact_ of exploitation has been reduced from the original evaluation but the risk of exploitation still exists and the _vulnerability_ is still _detected_.
+
+#### FRD-ALL-28
+
+> **Fully Mitigated Vulnerability**: A _vulnerability_ where the likelihood of exploitation or _potential adverse impact_ of exploitation has been reduced from the original evaluation until either are negligible, but the _vulnerability_ is still _detected_.
+
+#### FRD-ALL-29
+
+> **False Positive Vulnerability**: A _detected vulnerability_ that is not actually present in an exploitable state in the _information resource_; this includes situations where vulnerable software or code exist on an machine-based _information resource_ but are not loaded, running, or otherwise in an operating state required for exploitation.
+>
+>  _Note: This only applies if the _vulnerability_ is not and was not present; a _remediated vulnerability_ or a _fully mitigated vulnerability_ cannot also be a _false positive vulnerability_._
+
+#### FRD-ALL-30
+
+> **Overdue Vulnerability**: A _vulnerability_ that the provider intends to _fully mitigate_ or _remediate_ but has not or will not do so within the time frames recommended or required by FedRAMP.
+
+#### FRD-ALL-31
+
+> **Accepted Vulnerability**: A _vulnerability_ that the provider does not intend to _fully mitigate_ or _remediate_, OR that has not or will not be _fully mitigated_ or _remediated_ within the maximum overdue period recommended or required by FedRAMP.
+
+#### FRD-ALL-32
+
+> **Catastrophic Adverse Effect**: A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would _likely_: (i) result in a severe degradation in the availability or performance of services within the _cloud service offering_ for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the _federal information_ stored within the _cloud service offering_.
+
+#### FRD-ALL-33
+
+> **Serious Adverse Effect**: A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the _cloud service offering_, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the _federal information_ stored within the _cloud service offering_.
+
+#### FRD-ALL-34
+
+> **Limited Adverse Effect**: A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the _cloud service offering_ for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the _federal information_ stored within the _cloud service offering_ by only a few relevant users.
+
+#### FRD-ALL-35
+
+> **Negligible Adverse Effect**: A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the _cloud service offering_; OR (ii) result in degradation of the availability or performance of services within the _cloud service offering_ for only a few relevant users.
+
+#### FRD-ALL-36
+
+> **Potential adverse impact (of vulnerability exploitation)**: The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.
+
+#### FRD-ALL-37
+
+> **Promptly**: Without unnecessary delay.
+>
+>  _Note: The use of _promptly_ in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a _cloud service offering_._
+
+#### FRD-ALL-38
+
+> **Persistently**: Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. 
+>
+>  _Note: The use of _persistently_ indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of &quot;continuous&quot; in federal information security policies._
+
+#### FRD-ALL-39
+
+> **Drift**: Changes to _information resources_ that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.
+
 
 
 
@@ -426,6 +538,349 @@
 #### FRR-MAS-AY-06
 
 > All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
+
+---   
+
+
+### FRR-VDR
+
+**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+
+#### FRR-VDR-01
+
+> Providers MUST systematically, _persistently_, and _promptly_ discover and identify _vulnerabilities_ within their _cloud service offering_ using appropriate techniques such as assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other relevant capabilities; this process is called _vulnerability detection_.
+
+#### FRR-VDR-02
+
+> Providers MUST systematically, _persistently_, and _promptly_ track, evaluate, monitor, _mitigate_, _remediate_, assess exploitation of, report, and otherwise manage all detected vulnerabilities within their _cloud service offering_; this process is called _vulnerability response_.
+
+#### FRR-VDR-03
+
+> Providers MUST follow the requirements and recommendations outlined in FRR-VDR-TF regarding timeframes for _vulnerability detection_ and _response_.
+>
+>  _Note: Providers are strongly encouraged to build programs that consistently exceed these thresholds. Performance will be measured by FedRAMP for comparison between providers and scoring within the FedRAMP Marketplace._
+
+#### FRR-VDR-04
+
+> Providers MAY sample effectively identical _information resources_, especially machine-based _information resources_, when performing _vulnerability detection_ UNLESS doing so would decrease the efficiency or effectiveness of _vulnerability detection_.
+
+#### FRR-VDR-05
+
+> Providers SHOULD evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to identify logical groupings of affected _information resources_ that may improve the efficiency and effectiveness of _vulnerability response_ by consolidating further activity; requirements and recommendations in this standard are then applied to these consolidated groupings of _vulnerabilities_ instead of each individual detected instance.
+
+#### FRR-VDR-06
+
+> Providers SHOULD evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to determine if they are _false positive vulnerabilities_.
+
+#### FRR-VDR-07
+
+> Providers MUST evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to determine if they are _likely exploitable vulnerabilities_.
+
+#### FRR-VDR-08
+
+> Providers MUST evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to determine if they are _internet-reachable vulnerabilities_.
+
+#### FRR-VDR-09
+
+> Providers MUST evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to estimate the _potential adverse impact_ of exploitation on government customers AND assign one of the following _potential adverse impact_ ratings:
+> - **N1**: Exploitation could be expected to have _negligible adverse effects_ on one or more _agencies_ that use the _cloud service offering_.
+> - **N2**: Exploitation could be expected to have _limited adverse effects_ on one or more _agencies_ that use the _cloud service offering_.
+> - **N3**: Exploitation could be expected to have a _serious adverse effect_ on one _agency_ that uses the _cloud service offering_.
+> - **N4**: Exploitation could be expected to have a _catastrophic adverse effect_ on one _agency_ that uses the _cloud service offering_ OR a _serious adverse effect_ on more than one federal agency that uses the _cloud service offering_.
+> - **N5**: Exploitation could be expected to have a _catastrophic adverse effect_ on more than one _agency_ that uses the _cloud service offering_.
+
+#### FRR-VDR-10
+
+> Providers SHOULD consider at least the following factors when considering the context of the _cloud service offering_ to evaluate _detected vulnerabilities_:
+> 1. **Criticality**: How important are the systems or information that might be impacted by the _vulnerability_?
+> 1. **Reachability**: How might a threat actor reach the _vulnerability_ and how _likely_ is that?
+> 1. **Exploitability**: How easy is it for a threat actor to exploit the _vulnerability_ and how _likely_ is that?
+> 1. **Detectability**: How easy is it for a threat actor to become aware of the _vulnerability_ and how _likely_ is that?
+> 1. **Prevalence**: How much of the _cloud service offering_ is affected by the _vulnerability_?
+> 1. **Privilege**: How much privileged authority or access is granted or can be gained from exploiting the _vulnerability_?
+> 1. **Proximate Vulnerabilities**: How does this _vulnerability_ interact with previously _detected vulnerabilities_, especially _partially_ or _fully mitigated vulnerabilities?_
+> 1. **Known Threats**: How might already known threats leverage the _vulnerability_ and how _likely_ is that?
+
+#### FRR-VDR-11
+
+> Providers MUST document the reason and resulting implications for their customers when choosing not to meet FedRAMP recommendations in this standard; this documentation MUST be included in the _authorization data_ for the _cloud service offering_.
+
+---   
+
+### FRR-VDR-AY
+
+**This section provides guidance on the application of this standard, including recommendations for implementing high quality _vulnerability detection_ and _response_ programs; providers who follow some or all of these will be better positioned to meet future FedRAMP authorization requirements.**
+
+#### FRR-VDR-AY-01
+
+> If it is not possible to _fully mitigate_ or _remediate_ _detected vulnerabilities_, providers SHOULD instead _partially mitigate vulnerabilities_ _promptly_, progressively, and *persistently*.
+
+#### FRR-VDR-AY-02
+
+> Providers SHOULD make design and architecture decisions for their _cloud service offering_ that mitigate the risk of _vulnerabilities_ by default AND decrease the risk and complexity of _vulnerability_ _detection_ and _response_.
+
+#### FRR-VDR-AY-03
+
+> Providers SHOULD use automated services to improve and streamline _vulnerability detection_ and _response_.
+
+#### FRR-VDR-AY-04
+
+> Providers SHOULD automatically perform _vulnerability detection_ on representative samples of new or _significantly_ _changed_ _information resources_.
+
+#### FRR-VDR-AY-05
+
+> Providers SHOULD NOT weaken the security of _information resources_ to facilitate vulnerability scanning or assessment activities.
+
+#### FRR-VDR-AY-06
+
+> Providers SHOULD NOT deploy or otherwise activate new machine-based _information resources_ with _Known Exploited Vulnerabilities_.
+
+---   
+
+### FRR-VDR-RP
+
+**This section identifies FedRAMP-specific reporting requirements and recommendations for _vulnerabilities_.**
+
+#### FRR-VDR-RP-01
+
+> Providers MUST report _vulnerability detection_ and _response_ activity to all necessary parties _persistently_, summarizing ALL activity since the previous report; these reports are _authorization data_ and are subject to the FedRAMP Authorization Data Sharing (ADS) standard.
+
+#### FRR-VDR-RP-02
+
+> Providers SHOULD include high-level overviews of ALL _vulnerability detection_ and _response_ activities conducted during this period for the _cloud service offering;_ this includes vulnerability disclosure programs, bug bounty programs, penetration testing, assessments, etc.
+
+#### FRR-VDR-RP-03
+
+> Providers MUST NOT irresponsibly disclose specific sensitive information about _vulnerabilities_ that would _likely_ lead to exploitation, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.
+>
+>  _Note: See FRR-VDR-EX for exceptions to this requirement._
+
+#### FRR-VDR-RP-04
+
+> Providers MAY responsibly disclose _vulnerabilities_ publicly or with other parties if the provider determines doing so will NOT _likely_ lead to exploitation.
+
+#### FRR-VDR-RP-05
+
+> Providers MUST include the following information (if applicable) on _detected vulnerabilities_ when reporting on _vulnerability detection_ and _response_ activity, UNLESS it is an _accepted vulnerability_:
+> 1. Provider&#x27;s internally assigned tracking identifier
+> 1. Time and source of the detection
+> 1. Time of completed evaluation
+> 1. Is it an *internet-reachable vulnerability* or not?
+> 1. Is it a *likely exploitable vulnerability* or not?
+> 1. Historically and currently estimated *potential adverse impact* of exploitation
+> 1. Time and level of each completed and evaluated reduction in *potential adverse impact*
+> 1. Estimated time and target level of next reduction in *potential adverse impact*
+> 1. Is it currently or is it likely to become an *overdue vulnerability* or not? If so, explain.
+> 1. Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their *federal information* within the *cloud service offering* resulting from the *vulnerability*
+> 1. Final disposition of the *vulnerability*
+
+#### FRR-VDR-RP-06
+
+> Providers MUST include the following information on _accepted vulnerabilities_ when reporting on _vulnerability detection_ and _response_ activity:
+> 1. Provider&#x27;s internally assigned tracking identifier
+> 1. Time and source of the detection
+> 1. Time of completed evaluation
+> 1. Is it an *internet-reachable vulnerability* or not?
+> 1. Is it a *likely exploitable vulnerability* or not?
+> 1. Currently estimated *potential adverse impact* of exploitation
+> 1. Explanation of why this is an *accepted vulnerability*
+> 1. Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their *federal information* within the *cloud service offering* resulting from the *accepted vulnerability*
+
+---   
+
+### FRR-VDR-EX
+
+**These exceptions MAY override some or all of the FedRAMP requirements and recommendations in this standard.**
+
+#### FRR-VDR-EX-01
+
+> Providers MAY be required to share additional _vulnerability_ information, alternative reports, or to report at an alternative frequency as a condition of a FedRAMP Corrective Action Plan or other agreements with federal agencies.
+
+#### FRR-VDR-EX-02
+
+> Providers MAY be required to provide additional information or details about _vulnerabilities_, including sensitive information that would _likely_ lead to exploitation, as part of review, response or investigation by necessary parties.
+
+#### FRR-VDR-EX-03
+
+> Providers MUST NOT use this standard to reject requests for additional information from necessary parties which also include law enforcement, Congress, and Inspectors General.
+
+---   
+
+### FRR-VDR-TF
+
+**This section provides guidance on timeframes that apply to all impact levels of FedRAMP authorization for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
+
+#### FRR-VDR-TF-01
+
+> Providers MUST report _vulnerability detection_ and _response_ activity to all necessary parties in a consistent format that is human readable at least monthly.
+
+#### FRR-VDR-TF-02
+
+> Providers SHOULD _remediate Known Exploited Vulnerabilities_ according to the due dates in the CISA Known Exploited Vulnerabilities Catalog (even if the vulnerability has been _fully mitigated_) as required by CISA Binding Operational Directive (BOD) 22-01 or any successor guidance from CISA.
+
+#### FRR-VDR-TF-03
+
+> Providers MUST categorize any vulnerability that is not or will not be _fully mitigated_ or _remediated_ within 192 days of evaluation as an _accepted vulnerability_.
+
+---   
+
+### FRR-VDR-TF-LO
+
+**This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
+
+#### FRR-VDR-TF-LO-01
+
+> Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every month.
+
+#### FRR-VDR-TF-LO-02
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once every week.
+
+#### FRR-VDR-TF-LO-03
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every month.
+
+#### FRR-VDR-TF-LO-04
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once every six months.
+
+#### FRR-VDR-TF-LO-05
+
+> Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 7 days of _detection_.
+
+#### FRR-VDR-TF-LO-06
+
+> Providers SHOULD _partially mitigate, fully mitigate,_ or _remediate vulnerabilities_ to a lower _potential adverse impact_ within the timeframes from evaluation shown below (in days), factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
+> | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
+> |-------------------------|-----------|------------|------|
+> | N5 | 4|8 | 32|
+> | N4 | 8|32 | 64|
+> | N3 | 32|64 | 192|
+> | N2 | 96|160 | 192|
+
+#### FRR-VDR-TF-LO-07
+
+> Providers SHOULD _mitigate_ or _remediate_ remaining _vulnerabilities_ during routine operations as determined necessary by the provider.
+
+---   
+
+### FRR-VDR-TF-MO
+
+**This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
+
+#### FRR-VDR-TF-MO-01
+
+> Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every 14 days.
+
+#### FRR-VDR-TF-MO-02
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once every 3 days.
+
+#### FRR-VDR-TF-MO-03
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every 14 days.
+
+#### FRR-VDR-TF-MO-04
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once per month.
+
+#### FRR-VDR-TF-MO-05
+
+> Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 5 days of _detection_.
+
+#### FRR-VDR-TF-MO-06
+
+> Providers SHOULD treat _internet-reachable likely exploitable vulnerabilities_ with a _potential adverse impact_ of N4 or N5 as a security incident until they are _partially mitigated_ to N3 or below.
+
+#### FRR-VDR-TF-MO-07
+
+> Providers SHOULD _partially mitigate, fully mitigate,_ or _remediate vulnerabilities_ to a lower _potential adverse impact_ within the timeframes from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
+> | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
+> |-------------------------|-----------|------------|------|
+> | N5 | 2|4 | 16|
+> | N4 | 4|8 | 64|
+> | N3 | 16|32 | 128|
+> | N2 | 48|128 | 192|
+
+#### FRR-VDR-TF-MO-08
+
+> Providers SHOULD *mitigate* or *remediate* remaining *vulnerabilities* during routine operations as determined necessary by the provider.
+
+---   
+
+### FRR-VDR-TF-HI
+
+**This section provides guidance on timeframes that apply specifically to FedRAMP High authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
+
+#### FRR-VDR-TF-HI-01
+
+> Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every 7 days.
+
+#### FRR-VDR-TF-HI-02
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once per day.
+
+#### FRR-VDR-TF-HI-03
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every 7 days.
+
+#### FRR-VDR-TF-HI-04
+
+> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once every month.
+
+#### FRR-VDR-TF-HI-05
+
+> Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 2 days of _detection_.
+
+#### FRR-VDR-TF-HI-06
+
+> Providers SHOULD treat _internet-reachable likely exploitable vulnerabilities_ with a _potential adverse impact_ of N4 or N5 as a security incident until they are _partially mitigated_ to N3 or below.
+
+#### FRR-VDR-TF-HI-07
+
+> Providers SHOULD treat _likely exploitable vulnerabilities_ that are NOT _internet-reachable_ with a _potential adverse impact_ of N5 as a security incident until they are partially mitigated to N4 or below.
+> | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
+> |-------------------------|-----------|------------|------|
+> | N5 | .5|1 | 8|
+> | N4 | 2|8 | 32|
+> | N3 | 8|16 | 64|
+> | N2 | 24|96 | 192|
+
+#### FRR-VDR-TF-HI-08
+
+> Providers SHOULD _partially mitigate_ _vulnerabilities_ to a lower _potential adverse impact_ within the maximum time-frames from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
+
+#### FRR-VDR-TF-HI-09
+
+> Providers SHOULD *mitigate* or *remediate* remaining *vulnerabilities* during routine operations as determined necessary by the provider.
+
+---   
+
+### FRR-VDR-AG
+
+**The section provides guidance for agencies that apply under 44 USC § 3613 (e) which states that the assessment and materials within a FedRAMP authorization package “shall be presumed adequate for use in an agency authorization to operate cloud computing products and services.”**
+
+#### FRR-VDR-AG-01
+
+> Agencies SHOULD review the information provided in vulnerability reports at appropriate and reasonable intervals commensurate with the expectations and risk posture indicated by their Authorization to Operate, and SHOULD use automated processing and filtering of machine readable information from cloud service providers.
+>
+>  _Note: FedRAMP recommends that agencies only review *overdue* and _accepted vulnerabilities_ with a _potential adverse impact_ of N3 or higher unless the cloud service provider recommends mitigations or the service is included in a higher risk federal information system. Furthermore, _accepted vulnerabilities_ generally only need to be reviewed when they are added or during an updated risk assessment due to changes in the agency’s use or authorization._
+
+#### FRR-VDR-AG-02
+
+> Agencies SHOULD use *vulnerability* information reported by the Provider to maintain Plans of Action &amp; Milestones for agency security programs when relevant according to agency security policies (such as if the agency takes action to mitigate the risk of exploitation or authorized the continued use of a cloud service with *accepted vulnerabilities* that put agency information systems at risk).
+
+#### FRR-VDR-AG-03
+
+> Agencies SHOULD NOT request additional information from cloud service providers that is not required by this FedRAMP standard UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such.
+>
+>  _Note: This is related to the Presumption of Adequacy directed by 44 USC § 3613 (e)._
+
+#### FRR-VDR-AG-04
+
+> Agencies MUST inform FedRAMP after requesting any additional *vulnerability* information or materials from a cloud service provider beyond those required by this policy by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).
+>
+>  _Note: This is an OMB policy; agencies are required to notify FedRAMP in OMB Memorandum M-24-15 section IV (a)._
 
 ---   
 
@@ -799,6 +1254,36 @@ Examples:
 - Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)
 - Adding models to existing approved AI services without exposing federal information to new services
           
+
+---   
+    
+  
+### FRA-VDR
+
+**Purpose:** This Technical Assistance provides additional context behind the intent and goals of certain aspects of this standard that have caused significant confusion or requests for clarification during public comment. This assistance is initially designed for 20x Phase Two/Three and the Rev5 Closed Beta Balance Improvement Test.
+
+**Disclaimer:** Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.
+
+****
+
+#### FRA-VDR-01
+
+FedRAMP focuses on internet-reachable (rather than internet-accessible) to ensure that any service that might receive a payload from the internet is prioritized if that service has a vulnerability that can be triggered by processing the data in the payload. The simplest way to prevent exploitation of internet-reachable vulnerabilities is to intercept, inspect, filter, sanitize, reject, or otherwise deflect triggering payloads before they are processed by the vulnerable resource; once this prevention is in place the vulnerability should no longer be considered an internet-reachable vulnerability.
+
+A classic example of an internet-reachable vulnerability on systems that are not typically internet-accessible is SQL injection (https://en.wikipedia.org/wiki/SQL_injection), where an application stack behind a load balancer and firewall with no ability to route traffic to or from the internet can receive a payload indirectly from the internet that triggers the manipulation or compromise of data in database that can only be accessed by an authorized connection from the application server on a private network.
+
+Another simple example is the infamous Log4Shell (https://en.wikipedia.org/wiki/Log4Shell) vulnerability from 2021, where exploitation was possible via vulnerable internet-reachable resources deep in the application stack that were often not internet-accessible themselves.
+
+
+---   
+    
+
+#### FRA-VDR-02
+
+The simple reality is that most traditional vulnerabilities discovered by scanners or during assessment are not likely to be exploitable; exploitation typically requires an unrealistic set of circumstances that will not occur during normal operation. The likelihood of exploitation will vary depending on so many factors that FedRAMP will not recommend a specific framework for approaching this beyond the recommendations and requirements in this document.
+
+The proof, ultimately, is in the pudding - providers who regularly evaluate vulnerabilities as not likely exploitable without careful consideration are more likely to suffer from an adverse impact where the root cause was an exploited vulnerability that was improperly evaluated. If done recklessly or deliberately, such actions will have a potential adverse impact on a provider&#x27;s FedRAMP authorization.
+
 
 ---   
     
