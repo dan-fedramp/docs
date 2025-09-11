@@ -839,16 +839,16 @@
 #### FRR-VDR-TF-HI-07
 
 > Providers SHOULD treat _likely exploitable vulnerabilities_ that are NOT _internet-reachable_ with a _potential adverse impact_ of N5 as a security incident until they are partially mitigated to N4 or below.
+
+#### FRR-VDR-TF-HI-08
+
+> Providers SHOULD _partially mitigate_ _vulnerabilities_ to a lower _potential adverse impact_ within the maximum time-frames from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
 > | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
 > |-------------------------|-----------|------------|------|
 > | N5 | .5|1 | 8|
 > | N4 | 2|8 | 32|
 > | N3 | 8|16 | 64|
 > | N2 | 24|96 | 192|
-
-#### FRR-VDR-TF-HI-08
-
-> Providers SHOULD _partially mitigate_ _vulnerabilities_ to a lower _potential adverse impact_ within the maximum time-frames from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
 
 #### FRR-VDR-TF-HI-09
 
@@ -1270,7 +1270,7 @@ Examples:
 
 FedRAMP focuses on internet-reachable (rather than internet-accessible) to ensure that any service that might receive a payload from the internet is prioritized if that service has a vulnerability that can be triggered by processing the data in the payload. The simplest way to prevent exploitation of internet-reachable vulnerabilities is to intercept, inspect, filter, sanitize, reject, or otherwise deflect triggering payloads before they are processed by the vulnerable resource; once this prevention is in place the vulnerability should no longer be considered an internet-reachable vulnerability.
 
-A classic example of an internet-reachable vulnerability on systems that are not typically internet-accessible is SQL injection (https://en.wikipedia.org/wiki/SQL_injection), where an application stack behind a load balancer and firewall with no ability to route traffic to or from the internet can receive a payload indirectly from the internet that triggers the manipulation or compromise of data in database that can only be accessed by an authorized connection from the application server on a private network.
+A classic example of an internet-reachable vulnerability on systems that are not typically internet-accessible is SQL injection (https://en.wikipedia.org/wiki/SQL_injection), where an application stack behind a load balancer and firewall with no ability to route traffic to or from the internet can receive a payload indirectly from the internet that triggers the manipulation or compromise of data in a database that can only be accessed by an authorized connection from the application server on a private network.
 
 Another simple example is the infamous Log4Shell (https://en.wikipedia.org/wiki/Log4Shell) vulnerability from 2021, where exploitation was possible via vulnerable internet-reachable resources deep in the application stack that were often not internet-accessible themselves.
 
