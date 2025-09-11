@@ -1519,6 +1519,17 @@
               "Providers"
             ],
             "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-VDR-01"
+            ]
+          },
+          {
+            "id": "FRR-VDR-TF-HI-08",
+            "statement": "Providers SHOULD _partially mitigate_ _vulnerabilities_ to a lower _potential adverse impact_ within the maximum time-frames from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:",
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
             "pain_timeframes": [
               {
                 "pain": 5,
@@ -1545,17 +1556,6 @@
                 "max_days_nlev": 192
               }
             ],
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-08",
-            "statement": "Providers SHOULD _partially mitigate_ _vulnerabilities_ to a lower _potential adverse impact_ within the maximum time-frames from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
             ]
@@ -2189,7 +2189,7 @@
         {
           "id": "FRA-VDR-01",
           "applies_to": "FRR-VDR-08",
-          "statement": "FedRAMP focuses on internet-reachable (rather than internet-accessible) to ensure that any service that might receive a payload from the internet is prioritized if that service has a vulnerability that can be triggered by processing the data in the payload. The simplest way to prevent exploitation of internet-reachable vulnerabilities is to intercept, inspect, filter, sanitize, reject, or otherwise deflect triggering payloads before they are processed by the vulnerable resource; once this prevention is in place the vulnerability should no longer be considered an internet-reachable vulnerability.\n\nA classic example of an internet-reachable vulnerability on systems that are not typically internet-accessible is SQL injection (https://en.wikipedia.org/wiki/SQL_injection), where an application stack behind a load balancer and firewall with no ability to route traffic to or from the internet can receive a payload indirectly from the internet that triggers the manipulation or compromise of data in database that can only be accessed by an authorized connection from the application server on a private network.\n\nAnother simple example is the infamous Log4Shell (https://en.wikipedia.org/wiki/Log4Shell) vulnerability from 2021, where exploitation was possible via vulnerable internet-reachable resources deep in the application stack that were often not internet-accessible themselves."
+          "statement": "FedRAMP focuses on internet-reachable (rather than internet-accessible) to ensure that any service that might receive a payload from the internet is prioritized if that service has a vulnerability that can be triggered by processing the data in the payload. The simplest way to prevent exploitation of internet-reachable vulnerabilities is to intercept, inspect, filter, sanitize, reject, or otherwise deflect triggering payloads before they are processed by the vulnerable resource; once this prevention is in place the vulnerability should no longer be considered an internet-reachable vulnerability.\n\nA classic example of an internet-reachable vulnerability on systems that are not typically internet-accessible is SQL injection (https://en.wikipedia.org/wiki/SQL_injection), where an application stack behind a load balancer and firewall with no ability to route traffic to or from the internet can receive a payload indirectly from the internet that triggers the manipulation or compromise of data in a database that can only be accessed by an authorized connection from the application server on a private network.\n\nAnother simple example is the infamous Log4Shell (https://en.wikipedia.org/wiki/Log4Shell) vulnerability from 2021, where exploitation was possible via vulnerable internet-reachable resources deep in the application stack that were often not internet-accessible themselves."
         },
         {
           "id": "FRA-VDR-02",
