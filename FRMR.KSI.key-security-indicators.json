@@ -143,20 +143,23 @@
             "statement": "Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-06", "FRR-MAS-01"]
+            "referenced_fr": ["FRD-ALL-06", "FRR-MAS-01"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-KSI-02",
             "statement": "All parties SHOULD follow FedRAMP's best practices and technical assistance on assessing Key Security Indicators where applicable.",
             "affects": ["Providers", "Agencies", "3PAOs"],
-            "primary_key_word": "SHOULD"
+            "primary_key_word": "SHOULD",
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-KSI-03",
             "statement": "All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.",
             "affects": ["Providers", "Agencies", "3PAOs"],
             "primary_key_word": "SHOULD",
-            "is_interim": true
+            "is_interim": true,
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       }
@@ -190,7 +193,8 @@
               "control_id": "at-4",
               "title": "Training Records"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CED-02",
@@ -209,7 +213,8 @@
               "control_id": "sr-11.1",
               "title": "Anti-counterfeit Training"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -243,7 +248,8 @@
               "control_id": "ma-2",
               "title": "Controlled Maintenance"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CMT-02",
@@ -278,7 +284,8 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CMT-03",
@@ -297,7 +304,8 @@
               "control_id": "si-2",
               "title": "Flaw Remediation"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CMT-04",
@@ -324,7 +332,8 @@
               "control_id": "cm-9",
               "title": "Configuration Management Plan"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CMT-05",
@@ -347,7 +356,8 @@
               "control_id": "si-2",
               "title": "Flaw Remediation"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -371,7 +381,8 @@
               "control_id": "ca-9",
               "title": "Internal System Connections"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CNA-02",
@@ -386,7 +397,8 @@
               "control_id": "ca-9",
               "title": "Internal System Connections"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CNA-03",
@@ -405,7 +417,8 @@
               "control_id": "sc-7",
               "title": "Boundary Protection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CNA-04",
@@ -420,7 +433,8 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CNA-05",
@@ -431,13 +445,15 @@
               "control_id": "sc-5",
               "title": "Denial-of-service Protection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CNA-06",
           "statement": "Design systems for high availability and rapid recovery",
           "applied_impact_levels": ["Low"],
-          "controls": []
+          "controls": [],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-CNA-07",
@@ -457,7 +473,8 @@
               "control_id": "pl-10",
               "title": "Baseline Selection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -496,7 +513,8 @@
               "control_id": "ia-8",
               "title": "Identification and Authentication (Non-organizational Users)"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-IAM-02",
@@ -539,7 +557,8 @@
               "control_id": "ia-6",
               "title": "Authentication Feedback"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-IAM-03",
@@ -693,7 +712,8 @@
               "control_id": "sc-39",
               "title": "Process Isolation"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-IAM-05",
@@ -820,7 +840,8 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-IAM-06",
@@ -855,7 +876,8 @@
               "control_id": "ps-8",
               "title": "Personnel Sanctions"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -898,7 +920,8 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-INR-02",
@@ -925,7 +948,8 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-INR-03",
@@ -949,7 +973,8 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -1012,7 +1037,8 @@
               "control_id": "au-11",
               "title": "Audit Record Retention"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-MLA-02",
@@ -1040,7 +1066,8 @@
               "control_id": "si-4",
               "title": "System Monitoring"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-MLA-03",
@@ -1075,7 +1102,8 @@
               "control_id": "si-5",
               "title": "Security Alerts, Advisories, and Directives"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-MLA-04",
@@ -1095,7 +1123,8 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-MLA-05",
@@ -1114,7 +1143,8 @@
               "control_id": "cm-6",
               "title": "Configuration Settings"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-MLA-06",
@@ -1125,7 +1155,8 @@
               "control_id": "ca-5",
               "title": "Plan of Action and Milestones"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -1165,7 +1196,8 @@
               "control_id": "cp-2.8",
               "title": "Identify Critical Assets"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-PIY-02",
@@ -1277,7 +1309,8 @@
               "control_id": "sr-11",
               "title": "Component Authenticity"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-PIY-03",
@@ -1288,7 +1321,8 @@
               "control_id": "ra-5.11",
               "title": "Public Disclosure Program"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-PIY-04",
@@ -1303,14 +1337,16 @@
               "control_id": "sa-3",
               "title": "System Development Life Cycle"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-PIY-05",
           "statement": "Document methods used to evaluate _information resource_ implementations",
           "referenced_fr": ["FRD-ALL-02"],
           "applied_impact_levels": ["Low"],
-          "controls": []
+          "controls": [],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-PIY-06",
@@ -1345,7 +1381,8 @@
               "control_id": "sr-2.1",
               "title": "Establish SCRM Team"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-PIY-07",
@@ -1356,7 +1393,8 @@
               "control_id": "ca-7.4",
               "title": "Risk Monitoring"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -1379,7 +1417,8 @@
               "control_id": "cp-10",
               "title": "System Recovery and Reconstitution"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-RPL-02",
@@ -1402,7 +1441,8 @@
               "control_id": "cp-10",
               "title": "System Recovery and Reconstitution"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-RPL-03",
@@ -1433,7 +1473,8 @@
               "control_id": "si-12",
               "title": "Information Management and Retention"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-RPL-04",
@@ -1461,7 +1502,8 @@
               "control_id": "ir-3",
               "title": "Incident Response Testing"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -1496,7 +1538,8 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-SVC-02",
@@ -1531,7 +1574,8 @@
               "control_id": "sc-22",
               "title": "Architecture and Provisioning for Name/Address Resolution Service"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-SVC-03",
@@ -1554,7 +1598,8 @@
               "control_id": "sc-13",
               "title": "Cryptographic Protection"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-SVC-04",
@@ -1597,7 +1642,8 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-SVC-05",
@@ -1621,7 +1667,8 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-SVC-06",
@@ -1645,7 +1692,8 @@
               "control_id": "sc-12",
               "title": "Cryptographic Key Establishment and Management"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-SVC-07",
@@ -1664,7 +1712,8 @@
               "control_id": "ra-7",
               "title": "Risk Response"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     },
@@ -1692,7 +1741,8 @@
               "control_id": "ps-7",
               "title": "External Personnel Security"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-TPR-02",
@@ -1728,7 +1778,8 @@
               "control_id": "sa-9",
               "title": "External System Services"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-TPR-03",
@@ -1755,7 +1806,8 @@
               "control_id": "sr-5",
               "title": "Acquisition Strategies, Tools, and Methods"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-TPR-04",
@@ -1798,7 +1850,8 @@
               "control_id": "sr-8",
               "title": "Notification Agreements"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         }
       ]
     }

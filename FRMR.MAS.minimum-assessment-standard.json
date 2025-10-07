@@ -150,35 +150,40 @@
               "FRD-ALL-02",
               "FRD-ALL-03",
               "FRD-ALL-04"
-            ]
+            ],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-02",
             "statement": "Providers MUST include the configuration and usage of _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-05"]
+            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-05"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-03",
             "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal information_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-01", "FRD-ALL-05"]
+            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-01", "FRD-ALL-05"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-04",
             "statement": "Providers MUST include metadata (including metadata about _federal information_), ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-01"]
+            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-01"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-05",
             "statement": "Providers MUST clearly identify, document, and explain information flows and impact levels for ALL _information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-02"]
+            "referenced_fr": ["FRR-MAS-01", "FRD-ALL-02"],
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       },
@@ -191,7 +196,8 @@
             "statement": "Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.",
             "affects": ["Providers"],
             "primary_key_word": "MAY",
-            "referenced_fr": ["FRD-ALL-02", "FRD-ALL-06"]
+            "referenced_fr": ["FRD-ALL-02", "FRD-ALL-06"],
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       },
@@ -206,7 +212,8 @@
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
             "reference_url": "http://fedramp.gov/scope",
-            "referenced_fr": ["FRD-ALL-06"]
+            "referenced_fr": ["FRD-ALL-06"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-AY-02",
@@ -214,7 +221,8 @@
             "affects": ["All"],
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
-            "reference_url": "http://fedramp.gov/scope"
+            "reference_url": "http://fedramp.gov/scope",
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-AY-03",
@@ -227,7 +235,8 @@
               "FRD-ALL-05",
               "FRD-ALL-06",
               "FRR-MAS-02"
-            ]
+            ],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-AY-04",
@@ -239,20 +248,23 @@
               "FRD-ALL-02",
               "FRD-ALL-03",
               "FRD-ALL-05"
-            ]
+            ],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-AY-05",
             "statement": "All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Standard as needed.",
             "affects": ["All"],
-            "primary_key_word": "SHOULD"
+            "primary_key_word": "SHOULD",
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-MAS-AY-06",
             "statement": "All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-06"]
+            "referenced_fr": ["FRD-ALL-06"],
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       }

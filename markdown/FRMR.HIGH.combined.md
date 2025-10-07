@@ -1,9 +1,9 @@
-# FedRAMP FedRAMP 20x Combined Requirements
+# FedRAMP FedRAMP 20x All Impact Requirements
 
-- **Release:** 25.08A
-- **Published:** 2025-08-24  
-- **Designator:** FRMR-LOW
-- **Description:** Combined FedRAMP 20x Low Requirements
+- **Release:** Untracked
+- **Published:** 2025-10-07  
+- **Designator:** FRMR-ALL
+- **Description:** FedRAMP 20x All Impact Requirements
 
 ---
 
@@ -721,90 +721,6 @@
 #### FRR-VDR-TF-03
 
 > Providers MUST categorize any vulnerability that is not or will not be _fully mitigated_ or _remediated_ within 192 days of evaluation as an _accepted vulnerability_.
-
----   
-
-### FRR-VDR-TF-LO
-
-**This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
-
-#### FRR-VDR-TF-LO-01
-
-> Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every month.
-
-#### FRR-VDR-TF-LO-02
-
-> Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once every week.
-
-#### FRR-VDR-TF-LO-03
-
-> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every month.
-
-#### FRR-VDR-TF-LO-04
-
-> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once every six months.
-
-#### FRR-VDR-TF-LO-05
-
-> Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 7 days of _detection_.
-
-#### FRR-VDR-TF-LO-06
-
-> Providers SHOULD _partially mitigate, fully mitigate,_ or _remediate vulnerabilities_ to a lower _potential adverse impact_ within the timeframes from evaluation shown below (in days), factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
-> | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
-> |-------------------------|-----------|------------|------|
-> | N5 | 4|8 | 32|
-> | N4 | 8|32 | 64|
-> | N3 | 32|64 | 192|
-> | N2 | 96|160 | 192|
-
-#### FRR-VDR-TF-LO-07
-
-> Providers SHOULD _mitigate_ or _remediate_ remaining _vulnerabilities_ during routine operations as determined necessary by the provider.
-
----   
-
-### FRR-VDR-TF-MO
-
-**This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
-
-#### FRR-VDR-TF-MO-01
-
-> Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every 14 days.
-
-#### FRR-VDR-TF-MO-02
-
-> Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once every 3 days.
-
-#### FRR-VDR-TF-MO-03
-
-> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every 14 days.
-
-#### FRR-VDR-TF-MO-04
-
-> Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once per month.
-
-#### FRR-VDR-TF-MO-05
-
-> Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 5 days of _detection_.
-
-#### FRR-VDR-TF-MO-06
-
-> Providers SHOULD treat _internet-reachable likely exploitable vulnerabilities_ with a _potential adverse impact_ of N4 or N5 as a security incident until they are _partially mitigated_ to N3 or below.
-
-#### FRR-VDR-TF-MO-07
-
-> Providers SHOULD _partially mitigate, fully mitigate,_ or _remediate vulnerabilities_ to a lower _potential adverse impact_ within the timeframes from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
-> | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
-> |-------------------------|-----------|------------|------|
-> | N5 | 2|4 | 16|
-> | N4 | 4|8 | 64|
-> | N3 | 16|32 | 128|
-> | N2 | 48|128 | 192|
-
-#### FRR-VDR-TF-MO-08
-
-> Providers SHOULD *mitigate* or *remediate* remaining *vulnerabilities* during routine operations as determined necessary by the provider.
 
 ---   
 
