@@ -68,4 +68,7 @@ bun run scripts/generate-table-of-docs.ts
 
 **Conversion to PDF:**
 
-Manually using md-to-pdf for now.
+```sh
+cd markdown
+../tools/scripts/update-pdfs.sh
+```

@@ -932,14 +932,15 @@
         "requirements": [
           {
             "id": "FRR-MAS-EX-01",
-            "statement": "Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.",
+            "statement": "Providers MAY include documentation of _information resources_ beyond the _cloud service offering_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and _authorization package_ supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.",
             "affects": [
               "Providers"
             ],
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRD-ALL-02",
-              "FRD-ALL-06"
+              "FRD-ALL-06",
+              "FRD-ALL-14"
             ],
             "impact": {
               "low": true,
@@ -988,7 +989,7 @@
           },
           {
             "id": "FRR-MAS-AY-03",
-            "statement": "_Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP(_FRR-MAS-02_).",
+            "statement": "_Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP (_FRR-MAS-02_).",
             "affects": [
               "All"
             ],
@@ -1008,7 +1009,7 @@
           },
           {
             "id": "FRR-MAS-AY-04",
-            "statement": "_Information resources_ (including _third-party information resources_+_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).",
+            "statement": "_Information resources_ (including _third-party information resources_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).",
             "affects": [
               "All"
             ],

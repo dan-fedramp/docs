@@ -507,7 +507,7 @@
 
 #### FRR-MAS-EX-01
 
-> Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.
+> Providers MAY include documentation of _information resources_ beyond the _cloud service offering_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and _authorization package_ supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.
 
 ---   
 
@@ -525,11 +525,11 @@
 
 #### FRR-MAS-AY-03
 
-> _Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP(_FRR-MAS-02_).
+> _Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP (_FRR-MAS-02_).
 
 #### FRR-MAS-AY-04
 
-> _Information resources_ (including _third-party information resources_+_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).
+> _Information resources_ (including _third-party information resources_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).
 
 #### FRR-MAS-AY-05
 
