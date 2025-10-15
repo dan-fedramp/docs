@@ -17,13 +17,13 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-01",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.KSI.P1.25.05C",
-            "is_optional": false,
-            "comment": "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            ]
           }
         }
       },
@@ -37,13 +37,13 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-01",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.KSI.P1.25.05C",
-            "is_optional": false,
-            "comment": "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            ]
           }
         }
       },
@@ -57,13 +57,13 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-01",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.KSI.P1.25.05B",
-            "is_optional": false,
-            "comment": "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            ]
           }
         }
       },
@@ -77,13 +77,13 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-16",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.KSI.P1.25.05A",
-            "is_optional": false,
-            "comment": "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
+            ]
           }
         },
         "related_rfcs": [
@@ -158,7 +158,6 @@
             "statement": "All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.",
             "affects": ["Providers", "Agencies", "3PAOs"],
             "primary_key_word": "SHOULD",
-            "is_interim": true,
             "impact": { "low": true, "moderate": true, "high": true }
           }
         ]

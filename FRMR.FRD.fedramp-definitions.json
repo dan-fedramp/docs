@@ -4,9 +4,39 @@
   "info": {
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
-    "current_release": "25.09A",
+    "current_release": "25.10A",
     "types": ["FRR"],
     "releases": [
+      {
+        "id": "25.10A",
+        "published_date": "2025-09-10",
+        "description": "Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard.",
+        "public_comment": true,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-01",
+                "designator": "20x"
+              }
+            },
+            "comments": [
+              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
+            ]
+          },
+          "Rev5": {
+            "timeline": {
+              "wide_release": {
+                "start_date": "2025-06-01",
+                "designator": "R5.FRD.WR"
+              }
+            },
+            "comments": [
+              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
+            ]
+          }
+        }
+      },
       {
         "id": "25.09A",
         "published_date": "2025-09-10",
@@ -17,26 +47,23 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-01",
-                "designator": "20x",
-                "comment": "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
+                "designator": "20x"
               }
             },
-            "specific_release": "20x.FRD.P2.25.09A",
-            "is_optional": false,
-            "comment": ""
+            "comments": [
+              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
+            ]
           },
           "Rev5": {
             "timeline": {
               "wide_release": {
                 "start_date": "2025-06-01",
-                "is_tentative": false,
-                "designator": "R5.FRD.WR",
-                "comment": "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
+                "designator": "R5.FRD.WR"
               }
             },
-            "is_optional": false,
-            "specific_release": "R5.FRD.WR.25.09A",
-            "comment": ""
+            "comments": [
+              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
+            ]
           }
         }
       }
@@ -337,6 +364,12 @@
         "term": "Drift",
         "definition": "Changes to _information resources_ that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.",
         "referenced_fr": ["FRD-ALL-02"]
+      },
+      {
+        "id": "FRD-ALL-40",
+        "term": "Federal Customer Data",
+        "definition": "Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. ",
+        "note": "The use of _persistently_ indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of \"continuous\" in federal information security policies."
       }
     ]
   }

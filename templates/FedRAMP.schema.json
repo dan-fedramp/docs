@@ -219,7 +219,6 @@
           "type": "string",
           "pattern": "^(20x|R5)\\.[A-Z]{3}\\.((P|B)\\d+|WR)\\.\\d{2}\\.\\d{2}[A-Z]$"
         },
-        "is_optional": { "type": "boolean" },
         "comment": { "type": "string" }
       }
     },
@@ -264,7 +263,6 @@
                   "NONE"
                 ]
               },
-              "is_interim": { "type": "boolean" },
               "referenced_fr": {
                 "type": "array",
                 "items": { "type": "string" }

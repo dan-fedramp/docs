@@ -513,7 +513,6 @@
               "Providers"
             ],
             "primary_key_word": "MAY",
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,
@@ -527,7 +526,6 @@
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "referenced_fr": [
               "FRD-ALL-17"
             ],
@@ -556,7 +554,6 @@
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,
@@ -570,7 +567,6 @@
               "Providers"
             ],
             "primary_key_word": "MAY",
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,
@@ -687,7 +683,6 @@
               "Providers"
             ],
             "primary_key_word": "SHOULD",
-            "is_interim": true,
             "referenced_fr": [
               "FRD-ALL-11"
             ],
@@ -818,7 +813,6 @@
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "referenced_fr": [
               "FRD-ALL-12"
             ],
@@ -1789,7 +1783,6 @@
             "referenced_fr": [
               "FRD-VDR-01"
             ],
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,
@@ -1806,7 +1799,6 @@
             "referenced_fr": [
               "FRD-VDR-01"
             ],
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,
@@ -1824,7 +1816,6 @@
             "referenced_fr": [
               "FRD-VDR-01"
             ],
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,
@@ -1839,7 +1830,6 @@
               "Agencies"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,
@@ -1895,7 +1885,6 @@
               "3PAOs"
             ],
             "primary_key_word": "SHOULD",
-            "is_interim": true,
             "impact": {
               "low": true,
               "moderate": true,

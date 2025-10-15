@@ -17,26 +17,25 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-17",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.SCN.P1.25.06A",
-            "is_optional": false,
-            "comment": "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
+            ]
           },
           "Rev5": {
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-07-07",
-                "is_tentative": true,
-                "designator": "R5.SCN.B1",
-                "comment": "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1)."
+                "designator": "R5.SCN.B1"
               }
             },
-            "is_optional": true,
-            "specific_release": "R5.SCN.B1.25.06A",
-            "comment": "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            "comments": [
+              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1).",
+              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            ]
           }
         }
       },
@@ -50,26 +49,25 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-17",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.SCN.P1.25.06A",
-            "is_optional": false,
-            "comment": "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
+            ]
           },
           "Rev5": {
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-07-07",
-                "is_tentative": true,
-                "designator": "R5.SCN.B1",
-                "comment": "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1)."
+                "designator": "R5.SCN.B1"
               }
             },
-            "is_optional": true,
-            "specific_release": "R5.SCN.B1.25.06A",
-            "comment": "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            "comments": [
+              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1).",
+              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            ]
           }
         },
         "related_rfcs": [
@@ -172,7 +170,6 @@
             "statement": "Providers MAY notify necessary parties in a variety of ways as long as the mechanism for notification is clearly documented and easily accessible.",
             "affects": ["Providers"],
             "primary_key_word": "MAY",
-            "is_interim": true,
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
@@ -180,7 +177,6 @@
             "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "referenced_fr": ["FRD-ALL-17"],
             "impact": { "low": true, "moderate": true, "high": true }
           },
@@ -201,7 +197,6 @@
             ],
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
@@ -209,7 +204,6 @@
             "statement": "Providers MAY include additional relevant information in Significant Change Notifications.",
             "affects": ["Providers"],
             "primary_key_word": "MAY",
-            "is_interim": true,
             "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
@@ -279,7 +273,6 @@
             "statement": "Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting _transformative_ changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "is_interim": true,
             "referenced_fr": ["FRD-ALL-11"],
             "impact": { "low": true, "moderate": true, "high": true }
           },
@@ -351,7 +344,6 @@
             "statement": "Providers MUST follow the legacy Significant Change Request process or full re-authorization for _impact categorization_ changes, with advance approval from an identified lead agency, until further notice.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "referenced_fr": ["FRD-ALL-12"],
             "impact": { "low": true, "moderate": true, "high": true }
           }

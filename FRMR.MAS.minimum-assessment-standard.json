@@ -17,26 +17,25 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-17",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.MAS.P1.25.06A",
-            "is_optional": false,
-            "comment": "Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR."
+            ]
           },
           "Rev5": {
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-07-30",
-                "is_tentative": true,
-                "designator": "R5.MAS.B1",
-                "comment": "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1)."
+                "designator": "R5.MAS.B1"
               }
             },
-            "specific_release": "R5.MAS.B1.25.06A",
-            "is_optional": true,
-            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            "comments": [
+              "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1).",
+              "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            ]
           }
         }
       },
@@ -50,26 +49,25 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-06-17",
-                "designator": "20xP1",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20xP1"
               }
             },
-            "specific_release": "20x.MAS.P1.25.06A",
-            "is_optional": false,
-            "comment": "Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR."
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
+              "Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR."
+            ]
           },
           "Rev5": {
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-07-30",
-                "is_tentative": true,
-                "designator": "R5.MAS.B1",
-                "comment": "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1)."
+                "designator": "R5.MAS.B1"
               }
             },
-            "specific_release": "R5.MAS.B1.25.06A",
-            "is_optional": true,
-            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            "comments": [
+              "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1).",
+              "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            ]
           }
         }
       },
@@ -81,15 +79,15 @@
         "effective": {
           "20x": {
             "pilot": "2025-05-30",
-            "specific_release": "20x.MAS.P1.25.05A",
-            "is_optional": false,
-            "comment": "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
+            "comments": [
+              "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
+            ]
           },
           "Rev5": {
             "closed_beta": "2025-06-30",
-            "specific_release": "R5.MAS.B1.25.05A",
-            "is_optional": true,
-            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
+            "comments": [
+              "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
+            ]
           }
         },
         "related_rfcs": [

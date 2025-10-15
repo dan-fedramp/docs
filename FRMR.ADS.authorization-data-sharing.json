@@ -17,13 +17,11 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-09-01",
-                "designator": "20x",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20x"
               }
             },
-            "specific_release": "20x.ADS.P1.25.08A",
-            "is_optional": false,
             "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
               "20xP1 participants do not need to fully align with this policy to receive pilot authorization.",
               "Participants in the 20xP1 pilot who receive pilot authorizations must demonstrate progress towards the adoption of this policy and be in full alignment by the expiration date of their pilot authorization."
             ]
@@ -32,14 +30,11 @@
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-09-01",
-                "is_tentative": true,
-                "designator": "R5.ADS.B1",
-                "comment": "This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services."
+                "designator": "R5.ADS.B1"
               }
             },
-            "is_optional": true,
-            "specific_release": "R5.ADS.B1.25.08A",
             "comments": [
+              "This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services.",
               "These requirements will be initially tested and evaluated for Rev5 in the ADS Closed Beta (B1).",
               "Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.",
               "Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test."

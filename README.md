@@ -72,3 +72,14 @@ bun run scripts/generate-table-of-docs.ts
 cd markdown
 ../tools/scripts/update-pdfs.sh
 ```
+
+# Broader Changes / Notes
+
+- **October**
+  - Removed `specific_release` from JSON files (this was not really used)
+  - Removed `is_optional` from JSON files to avoid confusion
+  - Removed `is_tentantive` from JSON files to avoid confusion
+  - Removed `is_interim` from JSON files to avoid confusion
+  - Removed `comment` field from releases and replaced with `comments` array in JSON files
+  - 
+  
