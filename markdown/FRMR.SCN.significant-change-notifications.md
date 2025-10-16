@@ -1,23 +1,22 @@
 # FedRAMP Significant Change Notification Requirements
 
-- **Release:** 25.06B
-- **Published:** 2025-08-24  
+- **Release:** 25.10A
+- **Published:** 2025-10-17  
 - **Designator:** SCN
-- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).
+- **Description:** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
 
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-17** for **20xP1**. 
+  - This release is effective **2025-06-17** for **20x Phase One Pilot**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard.  
 
 - **FedRAMP Rev5**:
-  - This release is effective **2025-07-07** for **R5.SCN.B1** _(tentatively)_. 
-  - These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1).
-  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.  
+  - This release is effective **2025-07-07** for **Rev5 Closed Beta**. 
+  - These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.
+  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
 
 
 ### Documentation Guidelines
@@ -280,10 +279,10 @@ Key Tests:
 Examples:
 
 - The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)
-- Increasing the security categorization of a service within the offering that actively handles federal information (does NOT include impact change of entire offering - see impact categorization change)
+- Increasing the security categorization of a service within the offering that actively handles _federal customer data_ (does NOT include impact change of entire offering - see impact categorization change)
 - Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)
-- Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations
-- Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)
+- Datacenter migration where large amounts of _federal customer data_ is moved across boundaries different from normal day-to-day operations
+- Adding a new AI-based capability that impacts _federal customer data_ in a different way than existing services or capabilities (such as integrating a new third-party service or training on _federal customer data_)
           
 
 ---   
@@ -309,7 +308,7 @@ Examples:
 - Deploying larger than normal incremental feature improvements in code or libraries that are the work of multiple weeks of development efforts but are not considered a major new service
 - Changing cryptographic modules where the new module meets the same standards and characteristics of the former
 - Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)
-- Adding models to existing approved AI services without exposing federal information to new services
+- Adding models to existing approved AI services without exposing _federal customer data_ to new services
           
 
 ---   

@@ -1,18 +1,17 @@
 # FedRAMP Key Security Indicators
 
-- **Release:** 25.05D
-- **Published:** 2025-08-24  
+- **Release:** 25.10A
+- **Published:** 2025-10-17  
 - **Designator:** KSI
-- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL).
+- **Description:** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
 
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-01** for **20xP1**. 
+  - This release is effective **2025-06-01** for **20x Phase One Pilot**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_.  
 
 
 ### Documentation Guidelines
@@ -621,7 +620,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-10 Software Usage Restrictions
 - ps-7 External Personnel Security
 #### KSI-TPR-02
-> _Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured.
+> _Regularly_ confirm that services handling _federal customer data_ or are likely to impact the confidentiality, integrity, or availability of _federal customer data_ are FedRAMP authorized and securely configured.
 
 ##### Controls
 

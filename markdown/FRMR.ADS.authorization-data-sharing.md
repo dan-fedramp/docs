@@ -1,24 +1,20 @@
 # FedRAMP Authorization Data Sharing Standard
 
-- **Release:** 25.08A
-- **Published:** 2025-08-24  
+- **Release:** 25.10A
+- **Published:** 2025-10-17  
 - **Designator:** ADS
-- **Description:** Initial release of the Authorization Data Sharing Standard
+- **Description:** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
 
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-09-01** for **20x**. 
-  - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - 20xP1 participants do not need to fully align with this policy to receive pilot authorization.
-  - Participants in the 20xP1 pilot who receive pilot authorizations must demonstrate progress towards the adoption of this policy and be in full alignment by the expiration date of their pilot authorization.
+  - This release is effective **2025-09-01** for **20x Phase One Pilot**. 
+  - These requirements and recommendations apply to all participants in the FedRAMP 20x Phase One pilot.
 
 - **FedRAMP Rev5**:
-  - This release is effective **2025-09-01** for **R5.ADS.B1** _(tentatively)_. 
-  - This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services.
-  - These requirements will be initially tested and evaluated for Rev5 in the ADS Closed Beta (B1).
+  - This release is effective **2025-09-01** for **Rev5 Closed Beta**. 
   - Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
   - Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test.
 
@@ -39,7 +35,7 @@ The following FedRAMP documentation guidelines apply to this document:
 
 Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.
 
-This security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not federal information in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.
+This security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.
 
 The FedRAMP Authorization Data Sharing Standard provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.
 
