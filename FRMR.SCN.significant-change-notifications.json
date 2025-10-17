@@ -391,13 +391,15 @@
         {
           "id": "FRA-SCN-03",
           "applies_to": "FRR-SCN-03",
-          "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change."
+          "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change.",
+            "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "FRA-SCN-RR",
           "applies_to": "FRR-SCN-RR",
           "statement": "Activities that match the _routine recurring_ _significant change_ type are performed _regularly_ and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.\n\nThese changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.\n\nIf the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g., replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).",
           "referenced_fr": ["FRD-ALL-09", "FRD-ALL-08", "FRD-ALL-07"],
+          "impact": { "low": true, "moderate": true, "high": true },
           "examples": [
             {
               "id": "Ongoing operations",
@@ -433,6 +435,7 @@
           "id": "FRA-SCN-TF",
           "applies_to": "FRR-SCN-TF",
           "statement": "Activities that match the _transformative_ _significant change_ type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without _transformative_ changes, while hyperscale providers may release multiple _transformative_ changes per year.",
+            "impact": { "low": true, "moderate": true, "high": true },
           "examples": [
             {
               "id": "Transformative changes",
@@ -455,6 +458,7 @@
           "id": "FRA-SCN-AD",
           "applies_to": "FRR-SCN-AD",
           "statement": "Activities that match the _adaptive_ _significant change_ type are a frequent and normal part of iteratively improving a service by deploying new functionality or modifying existing functionality in a way that is typically transparent to customers and does not introduce significant new security risks.\n\nIn general, most changes that do not happen _regularly_ will be _adaptive_ changes. This change type deliberately covers a wide range of activities in a way that requires assessment and consideration.",
+          "impact": { "low": true, "moderate": true, "high": true },
           "referenced_fr": ["FRD-ALL-10", "FRD-ALL-08", "FRD-ALL-07"],
           "examples": [
             {

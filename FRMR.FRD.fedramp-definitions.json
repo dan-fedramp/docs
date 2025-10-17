@@ -5,7 +5,7 @@
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
     "current_release": "25.10A",
-    "types": ["FRR"],
+    "types": ["FRD"],
     "releases": [
       {
         "id": "25.10A",
