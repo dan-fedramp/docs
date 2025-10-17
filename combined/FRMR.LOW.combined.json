@@ -1,17 +1,17 @@
 {
   "info": {
-    "name": "FedRAMP 20x Combined Requirements",
-    "short_name": "FRMR-LOW",
-    "current_release": "25.08A",
+    "name": "FedRAMP 20x All Impact Requirements",
+    "short_name": "FRMR-ALL",
+    "current_release": "Untracked",
     "types": [
       "FRR",
-      "FRA"
+      "KSI"
     ],
     "releases": [
       {
-        "id": "25.08A",
-        "published_date": "2025-08-24",
-        "description": "Combined FedRAMP 20x Low Requirements"
+        "id": "Untracked",
+        "published_date": "2025-10-17",
+        "description": "FedRAMP 20x All Impact Requirements"
       }
     ]
   },
@@ -47,7 +47,12 @@
               "FRD-ALL-09",
               "FRD-ALL-17",
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-02",
@@ -59,7 +64,12 @@
             "referenced_fr": [
               "FRD-ALL-17",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-03",
@@ -72,7 +82,12 @@
               "FRD-ALL-06",
               "FRD-ALL-09",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-04",
@@ -83,7 +98,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-05",
@@ -96,7 +116,12 @@
               "FRD-ALL-15",
               "FRD-ALL-04",
               "FRD-ALL-06"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-06",
@@ -110,7 +135,12 @@
               "FRD-ALL-09",
               "FRD-ALL-15",
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-07",
@@ -124,7 +154,12 @@
               "FRD-ALL-09",
               "FRD-ALL-15",
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-08",
@@ -135,7 +170,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-09",
@@ -146,7 +186,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-10",
@@ -157,7 +202,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -179,7 +229,12 @@
             "referenced_fr": [
               "FRD-ALL-15",
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-AC-02",
@@ -190,7 +245,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-ALL-14"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -215,7 +275,12 @@
               "FRD-ALL-06",
               "FRD-ALL-09",
               "FRR-MAS-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-TC-02",
@@ -228,7 +293,12 @@
               "FRD-ALL-16",
               "FRD-ALL-15",
               "FRD-ALL-17"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-TC-03",
@@ -240,7 +310,12 @@
             "referenced_fr": [
               "FRD-ALL-16",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-TC-04",
@@ -252,7 +327,12 @@
             "referenced_fr": [
               "FRD-ALL-16",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-TC-05",
@@ -264,7 +344,12 @@
             "referenced_fr": [
               "FRD-ALL-16",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-TC-06",
@@ -276,7 +361,12 @@
             "referenced_fr": [
               "FRD-ALL-16",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-ADS-TC-07",
@@ -288,7 +378,12 @@
             "referenced_fr": [
               "FRD-ALL-16",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -307,7 +402,12 @@
               "FRD-ALL-06",
               "FRD-ALL-09",
               "FRD-ALL-15"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       }
@@ -326,7 +426,12 @@
             "affects": [
               "Providers"
             ],
-            "primary_key_word": "MUST"
+            "primary_key_word": "MUST",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-02",
@@ -334,7 +439,12 @@
             "affects": [
               "Providers"
             ],
-            "primary_key_word": "MUST"
+            "primary_key_word": "MUST",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-03",
@@ -345,7 +455,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-08"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-04",
@@ -353,7 +468,12 @@
             "affects": [
               "Providers"
             ],
-            "primary_key_word": "MUST"
+            "primary_key_word": "MUST",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-05",
@@ -361,7 +481,12 @@
             "affects": [
               "Providers"
             ],
-            "primary_key_word": "MUST"
+            "primary_key_word": "MUST",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-06",
@@ -374,7 +499,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-ALL-08"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-07",
@@ -383,7 +513,11 @@
               "Providers"
             ],
             "primary_key_word": "MAY",
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-08",
@@ -392,10 +526,14 @@
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "referenced_fr": [
               "FRD-ALL-17"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-09",
@@ -416,7 +554,11 @@
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-10",
@@ -425,7 +567,11 @@
               "Providers"
             ],
             "primary_key_word": "MAY",
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -442,7 +588,12 @@
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRD-ALL-08"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-EX-02",
@@ -453,7 +604,12 @@
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRD-ALL-08"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -474,7 +630,12 @@
             "primary_key_word": "SHOULD NOT",
             "referenced_fr": [
               "FRD-ALL-09"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -498,7 +659,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-10"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -517,10 +683,14 @@
               "Providers"
             ],
             "primary_key_word": "SHOULD",
-            "is_interim": true,
             "referenced_fr": [
               "FRD-ALL-11"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TF-02",
@@ -531,7 +701,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-11"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TF-03",
@@ -542,7 +717,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-11"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TF-04",
@@ -556,7 +736,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-11"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TF-05",
@@ -572,7 +757,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-11"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TF-06",
@@ -583,7 +773,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-11"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TF-07",
@@ -594,7 +789,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-11"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -613,10 +813,14 @@
               "Providers"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true,
             "referenced_fr": [
               "FRD-ALL-12"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       }
@@ -628,7 +832,7 @@
         "requirements": [
           {
             "id": "FRR-MAS-01",
-            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.",
+            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal customer data_ or _likely_ to impact the confidentiality, integrity, or availability of _federal customer data_ _handled_ by the _cloud service offering_.",
             "affects": [
               "Providers"
             ],
@@ -638,7 +842,12 @@
               "FRD-ALL-02",
               "FRD-ALL-03",
               "FRD-ALL-04"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-02",
@@ -650,11 +859,16 @@
             "referenced_fr": [
               "FRR-MAS-01",
               "FRD-ALL-05"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-03",
-            "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal information_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
+            "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal customer data_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": [
               "Providers"
             ],
@@ -663,11 +877,16 @@
               "FRR-MAS-01",
               "FRD-ALL-01",
               "FRD-ALL-05"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-04",
-            "statement": "Providers MUST include metadata (including metadata about _federal information_), ONLY IF _FRR-MAS-01_ APPLIES.",
+            "statement": "Providers MUST include metadata (including metadata about _federal customer data_), ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": [
               "Providers"
             ],
@@ -675,7 +894,12 @@
             "referenced_fr": [
               "FRR-MAS-01",
               "FRD-ALL-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-05",
@@ -687,7 +911,12 @@
             "referenced_fr": [
               "FRR-MAS-01",
               "FRD-ALL-02"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -697,15 +926,21 @@
         "requirements": [
           {
             "id": "FRR-MAS-EX-01",
-            "statement": "Providers MAY include documentation of _information resources_ beyond the _cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.",
+            "statement": "Providers MAY include documentation of _information resources_ beyond the _cloud service offering_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and _authorization package_ supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.",
             "affects": [
               "Providers"
             ],
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRD-ALL-02",
-              "FRD-ALL-06"
-            ]
+              "FRD-ALL-06",
+              "FRD-ALL-14"
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -724,7 +959,12 @@
             "reference_url": "http://fedramp.gov/scope",
             "referenced_fr": [
               "FRD-ALL-06"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-AY-02",
@@ -734,11 +974,16 @@
             ],
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
-            "reference_url": "http://fedramp.gov/scope"
+            "reference_url": "http://fedramp.gov/scope",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-AY-03",
-            "statement": "_Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP(_FRR-MAS-02_).",
+            "statement": "_Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP (_FRR-MAS-02_).",
             "affects": [
               "All"
             ],
@@ -749,11 +994,16 @@
               "FRD-ALL-05",
               "FRD-ALL-06",
               "FRR-MAS-02"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-AY-04",
-            "statement": "_Information resources_ (including _third-party information resources_+_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).",
+            "statement": "_Information resources_ (including _third-party information resources_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).",
             "affects": [
               "All"
             ],
@@ -763,7 +1013,12 @@
               "FRD-ALL-02",
               "FRD-ALL-03",
               "FRD-ALL-05"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-AY-05",
@@ -771,7 +1026,12 @@
             "affects": [
               "All"
             ],
-            "primary_key_word": "SHOULD"
+            "primary_key_word": "SHOULD",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-MAS-AY-06",
@@ -782,7 +1042,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-06"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       }
@@ -805,7 +1070,12 @@
               "FRD-ALL-20",
               "FRD-ALL-06",
               "FRD-ALL-21"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-02",
@@ -821,7 +1091,12 @@
               "FRD-ALL-28",
               "FRD-ALL-06",
               "FRD-ALL-22"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-03",
@@ -834,7 +1109,12 @@
             "referenced_fr": [
               "FRD-ALL-21",
               "FRD-ALL-22"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-04",
@@ -846,7 +1126,12 @@
             "referenced_fr": [
               "FRD-ALL-02",
               "FRD-ALL-21"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-05",
@@ -861,7 +1146,12 @@
               "FRD-ALL-02",
               "FRD-ALL-22",
               "FRD-ALL-20"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-06",
@@ -872,7 +1162,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-ALL-"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-07",
@@ -883,7 +1178,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-08",
@@ -894,7 +1194,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-09",
@@ -912,7 +1217,12 @@
             ],
             "referenced_fr": [
               "FRD-ALL-"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-10",
@@ -933,7 +1243,12 @@
             ],
             "referenced_fr": [
               "FRD-ALL-"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-11",
@@ -944,7 +1259,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-ALL-"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -954,14 +1274,19 @@
         "requirements": [
           {
             "id": "FRR-VDR-AY-01",
-            "statement": "If it is not possible to _fully mitigate_ or _remediate_ _detected vulnerabilities_, providers SHOULD instead _partially mitigate vulnerabilities_ _promptly_, progressively, and *persistently*.",
+            "statement": "If it is not possible to _fully mitigate_ or _remediate_ _detected vulnerabilities_, providers SHOULD instead _partially mitigate vulnerabilities_ _promptly_, progressively, and _persistently_.",
             "affects": [
               "Providers"
             ],
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AY-02",
@@ -972,7 +1297,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AY-03",
@@ -983,7 +1313,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AY-04",
@@ -994,7 +1329,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AY-05",
@@ -1005,7 +1345,12 @@
             "primary_key_word": "SHOULD NOT",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AY-06",
@@ -1016,7 +1361,12 @@
             "primary_key_word": "SHOULD NOT",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -1037,7 +1387,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-RP-02",
@@ -1048,7 +1403,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-RP-03",
@@ -1060,7 +1420,12 @@
             "note": "See FRR-VDR-EX for exceptions to this requirement.",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-RP-04",
@@ -1071,7 +1436,12 @@
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-RP-05",
@@ -1080,14 +1450,14 @@
               "Provider's internally assigned tracking identifier",
               "Time and source of the detection",
               "Time of completed evaluation",
-              "Is it an *internet-reachable vulnerability* or not?",
-              "Is it a *likely exploitable vulnerability* or not?",
-              "Historically and currently estimated *potential adverse impact* of exploitation",
-              "Time and level of each completed and evaluated reduction in *potential adverse impact*",
-              "Estimated time and target level of next reduction in *potential adverse impact*",
-              "Is it currently or is it likely to become an *overdue vulnerability* or not? If so, explain.",
-              "Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their *federal information* within the *cloud service offering* resulting from the *vulnerability*",
-              "Final disposition of the *vulnerability*"
+              "Is it an _internet-reachable vulnerability_ or not?",
+              "Is it a _likely exploitable vulnerability_ or not?",
+              "Historically and currently estimated _potential adverse impact_ of exploitation",
+              "Time and level of each completed and evaluated reduction in _potential adverse impact_",
+              "Estimated time and target level of next reduction in _potential adverse impact_",
+              "Is it currently or is it likely to become an _overdue vulnerability_ or not? If so, explain.",
+              "Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their _federal customer data_ within the _cloud service offering_ resulting from the _vulnerability_",
+              "Final disposition of the _vulnerability_"
             ],
             "affects": [
               "Providers"
@@ -1095,7 +1465,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-RP-06",
@@ -1104,11 +1479,11 @@
               "Provider's internally assigned tracking identifier",
               "Time and source of the detection",
               "Time of completed evaluation",
-              "Is it an *internet-reachable vulnerability* or not?",
-              "Is it a *likely exploitable vulnerability* or not?",
-              "Currently estimated *potential adverse impact* of exploitation",
-              "Explanation of why this is an *accepted vulnerability*",
-              "Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their *federal information* within the *cloud service offering* resulting from the *accepted vulnerability*"
+              "Is it an _internet-reachable vulnerability_ or not?",
+              "Is it a _likely exploitable vulnerability_ or not?",
+              "Currently estimated _potential adverse impact_ of exploitation",
+              "Explanation of why this is an _accepted vulnerability_",
+              "Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their _federal customer data_ within the _cloud service offering_ resulting from the _accepted vulnerability_"
             ],
             "affects": [
               "Providers"
@@ -1116,7 +1491,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -1133,7 +1513,12 @@
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-EX-02",
@@ -1144,7 +1529,12 @@
             "primary_key_word": "MAY",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-EX-03",
@@ -1152,7 +1542,12 @@
             "affects": [
               "Providers"
             ],
-            "primary_key_word": "MUST NOT"
+            "primary_key_word": "MUST NOT",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -1173,7 +1568,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-TF-02",
@@ -1186,7 +1586,12 @@
               "FRD-VDR-01"
             ],
             "reference": "CISA BOD 22-01",
-            "reference_url": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities"
+            "reference_url": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-TF-03",
@@ -1197,7 +1602,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -1208,6 +1618,11 @@
           "FRD-VDR-00",
           "FRD-VDR-00"
         ],
+        "impact": {
+          "low": true,
+          "moderate": false,
+          "high": false
+        },
         "requirements": [
           {
             "id": "FRR-VDR-TF-LO-01",
@@ -1218,7 +1633,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            }
           },
           {
             "id": "FRR-VDR-TF-LO-02",
@@ -1229,7 +1649,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            }
           },
           {
             "id": "FRR-VDR-TF-LO-03",
@@ -1240,7 +1665,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            }
           },
           {
             "id": "FRR-VDR-TF-LO-04",
@@ -1251,7 +1681,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            }
           },
           {
             "id": "FRR-VDR-TF-LO-05",
@@ -1262,7 +1697,12 @@
             "primary_key_word": "MUST",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            }
           },
           {
             "id": "FRR-VDR-TF-LO-06",
@@ -1299,7 +1739,12 @@
             ],
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            }
           },
           {
             "id": "FRR-VDR-TF-LO-07",
@@ -1310,266 +1755,12 @@
             "primary_key_word": "SHOULD",
             "referenced_fr": [
               "FRD-VDR-01"
-            ]
-          }
-        ]
-      },
-      "timeframe-moderate": {
-        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
-        "id": "FRR-VDR-TF-MO",
-        "referenced_fr": [
-          "FRD-VDR-00",
-          "FRD-VDR-00"
-        ],
-        "requirements": [
-          {
-            "id": "FRR-VDR-TF-MO-01",
-            "statement": "Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every 14 days.",
-            "affects": [
-              "Providers"
             ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-MO-02",
-            "statement": "Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once every 3 days.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-MO-03",
-            "statement": "Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every 14 days.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-MO-04",
-            "statement": "Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once per month.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-MO-05",
-            "statement": "Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 5 days of _detection_.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "MUST",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-MO-06",
-            "statement": "Providers SHOULD treat _internet-reachable likely exploitable vulnerabilities_ with a _potential adverse impact_ of N4 or N5 as a security incident until they are _partially mitigated_ to N3 or below.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-MO-07",
-            "statement": "Providers SHOULD _partially mitigate, fully mitigate,_ or _remediate vulnerabilities_ to a lower _potential adverse impact_ within the timeframes from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "pain_timeframes": [
-              {
-                "pain": 5,
-                "max_days_irv_lev": 2,
-                "max_days_nirv_lev": 4,
-                "max_days_nlev": 16
-              },
-              {
-                "pain": 4,
-                "max_days_irv_lev": 4,
-                "max_days_nirv_lev": 8,
-                "max_days_nlev": 64
-              },
-              {
-                "pain": 3,
-                "max_days_irv_lev": 16,
-                "max_days_nirv_lev": 32,
-                "max_days_nlev": 128
-              },
-              {
-                "pain": 2,
-                "max_days_irv_lev": 48,
-                "max_days_nirv_lev": 128,
-                "max_days_nlev": 192
-              }
-            ],
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-MO-08",
-            "statement": "Providers SHOULD *mitigate* or *remediate* remaining *vulnerabilities* during routine operations as determined necessary by the provider.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          }
-        ]
-      },
-      "timeframe-high": {
-        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP High authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
-        "id": "FRR-VDR-TF-HI",
-        "referenced_fr": [
-          "FRD-VDR-00",
-          "FRD-VDR-00"
-        ],
-        "requirements": [
-          {
-            "id": "FRR-VDR-TF-HI-01",
-            "statement": "Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every 7 days.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-02",
-            "statement": "Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once per day.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-03",
-            "statement": "Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every 7 days.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-04",
-            "statement": "Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once every month.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-05",
-            "statement": "Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 2 days of _detection_.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "MUST",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-06",
-            "statement": "Providers SHOULD treat _internet-reachable likely exploitable vulnerabilities_ with a _potential adverse impact_ of N4 or N5 as a security incident until they are _partially mitigated_ to N3 or below.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-07",
-            "statement": "Providers SHOULD treat _likely exploitable vulnerabilities_ that are NOT _internet-reachable_ with a _potential adverse impact_ of N5 as a security incident until they are partially mitigated to N4 or below.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-08",
-            "statement": "Providers SHOULD _partially mitigate_ _vulnerabilities_ to a lower _potential adverse impact_ within the maximum time-frames from evaluation shown below, factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "SHOULD",
-            "pain_timeframes": [
-              {
-                "pain": 5,
-                "max_days_irv_lev": ".5",
-                "max_days_nirv_lev": 1,
-                "max_days_nlev": 8
-              },
-              {
-                "pain": 4,
-                "max_days_irv_lev": 2,
-                "max_days_nirv_lev": 8,
-                "max_days_nlev": 32
-              },
-              {
-                "pain": 3,
-                "max_days_irv_lev": 8,
-                "max_days_nirv_lev": 16,
-                "max_days_nlev": 64
-              },
-              {
-                "pain": 2,
-                "max_days_irv_lev": 24,
-                "max_days_nirv_lev": 96,
-                "max_days_nlev": 192
-              }
-            ],
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
-          },
-          {
-            "id": "FRR-VDR-TF-HI-09",
-            "statement": "Providers SHOULD *mitigate* or *remediate* remaining *vulnerabilities* during routine operations as determined necessary by the provider.",
-            "affects": [
-              "Providers"
-            ],
-            "primary_key_word": "MUST",
-            "referenced_fr": [
-              "FRD-VDR-01"
-            ]
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            }
           }
         ]
       },
@@ -1584,7 +1775,7 @@
           {
             "id": "FRR-VDR-AG-01",
             "statement": "Agencies SHOULD review the information provided in vulnerability reports at appropriate and reasonable intervals commensurate with the expectations and risk posture indicated by their Authorization to Operate, and SHOULD use automated processing and filtering of machine readable information from cloud service providers.",
-            "note": "FedRAMP recommends that agencies only review *overdue* and _accepted vulnerabilities_ with a _potential adverse impact_ of N3 or higher unless the cloud service provider recommends mitigations or the service is included in a higher risk federal information system. Furthermore, _accepted vulnerabilities_ generally only need to be reviewed when they are added or during an updated risk assessment due to changes in the agency’s use or authorization.",
+            "note": "FedRAMP recommends that agencies only review _overdue_ and _accepted vulnerabilities_ with a _potential adverse impact_ of N3 or higher unless the cloud service provider recommends mitigations or the service is included in a higher risk federal information system. Furthermore, _accepted vulnerabilities_ generally only need to be reviewed when they are added or during an updated risk assessment due to changes in the agency’s use or authorization.",
             "affects": [
               "Agencies"
             ],
@@ -1592,11 +1783,15 @@
             "referenced_fr": [
               "FRD-VDR-01"
             ],
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AG-02",
-            "statement": "Agencies SHOULD use *vulnerability* information reported by the Provider to maintain Plans of Action & Milestones for agency security programs when relevant according to agency security policies (such as if the agency takes action to mitigate the risk of exploitation or authorized the continued use of a cloud service with *accepted vulnerabilities* that put agency information systems at risk).",
+            "statement": "Agencies SHOULD use _vulnerability_ information reported by the Provider to maintain Plans of Action & Milestones for agency security programs when relevant according to agency security policies (such as if the agency takes action to mitigate the risk of exploitation or authorized the continued use of a cloud service with _accepted vulnerabilities_ that put agency information systems at risk).",
             "affects": [
               "Agencies"
             ],
@@ -1604,7 +1799,11 @@
             "referenced_fr": [
               "FRD-VDR-01"
             ],
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AG-03",
@@ -1617,17 +1816,25 @@
             "referenced_fr": [
               "FRD-VDR-01"
             ],
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-VDR-AG-04",
-            "statement": "Agencies MUST inform FedRAMP after requesting any additional *vulnerability* information or materials from a cloud service provider beyond those required by this policy by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).",
+            "statement": "Agencies MUST inform FedRAMP after requesting any additional _vulnerability_ information or materials from a cloud service provider beyond those required by this policy by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).",
             "note": "This is an OMB policy; agencies are required to notify FedRAMP in OMB Memorandum M-24-15 section IV (a).",
             "affects": [
               "Agencies"
             ],
             "primary_key_word": "MUST",
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       }
@@ -1647,7 +1854,12 @@
             "referenced_fr": [
               "FRD-ALL-06",
               "FRR-MAS-01"
-            ]
+            ],
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-KSI-02",
@@ -1657,7 +1869,12 @@
               "Agencies",
               "3PAOs"
             ],
-            "primary_key_word": "SHOULD"
+            "primary_key_word": "SHOULD",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-KSI-03",
@@ -1668,7 +1885,11 @@
               "3PAOs"
             ],
             "primary_key_word": "SHOULD",
-            "is_interim": true
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       }
@@ -1678,11 +1899,12 @@
     "ALL": [
       {
         "id": "FRD-ALL-01",
-        "term": "Federal Information",
-        "definition": "Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means \"information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.\"",
-        "note": "This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP's Technical Assistance and consult qualified legal experts for additional assistance identifying federal information.",
-        "reference": "OMB Circular A-130",
-        "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
+        "term": "Federal Customer Data",
+        "definition": "All electronic information, content, and materials that an _agency_ or its authorized users upload, store, or otherwise provide to a cloud service for processing or storage. This does NOT include account information, service metadata, analytics, telemetry, or other similar metadata generated by the cloud service provider.",
+        "note": "In the context of FedRAMP authorization, \"federal customer data\" ONLY ever refers to data owned by federal agency customers. Agreements and contracts with specific _agencies_ may require providers to protect additional data or even transfer ownshership of telemetry or usage data to the _agency_; always consult a lawyer that is familiar with company agreements and contracts when determining the scope of federal customer data.",
+        "referenced_fr": [
+          "FRD-ALL-19"
+        ]
       },
       {
         "id": "FRD-ALL-02",
@@ -1810,7 +2032,7 @@
       },
       {
         "id": "FRD-ALL-17",
-        "term": "Machine-readable",
+        "term": "Machine-Readable",
         "definition": "Has the meaning from 44 U.S. Code § 3502 (18) which is \"the term \"_machine-readable_\", when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost\"",
         "reference": "44 U.S. Code § 3502 (18)",
         "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
@@ -1875,7 +2097,7 @@
       },
       {
         "id": "FRD-ALL-24",
-        "term": "Internet-reachable Vulnerability (IRV)",
+        "term": "Internet-Reachable Vulnerability (IRV)",
         "definition": "A _vulnerability_ in a machine-based _information resource_ that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based _information resources_ that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.",
         "notes": [
           "The opposite of this is a \"Not Internet-reachable Vulnerability\" (NIRV).",
@@ -1963,7 +2185,7 @@
       {
         "id": "FRD-ALL-32",
         "term": "Catastrophic Adverse Effect",
-        "definition": "A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would _likely_: (i) result in a severe degradation in the availability or performance of services within the _cloud service offering_ for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the _federal information_ stored within the _cloud service offering_.",
+        "definition": "A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would _likely_: (i) result in a severe degradation in the availability or performance of services within the _cloud service offering_ for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the _federal customer data_ stored within the _cloud service offering_.",
         "referenced_fr": [
           "FRD-ALL-01",
           "FRD-ALL-06"
@@ -1972,7 +2194,7 @@
       {
         "id": "FRD-ALL-33",
         "term": "Serious Adverse Effect",
-        "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the _cloud service offering_, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the _federal information_ stored within the _cloud service offering_.",
+        "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the _cloud service offering_, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the _federal customer data_ stored within the _cloud service offering_.",
         "referenced_fr": [
           "FRD-ALL-01",
           "FRD-ALL-06"
@@ -1981,7 +2203,7 @@
       {
         "id": "FRD-ALL-34",
         "term": "Limited Adverse Effect",
-        "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the _cloud service offering_ for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the _federal information_ stored within the _cloud service offering_ by only a few relevant users.",
+        "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the _cloud service offering_ for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the _federal customer data_ stored within the _cloud service offering_ by only a few relevant users.",
         "referenced_fr": [
           "FRD-ALL-01",
           "FRD-ALL-06"
@@ -1997,7 +2219,7 @@
       },
       {
         "id": "FRD-ALL-36",
-        "term": "Potential adverse impact (of vulnerability exploitation)",
+        "term": "Potential Adverse Impact (of vulnerability exploitation)",
         "definition": "The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.",
         "referenced_fr": [
           "FRD-ALL-04",
@@ -2008,7 +2230,7 @@
       {
         "id": "FRD-ALL-37",
         "term": "Promptly",
-        "definition": "Without unnecessary delay.",
+        "definition": "Without Unnecessary Delay.",
         "note": "The use of _promptly_ in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a _cloud service offering_.",
         "referenced_fr": [
           "FRD-ALL-37",
@@ -2144,10 +2366,10 @@
               ],
               "examples": [
                 "The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)",
-                "Increasing the security categorization of a service within the offering that actively handles federal information (does NOT include impact change of entire offering - see impact categorization change)",
+                "Increasing the security categorization of a service within the offering that actively handles _federal customer data_ (does NOT include impact change of entire offering - see impact categorization change)",
                 "Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)",
-                "Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations",
-                "Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)"
+                "Datacenter migration where large amounts of _federal customer data_ is moved across boundaries different from normal day-to-day operations",
+                "Adding a new AI-based capability that impacts _federal customer data_ in a different way than existing services or capabilities (such as integrating a new third-party service or training on _federal customer data_)"
               ]
             }
           ]
@@ -2174,7 +2396,7 @@
                 "Deploying larger than normal incremental feature improvements in code or libraries that are the work of multiple weeks of development efforts but are not considered a major new service",
                 "Changing cryptographic modules where the new module meets the same standards and characteristics of the former",
                 "Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)",
-                "Adding models to existing approved AI services without exposing federal information to new services"
+                "Adding models to existing approved AI services without exposing _federal customer data_ to new services"
               ]
             }
           ]
@@ -2231,7 +2453,12 @@
               "control_id": "at-4",
               "title": "Training Records"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CED-02",
@@ -2252,7 +2479,12 @@
               "control_id": "sr-11.1",
               "title": "Anti-counterfeit Training"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -2288,7 +2520,12 @@
               "control_id": "ma-2",
               "title": "Controlled Maintenance"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CMT-02",
@@ -2325,7 +2562,12 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CMT-03",
@@ -2346,7 +2588,12 @@
               "control_id": "si-2",
               "title": "Flaw Remediation"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CMT-04",
@@ -2375,7 +2622,12 @@
               "control_id": "cm-9",
               "title": "Configuration Management Plan"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CMT-05",
@@ -2400,7 +2652,12 @@
               "control_id": "si-2",
               "title": "Flaw Remediation"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -2430,7 +2687,12 @@
               "control_id": "ca-9",
               "title": "Internal System Connections"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CNA-02",
@@ -2447,7 +2709,12 @@
               "control_id": "ca-9",
               "title": "Internal System Connections"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CNA-03",
@@ -2468,7 +2735,12 @@
               "control_id": "sc-7",
               "title": "Boundary Protection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CNA-04",
@@ -2485,7 +2757,12 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CNA-05",
@@ -2498,7 +2775,12 @@
               "control_id": "sc-5",
               "title": "Denial-of-service Protection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CNA-06",
@@ -2506,7 +2788,12 @@
           "applied_impact_levels": [
             "Low"
           ],
-          "controls": []
+          "controls": [],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-CNA-07",
@@ -2530,7 +2817,12 @@
               "control_id": "pl-10",
               "title": "Baseline Selection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -2573,7 +2865,12 @@
               "control_id": "ia-8",
               "title": "Identification and Authentication (Non-organizational Users)"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-IAM-02",
@@ -2618,7 +2915,12 @@
               "control_id": "ia-6",
               "title": "Authentication Feedback"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-IAM-03",
@@ -2776,7 +3078,12 @@
               "control_id": "sc-39",
               "title": "Process Isolation"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-IAM-05",
@@ -2905,7 +3212,12 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-IAM-06",
@@ -2942,7 +3254,12 @@
               "control_id": "ps-8",
               "title": "Personnel Sanctions"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -2989,7 +3306,12 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-INR-02",
@@ -3018,7 +3340,12 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-INR-03",
@@ -3046,7 +3373,12 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -3113,7 +3445,12 @@
               "control_id": "au-11",
               "title": "Audit Record Retention"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-MLA-02",
@@ -3145,7 +3482,12 @@
               "control_id": "si-4",
               "title": "System Monitoring"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-MLA-03",
@@ -3182,7 +3524,12 @@
               "control_id": "si-5",
               "title": "Security Alerts, Advisories, and Directives"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-MLA-04",
@@ -3206,7 +3553,12 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-MLA-05",
@@ -3227,7 +3579,12 @@
               "control_id": "cm-6",
               "title": "Configuration Settings"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-MLA-06",
@@ -3240,7 +3597,12 @@
               "control_id": "ca-5",
               "title": "Plan of Action and Milestones"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -3287,7 +3649,12 @@
               "control_id": "cp-2.8",
               "title": "Identify Critical Assets"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-PIY-02",
@@ -3403,7 +3770,12 @@
               "control_id": "sr-11",
               "title": "Component Authenticity"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-PIY-03",
@@ -3416,7 +3788,12 @@
               "control_id": "ra-5.11",
               "title": "Public Disclosure Program"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-PIY-04",
@@ -3433,7 +3810,12 @@
               "control_id": "sa-3",
               "title": "System Development Life Cycle"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-PIY-05",
@@ -3444,7 +3826,12 @@
           "applied_impact_levels": [
             "Low"
           ],
-          "controls": []
+          "controls": [],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-PIY-06",
@@ -3481,7 +3868,12 @@
               "control_id": "sr-2.1",
               "title": "Establish SCRM Team"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-PIY-07",
@@ -3494,7 +3886,12 @@
               "control_id": "ca-7.4",
               "title": "Risk Monitoring"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -3521,7 +3918,12 @@
               "control_id": "cp-10",
               "title": "System Recovery and Reconstitution"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-RPL-02",
@@ -3546,7 +3948,12 @@
               "control_id": "cp-10",
               "title": "System Recovery and Reconstitution"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-RPL-03",
@@ -3579,7 +3986,12 @@
               "control_id": "si-12",
               "title": "Information Management and Retention"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-RPL-04",
@@ -3611,7 +4023,12 @@
               "control_id": "ir-3",
               "title": "Incident Response Testing"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -3652,7 +4069,12 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-SVC-02",
@@ -3689,7 +4111,12 @@
               "control_id": "sc-22",
               "title": "Architecture and Provisioning for Name/Address Resolution Service"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-SVC-03",
@@ -3714,7 +4141,12 @@
               "control_id": "sc-13",
               "title": "Cryptographic Protection"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-SVC-04",
@@ -3759,7 +4191,12 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-SVC-05",
@@ -3787,7 +4224,12 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-SVC-06",
@@ -3815,7 +4257,12 @@
               "control_id": "sc-12",
               "title": "Cryptographic Key Establishment and Management"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-SVC-07",
@@ -3836,7 +4283,12 @@
               "control_id": "ra-7",
               "title": "Risk Response"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     },
@@ -3871,11 +4323,16 @@
               "control_id": "ps-7",
               "title": "External Personnel Security"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-TPR-02",
-          "statement": "_Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured",
+          "statement": "_Regularly_ confirm that services handling _federal customer data_ or are likely to impact the confidentiality, integrity, or availability of _federal customer data_ are FedRAMP authorized and securely configured",
           "referenced_fr": [
             "FRD-ALL-07",
             "FRD-ALL-01"
@@ -3912,7 +4369,12 @@
               "control_id": "sa-9",
               "title": "External System Services"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-TPR-03",
@@ -3941,7 +4403,12 @@
               "control_id": "sr-5",
               "title": "Acquisition Strategies, Tools, and Methods"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-TPR-04",
@@ -3986,7 +4453,12 @@
               "control_id": "sr-8",
               "title": "Notification Agreements"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         }
       ]
     }

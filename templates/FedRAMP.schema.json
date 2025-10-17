@@ -175,20 +175,13 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["id", "statement", "applied_impact_levels"],
+                "required": ["id", "statement"],
                 "properties": {
                   "id": {
                     "type": "string",
                     "pattern": "^KSI-[A-Z]{3}-\\d{2}$"
                   },
-                  "statement": { "type": "string" },
-                  "applied_impact_levels": {
-                    "type": "array",
-                    "items": {
-                      "type": "string",
-                      "enum": ["Low", "Moderate", "High"]
-                    }
-                  }
+                  "statement": { "type": "string" }
                 }
               }
             }
@@ -226,7 +219,6 @@
           "type": "string",
           "pattern": "^(20x|R5)\\.[A-Z]{3}\\.((P|B)\\d+|WR)\\.\\d{2}\\.\\d{2}[A-Z]$"
         },
-        "is_optional": { "type": "boolean" },
         "comment": { "type": "string" }
       }
     },
@@ -240,7 +232,13 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["id", "statement", "affects", "primary_key_word"],
+            "required": [
+              "id",
+              "statement",
+              "affects",
+              "primary_key_word",
+              "impact"
+            ],
             "properties": {
               "id": {
                 "type": "string",
@@ -265,7 +263,6 @@
                   "NONE"
                 ]
               },
-              "is_interim": { "type": "boolean" },
               "referenced_fr": {
                 "type": "array",
                 "items": { "type": "string" }
@@ -273,6 +270,15 @@
               "following_information": {
                 "type": "array",
                 "items": { "type": "string" }
+              },
+              "impact": {
+                "type": "object",
+                "required": ["low", "moderate", "high"],
+                "properties": {
+                  "low": { "type": "boolean" },
+                  "moderate": { "type": "boolean" },
+                  "high": { "type": "boolean" }
+                }
               }
             }
           }

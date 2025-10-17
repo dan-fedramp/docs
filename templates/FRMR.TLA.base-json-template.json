@@ -22,19 +22,16 @@
               }
             },
             "specific_release": "20x.TLA.P1.25.00A",
-            "is_optional": false,
             "comment": ""
           },
           "Rev5": {
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-00-00",
-                "is_tentative": true,
                 "designator": "R5.TLA.B1",
                 "comment": ""
               }
             },
-            "is_optional": true,
             "specific_release": "R5.TLA.B1.25.00A",
             "comment": ""
           }
@@ -101,7 +98,6 @@
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
-            "is_interim": true,
             "following_information": [
               "",
               ""
@@ -119,7 +115,6 @@
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
-            "is_interim": true,
             "following_information": ["", ""]
           }
         ]
@@ -135,7 +130,6 @@
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
-            "is_interim": true,
             "following_information": ["", ""]
           }
         ]

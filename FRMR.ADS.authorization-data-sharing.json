@@ -4,9 +4,40 @@
   "info": {
     "name": "Authorization Data Sharing Standard",
     "short_name": "ADS",
-    "current_release": "25.08A",
+    "current_release": "25.10A",
     "types": ["FRR", "FRA"],
     "releases": [
+      {
+        "id": "25.10A",
+        "published_date": "2025-10-17",
+        "description": "Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-09-01",
+                "designator": "20x Phase One Pilot"
+              }
+            },
+            "comments": [
+              "These requirements and recommendations apply to all participants in the FedRAMP 20x Phase One pilot."
+            ]
+          },
+          "Rev5": {
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-09-01",
+                "designator": "Rev5 Closed Beta"
+              }
+            },
+            "comments": [
+              "Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.",
+              "Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test."
+            ]
+          }
+        }
+      },
       {
         "id": "25.08A",
         "published_date": "2025-08-24",
@@ -17,13 +48,11 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-09-01",
-                "designator": "20x",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20x"
               }
             },
-            "specific_release": "20x.ADS.P1.25.08A",
-            "is_optional": false,
             "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
               "20xP1 participants do not need to fully align with this policy to receive pilot authorization.",
               "Participants in the 20xP1 pilot who receive pilot authorizations must demonstrate progress towards the adoption of this policy and be in full alignment by the expiration date of their pilot authorization."
             ]
@@ -32,14 +61,11 @@
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-09-01",
-                "is_tentative": true,
-                "designator": "R5.ADS.B1",
-                "comment": "This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services."
+                "designator": "R5.ADS.B1"
               }
             },
-            "is_optional": true,
-            "specific_release": "R5.ADS.B1.25.08A",
             "comments": [
+              "This release is effective 2025-09-01 for R5.ADS.B1 for FedRAMP Rev5 Authorized or In Process services.",
               "These requirements will be initially tested and evaluated for Rev5 in the ADS Closed Beta (B1).",
               "Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.",
               "Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test."
@@ -74,7 +100,7 @@
           "description": "Section 6 states that \"In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs' commercial customer base.\""
         }
       ],
-      "purpose": "Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.\n\nThis security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not federal information in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.\n\nThe FedRAMP Authorization Data Sharing Standard provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.\n\nAt the initial release of this standard there will not be many platforms that directly support the requirements in this standard. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.\n\n_* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._",
+      "purpose": "Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.\n\nThis security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.\n\nThe FedRAMP Authorization Data Sharing Standard provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.\n\nAt the initial release of this standard there will not be many platforms that directly support the requirements in this standard. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.\n\n_* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._",
       "expected_outcomes": [
         "Cloud service providers will be able to manage authorization data in the same platforms used for commercial customers, reusing data as appropriate",
         "Federal agencies will be able to access necessary authorization data via API or other automated mechanisms integrated into agency authorization systems to simplify the burden of review and continuous monitoring",
@@ -112,35 +138,40 @@
               "FRD-ALL-09",
               "FRD-ALL-17",
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-02",
             "statement": "Providers MUST use automation to ensure information remains consistent between human-readable and _machine-readable_ formats when _authorization data_ is provided in both formats; Providers SHOULD generate human-readable and _machine-readable_ data from the same source at the same time OR generate human-readable formats directly from _machine-readable_ data.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-17", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-17", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-03",
             "statement": "Providers MUST share a detailed list of specific services and their impact levels that are included in the _cloud service offering_ using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying _authorization data_.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-06", "FRD-ALL-09", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-06", "FRD-ALL-09", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-04",
             "statement": "Providers MUST share _authorization data_ with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. ",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-05",
             "statement": "Providers MUST provide sufficient information in _authorization data_ to support authorization decisions but SHOULD NOT include sensitive information that would _likely_ enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the _cloud service offering_. ",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-15", "FRD-ALL-04", "FRD-ALL-06"]
+            "referenced_fr": ["FRD-ALL-15", "FRD-ALL-04", "FRD-ALL-06"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-06",
@@ -152,7 +183,8 @@
               "FRD-ALL-09",
               "FRD-ALL-15",
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-07",
@@ -164,28 +196,32 @@
               "FRD-ALL-09",
               "FRD-ALL-15",
               "FRD-ALL-16"
-            ]
+            ],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-08",
             "statement": "Providers MUST notify all necessary parties when migrating to a _trust center_ and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the _trust center_ to obtain _authorization data_.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-16"]
+            "referenced_fr": ["FRD-ALL-16"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-09",
             "statement": "Providers MUST make historical versions of _authorization data_ available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-10",
             "statement": "Providers SHOULD follow FedRAMP’s best practices and technical assistance for sharing _authorization data_ where applicable.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       },
@@ -199,14 +235,16 @@
             "statement": "Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to _authorization data_ stored in the _trust center_.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-15", "FRD-ALL-16"]
+            "referenced_fr": ["FRD-ALL-15", "FRD-ALL-16"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-AC-02",
             "statement": "Providers SHOULD share at least the _authorization package_ with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  ",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-14"]
+            "referenced_fr": ["FRD-ALL-14"],
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       },
@@ -226,49 +264,56 @@
               "FRD-ALL-06",
               "FRD-ALL-09",
               "FRR-MAS-01"
-            ]
+            ],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-TC-02",
             "statement": "_Trust centers_ SHOULD make _authorization data_ available to view and download in both human-readable and _machine-readable_ formats",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15", "FRD-ALL-17"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15", "FRD-ALL-17"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-TC-03",
             "statement": "_Trust centers_ MUST provide documented programmatic access to all _authorization data_, including programmatic access to human-readable materials.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-TC-04",
             "statement": "_Trust centers_ SHOULD include features that encourage all necessary parties to provision and manage access to _authorization data_ for their users and services directly.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-TC-05",
             "statement": "_Trust centers_ MUST maintain an inventory and history of federal agency users or systems with access to _authorization data_ and MUST make this information available to FedRAMP without interruption. ",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-TC-06",
             "statement": "_Trust centers_ MUST log access to _authorization data_ and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           },
           {
             "id": "FRR-ADS-TC-07",
             "statement": "_Trust centers_ SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-16", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       },
@@ -281,7 +326,8 @@
             "statement": "Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.",
             "affects": ["Providers"],
             "primary_key_word": "MAY",
-            "referenced_fr": ["FRD-ALL-06", "FRD-ALL-09", "FRD-ALL-15"]
+            "referenced_fr": ["FRD-ALL-06", "FRD-ALL-09", "FRD-ALL-15"],
+            "impact": { "low": true, "moderate": true, "high": true }
           }
         ]
       }

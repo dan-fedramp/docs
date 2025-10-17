@@ -13,7 +13,7 @@
 {{#each info.releases.[0].effective}}
 - **FedRAMP {{@key}}**:
   {{#each this.timeline}}
-  - This release is effective **{{start_date}}** for **{{designator}}**{{#if is_tentative}} _(tentatively)_{{/if}}. 
+  - This release is effective **{{start_date}}** for **{{designator}}**. 
   {{#if comment}}
   - {{comment}}
   {{/if}}
@@ -98,6 +98,10 @@ The following FedRAMP documentation guidelines apply to this document:
       {{#each requirements}}
 
 #### {{this.id}}
+{{#if impact}}
+{{!-- this is super messy but ok for now --}}
+_Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
+{{/if}}
 
 > {{this.statement}}
         {{#if following_information}}
