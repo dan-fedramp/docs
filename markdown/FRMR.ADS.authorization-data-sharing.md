@@ -59,6 +59,7 @@ _* Providers with questions about this should consult with a lawyer who speciali
 **These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
 
 #### FRR-ADS-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST publicly share up-to-date information about the _cloud service offering_ in both human-readable and _machine-readable_ formats, including at least:
 > 1. Direct link to the FedRAMP Marketplace for the offering
@@ -75,38 +76,47 @@ _* Providers with questions about this should consult with a lawyer who speciali
 > 1. Customer support information for the _trust center_ (if applicable)
 
 #### FRR-ADS-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST use automation to ensure information remains consistent between human-readable and _machine-readable_ formats when _authorization data_ is provided in both formats; Providers SHOULD generate human-readable and _machine-readable_ data from the same source at the same time OR generate human-readable formats directly from _machine-readable_ data.
 
 #### FRR-ADS-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST share a detailed list of specific services and their impact levels that are included in the _cloud service offering_ using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying _authorization data_.
 
 #### FRR-ADS-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST share _authorization data_ with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. 
 
 #### FRR-ADS-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST provide sufficient information in _authorization data_ to support authorization decisions but SHOULD NOT include sensitive information that would _likely_ enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the _cloud service offering_. 
 
 #### FRR-ADS-06
+_Applies to:_ Low, Moderate, High
 
 > Providers of FedRAMP Rev5 Authorized _cloud service offerings_ MUST share _authorization data_ via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible _trust center_.
 
 #### FRR-ADS-07
+_Applies to:_ Low, Moderate, High
 
 > Providers of FedRAMP 20x Authorized _cloud service offerings_ MUST use a FedRAMP-compatible _trust center_ to store and share _authorization data_ with all necessary parties.
 
 #### FRR-ADS-08
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties when migrating to a _trust center_ and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the _trust center_ to obtain _authorization data_.
 
 #### FRR-ADS-09
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST make historical versions of _authorization data_ available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.
 
 #### FRR-ADS-10
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD follow FedRAMP’s best practices and technical assistance for sharing _authorization data_ where applicable.
 
@@ -117,10 +127,12 @@ _* Providers with questions about this should consult with a lawyer who speciali
 **These requirements for managing access apply to cloud service providers who establish FedRAMP-compatible _trust centers_ for storing and sharing _authorization data_.**
 
 #### FRR-ADS-AC-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to _authorization data_ stored in the _trust center_.
 
 #### FRR-ADS-AC-02
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD share at least the _authorization package_ with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  
 
@@ -131,30 +143,37 @@ _* Providers with questions about this should consult with a lawyer who speciali
 **These requirements apply to FedRAMP-compatible _trust centers_ used to store and share _authorization data_.**
 
 #### FRR-ADS-TC-01
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST be included as an _information resource_ included in the _cloud service offering_ for assessment if FRR-MAS-01 applies. 
 
 #### FRR-ADS-TC-02
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ SHOULD make _authorization data_ available to view and download in both human-readable and _machine-readable_ formats
 
 #### FRR-ADS-TC-03
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST provide documented programmatic access to all _authorization data_, including programmatic access to human-readable materials.
 
 #### FRR-ADS-TC-04
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ SHOULD include features that encourage all necessary parties to provision and manage access to _authorization data_ for their users and services directly.
 
 #### FRR-ADS-TC-05
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST maintain an inventory and history of federal agency users or systems with access to _authorization data_ and MUST make this information available to FedRAMP without interruption. 
 
 #### FRR-ADS-TC-06
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST log access to _authorization data_ and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.
 
 #### FRR-ADS-TC-07
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.
 
@@ -165,6 +184,7 @@ _* Providers with questions about this should consult with a lawyer who speciali
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
 
 #### FRR-ADS-EX-01
+_Applies to:_ Low, Moderate, High
 
 > Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.
 

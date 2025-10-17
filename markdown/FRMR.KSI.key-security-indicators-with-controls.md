@@ -48,14 +48,17 @@ Modern cloud services use automated or code-driven configuration management and 
 **These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.**
 
 #### FRR-KSI-01
+_Applies to:_ Low, Moderate, High
 
 > Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.
 
 #### FRR-KSI-02
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD follow FedRAMP&#x27;s best practices and technical assistance on assessing Key Security Indicators where applicable.
 
 #### FRR-KSI-03
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.
 

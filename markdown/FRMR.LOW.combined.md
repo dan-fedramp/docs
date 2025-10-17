@@ -1,7 +1,7 @@
 # FedRAMP FedRAMP 20x All Impact Requirements
 
 - **Release:** Untracked
-- **Published:** 2025-10-16  
+- **Published:** 2025-10-17  
 - **Designator:** FRMR-ALL
 - **Description:** FedRAMP 20x All Impact Requirements
 
@@ -221,6 +221,7 @@
 **These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
 
 #### FRR-ADS-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST publicly share up-to-date information about the _cloud service offering_ in both human-readable and _machine-readable_ formats, including at least:
 > 1. Direct link to the FedRAMP Marketplace for the offering
@@ -237,38 +238,47 @@
 > 1. Customer support information for the _trust center_ (if applicable)
 
 #### FRR-ADS-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST use automation to ensure information remains consistent between human-readable and _machine-readable_ formats when _authorization data_ is provided in both formats; Providers SHOULD generate human-readable and _machine-readable_ data from the same source at the same time OR generate human-readable formats directly from _machine-readable_ data.
 
 #### FRR-ADS-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST share a detailed list of specific services and their impact levels that are included in the _cloud service offering_ using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying _authorization data_.
 
 #### FRR-ADS-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST share _authorization data_ with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. 
 
 #### FRR-ADS-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST provide sufficient information in _authorization data_ to support authorization decisions but SHOULD NOT include sensitive information that would _likely_ enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the _cloud service offering_. 
 
 #### FRR-ADS-06
+_Applies to:_ Low, Moderate, High
 
 > Providers of FedRAMP Rev5 Authorized _cloud service offerings_ MUST share _authorization data_ via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible _trust center_.
 
 #### FRR-ADS-07
+_Applies to:_ Low, Moderate, High
 
 > Providers of FedRAMP 20x Authorized _cloud service offerings_ MUST use a FedRAMP-compatible _trust center_ to store and share _authorization data_ with all necessary parties.
 
 #### FRR-ADS-08
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties when migrating to a _trust center_ and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the _trust center_ to obtain _authorization data_.
 
 #### FRR-ADS-09
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST make historical versions of _authorization data_ available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.
 
 #### FRR-ADS-10
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD follow FedRAMP’s best practices and technical assistance for sharing _authorization data_ where applicable.
 
@@ -279,10 +289,12 @@
 **These requirements for managing access apply to cloud service providers who establish FedRAMP-compatible _trust centers_ for storing and sharing _authorization data_.**
 
 #### FRR-ADS-AC-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to _authorization data_ stored in the _trust center_.
 
 #### FRR-ADS-AC-02
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD share at least the _authorization package_ with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  
 
@@ -293,30 +305,37 @@
 **These requirements apply to FedRAMP-compatible _trust centers_ used to store and share _authorization data_.**
 
 #### FRR-ADS-TC-01
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST be included as an _information resource_ included in the _cloud service offering_ for assessment if FRR-MAS-01 applies. 
 
 #### FRR-ADS-TC-02
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ SHOULD make _authorization data_ available to view and download in both human-readable and _machine-readable_ formats
 
 #### FRR-ADS-TC-03
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST provide documented programmatic access to all _authorization data_, including programmatic access to human-readable materials.
 
 #### FRR-ADS-TC-04
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ SHOULD include features that encourage all necessary parties to provision and manage access to _authorization data_ for their users and services directly.
 
 #### FRR-ADS-TC-05
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST maintain an inventory and history of federal agency users or systems with access to _authorization data_ and MUST make this information available to FedRAMP without interruption. 
 
 #### FRR-ADS-TC-06
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ MUST log access to _authorization data_ and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.
 
 #### FRR-ADS-TC-07
+_Applies to:_ Low, Moderate, High
 
 > _Trust centers_ SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.
 
@@ -327,6 +346,7 @@
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
 
 #### FRR-ADS-EX-01
+_Applies to:_ Low, Moderate, High
 
 > Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.
 
@@ -338,38 +358,47 @@
 **These requirements apply ALWAYS to ALL _significant changes_ based on current Effective Date(s) and Overall Applicability**
 
 #### FRR-SCN-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties when Significant Change Notifications are required, including at least FedRAMP and all agency customers. Providers MAY share Significant Change Notifications publicly or with other parties.
 
 #### FRR-SCN-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST follow the procedures documented in their security plan to plan, evaluate, test, perform, assess, and document changes.
 
 #### FRR-SCN-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST evaluate and type label all _significant changes_, then follow FedRAMP requirements for the type.
 
 #### FRR-SCN-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST maintain auditable records of these activities and make them available to all necessary parties.
 
 #### FRR-SCN-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST keep historical Significant Change Notifications available to all necessary parties at least until the service completes its next annual assessment.
 
 #### FRR-SCN-06
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD follow FedRAMP&#x27;s best practices and technical assistance on _significant change_ assessment and notification where applicable.
 
 #### FRR-SCN-07
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY notify necessary parties in a variety of ways as long as the mechanism for notification is clearly documented and easily accessible.
 
 #### FRR-SCN-08
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.
 
 #### FRR-SCN-09
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST include at least the following information in Significant Change Notifications:
 > 1. Service Offering FedRAMP ID
@@ -384,6 +413,7 @@
 > 1. Name and title of approver
 
 #### FRR-SCN-10
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY include additional relevant information in Significant Change Notifications.
 
@@ -394,10 +424,12 @@
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
 
 #### FRR-SCN-EX-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY be required to delay _significant changes_ beyond the standard Significant Change Notification period and/or submit _significant changes_ for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.
 
 #### FRR-SCN-EX-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY execute _significant changes_ (including _transformative_ changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.
 
@@ -408,6 +440,7 @@
 **These requirements apply ONLY to _significant changes_ of type _routine recurring_.**
 
 #### FRR-SCN-RR-01
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.
 
@@ -418,6 +451,7 @@
 **These requirements apply ONLY to _significant changes_ of type _adaptive_.**
 
 #### FRR-SCN-AD-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within ten business days after finishing _adaptive_ changes, also including the following information:
 > 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
@@ -429,23 +463,28 @@
 **These requirements apply ONLY to _significant changes_ of type _transformative_.**
 
 #### FRR-SCN-TF-01
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting _transformative_ changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.
 
 #### FRR-SCN-TF-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties of initial plans for _transformative_ changes at least 30 business days before starting _transformative_ changes.
 
 #### FRR-SCN-TF-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties of final plans for _transformative_ changes at least 10 business days before starting _transformative_ changes.
 
 #### FRR-SCN-TF-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within 5 business days after finishing _transformative_ changes, also including the following information:
 > 1. Updates to all previously sent information
 
 #### FRR-SCN-TF-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within 5 business days after completing the verification, assessment, and/or validation of _transformative_ changes, also including the following information:
 > 1. Updates to all previously sent information
@@ -453,10 +492,12 @@
 > 1. Copy of the security assessment report (if applicable)
 
 #### FRR-SCN-TF-06
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST publish updated service documentation and other materials to reflect _transformative_ changes within 30 business days after finishing _transformative_ changes.
 
 #### FRR-SCN-TF-07
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.
 
@@ -467,6 +508,7 @@
 **These requirements apply ONLY to _significant changes_ of type _impact categorization_.**
 
 #### FRR-SCN-IM-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST follow the legacy Significant Change Request process or full re-authorization for _impact categorization_ changes, with advance approval from an identified lead agency, until further notice.
 
@@ -478,22 +520,27 @@
 **These requirements apply ALWAYS to ALL FedRAMP authorizations based on the Effective Date(s) and Overall Applicability.**
 
 #### FRR-MAS-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal customer data_ or _likely_ to impact the confidentiality, integrity, or availability of _federal customer data_ _handled_ by the _cloud service offering_.
 
 #### FRR-MAS-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST include the configuration and usage of _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal customer data_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST include metadata (including metadata about _federal customer data_), ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST clearly identify, document, and explain information flows and impact levels for ALL _information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
@@ -504,6 +551,7 @@
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
 
 #### FRR-MAS-EX-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY include documentation of _information resources_ beyond the _cloud service offering_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and _authorization package_ supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.
 
@@ -514,26 +562,32 @@
 **These rules provide general guidance on the application of this standard.**
 
 #### FRR-MAS-AY-01
+_Applies to:_ Low, Moderate, High
 
 > Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-02
+_Applies to:_ Low, Moderate, High
 
 > Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-03
+_Applies to:_ Low, Moderate, High
 
 > _Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP (_FRR-MAS-02_).
 
 #### FRR-MAS-AY-04
+_Applies to:_ Low, Moderate, High
 
 > _Information resources_ (including _third-party information resources_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).
 
 #### FRR-MAS-AY-05
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Standard as needed.
 
 #### FRR-MAS-AY-06
+_Applies to:_ Low, Moderate, High
 
 > All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
 
@@ -545,40 +599,49 @@
 **These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
 
 #### FRR-VDR-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST systematically, _persistently_, and _promptly_ discover and identify _vulnerabilities_ within their _cloud service offering_ using appropriate techniques such as assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other relevant capabilities; this process is called _vulnerability detection_.
 
 #### FRR-VDR-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST systematically, _persistently_, and _promptly_ track, evaluate, monitor, _mitigate_, _remediate_, assess exploitation of, report, and otherwise manage all detected vulnerabilities within their _cloud service offering_; this process is called _vulnerability response_.
 
 #### FRR-VDR-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST follow the requirements and recommendations outlined in FRR-VDR-TF regarding timeframes for _vulnerability detection_ and _response_.
 >
 >  _Note: Providers are strongly encouraged to build programs that consistently exceed these thresholds. Performance will be measured by FedRAMP for comparison between providers and scoring within the FedRAMP Marketplace._
 
 #### FRR-VDR-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY sample effectively identical _information resources_, especially machine-based _information resources_, when performing _vulnerability detection_ UNLESS doing so would decrease the efficiency or effectiveness of _vulnerability detection_.
 
 #### FRR-VDR-05
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to identify logical groupings of affected _information resources_ that may improve the efficiency and effectiveness of _vulnerability response_ by consolidating further activity; requirements and recommendations in this standard are then applied to these consolidated groupings of _vulnerabilities_ instead of each individual detected instance.
 
 #### FRR-VDR-06
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to determine if they are _false positive vulnerabilities_.
 
 #### FRR-VDR-07
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to determine if they are _likely exploitable vulnerabilities_.
 
 #### FRR-VDR-08
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to determine if they are _internet-reachable vulnerabilities_.
 
 #### FRR-VDR-09
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST evaluate _detected vulnerabilities_, considering the context of the _cloud service offering_, to estimate the _potential adverse impact_ of exploitation on government customers AND assign one of the following _potential adverse impact_ ratings:
 > - **N1**: Exploitation could be expected to have _negligible adverse effects_ on one or more _agencies_ that use the _cloud service offering_.
@@ -588,6 +651,7 @@
 > - **N5**: Exploitation could be expected to have a _catastrophic adverse effect_ on more than one _agency_ that uses the _cloud service offering_.
 
 #### FRR-VDR-10
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD consider at least the following factors when considering the context of the _cloud service offering_ to evaluate _detected vulnerabilities_:
 > 1. **Criticality**: How important are the systems or information that might be impacted by the _vulnerability_?
@@ -600,6 +664,7 @@
 > 1. **Known Threats**: How might already known threats leverage the _vulnerability_ and how _likely_ is that?
 
 #### FRR-VDR-11
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST document the reason and resulting implications for their customers when choosing not to meet FedRAMP recommendations in this standard; this documentation MUST be included in the _authorization data_ for the _cloud service offering_.
 
@@ -610,26 +675,32 @@
 **This section provides guidance on the application of this standard, including recommendations for implementing high quality _vulnerability detection_ and _response_ programs; providers who follow some or all of these will be better positioned to meet future FedRAMP authorization requirements.**
 
 #### FRR-VDR-AY-01
+_Applies to:_ Low, Moderate, High
 
 > If it is not possible to _fully mitigate_ or _remediate_ _detected vulnerabilities_, providers SHOULD instead _partially mitigate vulnerabilities_ _promptly_, progressively, and _persistently_.
 
 #### FRR-VDR-AY-02
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD make design and architecture decisions for their _cloud service offering_ that mitigate the risk of _vulnerabilities_ by default AND decrease the risk and complexity of _vulnerability_ _detection_ and _response_.
 
 #### FRR-VDR-AY-03
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD use automated services to improve and streamline _vulnerability detection_ and _response_.
 
 #### FRR-VDR-AY-04
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD automatically perform _vulnerability detection_ on representative samples of new or _significantly_ _changed_ _information resources_.
 
 #### FRR-VDR-AY-05
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD NOT weaken the security of _information resources_ to facilitate vulnerability scanning or assessment activities.
 
 #### FRR-VDR-AY-06
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD NOT deploy or otherwise activate new machine-based _information resources_ with _Known Exploited Vulnerabilities_.
 
@@ -640,24 +711,29 @@
 **This section identifies FedRAMP-specific reporting requirements and recommendations for _vulnerabilities_.**
 
 #### FRR-VDR-RP-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST report _vulnerability detection_ and _response_ activity to all necessary parties _persistently_, summarizing ALL activity since the previous report; these reports are _authorization data_ and are subject to the FedRAMP Authorization Data Sharing (ADS) standard.
 
 #### FRR-VDR-RP-02
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD include high-level overviews of ALL _vulnerability detection_ and _response_ activities conducted during this period for the _cloud service offering;_ this includes vulnerability disclosure programs, bug bounty programs, penetration testing, assessments, etc.
 
 #### FRR-VDR-RP-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST NOT irresponsibly disclose specific sensitive information about _vulnerabilities_ that would _likely_ lead to exploitation, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.
 >
 >  _Note: See FRR-VDR-EX for exceptions to this requirement._
 
 #### FRR-VDR-RP-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY responsibly disclose _vulnerabilities_ publicly or with other parties if the provider determines doing so will NOT _likely_ lead to exploitation.
 
 #### FRR-VDR-RP-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST include the following information (if applicable) on _detected vulnerabilities_ when reporting on _vulnerability detection_ and _response_ activity, UNLESS it is an _accepted vulnerability_:
 > 1. Provider&#x27;s internally assigned tracking identifier
@@ -673,6 +749,7 @@
 > 1. Final disposition of the _vulnerability_
 
 #### FRR-VDR-RP-06
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST include the following information on _accepted vulnerabilities_ when reporting on _vulnerability detection_ and _response_ activity:
 > 1. Provider&#x27;s internally assigned tracking identifier
@@ -691,14 +768,17 @@
 **These exceptions MAY override some or all of the FedRAMP requirements and recommendations in this standard.**
 
 #### FRR-VDR-EX-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY be required to share additional _vulnerability_ information, alternative reports, or to report at an alternative frequency as a condition of a FedRAMP Corrective Action Plan or other agreements with federal agencies.
 
 #### FRR-VDR-EX-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY be required to provide additional information or details about _vulnerabilities_, including sensitive information that would _likely_ lead to exploitation, as part of review, response or investigation by necessary parties.
 
 #### FRR-VDR-EX-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST NOT use this standard to reject requests for additional information from necessary parties which also include law enforcement, Congress, and Inspectors General.
 
@@ -709,14 +789,17 @@
 **This section provides guidance on timeframes that apply to all impact levels of FedRAMP authorization for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
 
 #### FRR-VDR-TF-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST report _vulnerability detection_ and _response_ activity to all necessary parties in a consistent format that is human readable at least monthly.
 
 #### FRR-VDR-TF-02
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD _remediate Known Exploited Vulnerabilities_ according to the due dates in the CISA Known Exploited Vulnerabilities Catalog (even if the vulnerability has been _fully mitigated_) as required by CISA Binding Operational Directive (BOD) 22-01 or any successor guidance from CISA.
 
 #### FRR-VDR-TF-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST categorize any vulnerability that is not or will not be _fully mitigated_ or _remediated_ within 192 days of evaluation as an _accepted vulnerability_.
 
@@ -727,26 +810,32 @@
 **This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.**
 
 #### FRR-VDR-TF-LO-01
+_Applies to:_ Low
 
 > Providers SHOULD make all recent historical _vulnerability detection_ and _response_ activity available in a _machine-readable_ format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated _persistently_, at least once every month.
 
 #### FRR-VDR-TF-LO-02
+_Applies to:_ Low
 
 > Providers SHOULD _persistently_ perform _vulnerability detection_ on representative samples of similar machine-based _information resources_, at least once every week.
 
 #### FRR-VDR-TF-LO-03
+_Applies to:_ Low
 
 > Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are _likely_ to _drift_, at least once every month.
 
 #### FRR-VDR-TF-LO-04
+_Applies to:_ Low
 
 > Providers SHOULD _persistently_ perform _vulnerability detection_ on all _information resources_ that are NOT _likely_ to _drift_, at least once every six months.
 
 #### FRR-VDR-TF-LO-05
+_Applies to:_ Low
 
 > Providers SHOULD evaluate ALL _vulnerabilities_ as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 7 days of _detection_.
 
 #### FRR-VDR-TF-LO-06
+_Applies to:_ Low
 
 > Providers SHOULD _partially mitigate, fully mitigate,_ or _remediate vulnerabilities_ to a lower _potential adverse impact_ within the timeframes from evaluation shown below (in days), factoring for the current _potential adverse impact_, _internet reachability,_ and _likely exploitability_:
 > | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
@@ -757,6 +846,7 @@
 > | N2 | 96|160 | 192|
 
 #### FRR-VDR-TF-LO-07
+_Applies to:_ Low
 
 > Providers SHOULD _mitigate_ or _remediate_ remaining _vulnerabilities_ during routine operations as determined necessary by the provider.
 
@@ -767,22 +857,26 @@
 **The section provides guidance for agencies that apply under 44 USC § 3613 (e) which states that the assessment and materials within a FedRAMP authorization package “shall be presumed adequate for use in an agency authorization to operate cloud computing products and services.”**
 
 #### FRR-VDR-AG-01
+_Applies to:_ Low, Moderate, High
 
 > Agencies SHOULD review the information provided in vulnerability reports at appropriate and reasonable intervals commensurate with the expectations and risk posture indicated by their Authorization to Operate, and SHOULD use automated processing and filtering of machine readable information from cloud service providers.
 >
 >  _Note: FedRAMP recommends that agencies only review _overdue_ and _accepted vulnerabilities_ with a _potential adverse impact_ of N3 or higher unless the cloud service provider recommends mitigations or the service is included in a higher risk federal information system. Furthermore, _accepted vulnerabilities_ generally only need to be reviewed when they are added or during an updated risk assessment due to changes in the agency’s use or authorization._
 
 #### FRR-VDR-AG-02
+_Applies to:_ Low, Moderate, High
 
 > Agencies SHOULD use _vulnerability_ information reported by the Provider to maintain Plans of Action &amp; Milestones for agency security programs when relevant according to agency security policies (such as if the agency takes action to mitigate the risk of exploitation or authorized the continued use of a cloud service with _accepted vulnerabilities_ that put agency information systems at risk).
 
 #### FRR-VDR-AG-03
+_Applies to:_ Low, Moderate, High
 
 > Agencies SHOULD NOT request additional information from cloud service providers that is not required by this FedRAMP standard UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such.
 >
 >  _Note: This is related to the Presumption of Adequacy directed by 44 USC § 3613 (e)._
 
 #### FRR-VDR-AG-04
+_Applies to:_ Low, Moderate, High
 
 > Agencies MUST inform FedRAMP after requesting any additional _vulnerability_ information or materials from a cloud service provider beyond those required by this policy by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).
 >
@@ -796,14 +890,17 @@
 **These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.**
 
 #### FRR-KSI-01
+_Applies to:_ Low, Moderate, High
 
 > Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.
 
 #### FRR-KSI-02
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD follow FedRAMP&#x27;s best practices and technical assistance on assessing Key Security Indicators where applicable.
 
 #### FRR-KSI-03
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.
 
