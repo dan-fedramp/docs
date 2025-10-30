@@ -185,7 +185,7 @@
         "^[A-Z]{3}$": {
           "type": "array",
           "items": {
-            "type": "object",
+            "type": "array",
             "required": [
               "id",
               "purpose",
