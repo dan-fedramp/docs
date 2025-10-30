@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic JSON Editor Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+  </head>
+  <body>
+    <h1>Basic JSON Editor Example</h1>
+
+    <div id='editor_holder'></div>
+    <button id='submit'>Submit (console.log)</button>
+
+    <script>
+    //     const schema = fetch('https://raw.githubusercontent.com/dan-fedramp/docs/refs/heads/main/templates/FedRAMP.schema.json');
+    // const data = fetch('https://raw.githubusercontent.com/dan-fedramp/docs/refs/heads/main/FRMR.ADS.authorization-data-sharing.json');
+      // Initialize the editor with a JSON schema
+      var editor = new JSONEditor(document.getElementById('editor_holder'),{
+        schema: {"$ref": "https://raw.githubusercontent.com/dan-fedramp/docs/refs/heads/main/templates/FedRAMP.schema.json"}, ajax: true
+      });
+
+      editor.on('ready',() => {
+  // Now the api methods will be available
+  editor.validate();
+});
+
+      // Hook up the submit button to log to the console
+      document.getElementById('submit').addEventListener('click',function() {
+        // Get the value from the editor
+        console.log(editor.getValue());
+      });
+    </script>
+  </body>
+</html>
