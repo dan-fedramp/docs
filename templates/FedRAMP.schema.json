@@ -179,6 +179,42 @@
         }
       }
     },
+    "FRA": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z]{3}$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "purpose",
+              "requirements"
+            ]},
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^FRA-[A-Z]{3}-\\d{2}$"
+              },
+              "disclaimer": {
+                "type": "string"
+              },
+              "purpose": {
+                "type": "string"
+              },
+              "requirements": {
+                  "$ref": "#/$defs/requirement_section"
+                 },
+              "referenced_fr": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+            }
+          }
+        },
     "FRD": {
       "type": "object",
       "patternProperties": {
